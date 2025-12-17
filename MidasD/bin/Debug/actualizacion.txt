@@ -1,0 +1,25 @@
+**version 1.1.4.53**  Correccion de centavos en los certificados de fianza en la parte literal del monto. 19/09/2022
+**version 1.1.4.52**  Se quito el plazo de tranferencias de las listas para RRHH siendo primordial los reportes de nuevas fianzas vencidas solamente. 29/06/2022
+**version 1.1.3.52**  Se quito la generacion automatica de asignacion de numero de fianza al momento de registrar la resolucion administrativa, ahora se registran con "0" para posterior asignacion por contabilidad 22/06/2022.
+**version 1.1.3.51**  Correcciones del numero de fianzas reales y validacion de contabilidad en fianzas reales 20/04/2022.
+**version 1.1.3.50**  Correcciones en mes de descuento para la Habilitado 8/04/2022.
+**version 1.1.3.49**  Correciones menores de validacion para numeros de CI con complementos 6/04/2022.
+**version 1.1.3.48**  Correciones menores en validacion de fianzas totales en contabilidad 30/03/2022.
+**version 1.1.3.47**  Se edito el flujo de las fianzas en dinero en la pestaña ayuda donde los Martilleros Judiciales deben ser registrados por Servicios Judiciales. 21/03/2022.
+**version 1.1.3.46**  Se añadio la resolucion de directorio en la emision de Certificados de Fianza para Martilleros Judiciales. 10/03/2022.
+**version 1.1.3.45**  Correcciones de texto en las solicitudes de fianzas. 24/02/2022.
+**version 1.1.3.44**  Mejoras en tiempos de consulta e interfaz de administrador. 22/02/2022.
+**version 1.1.3.43**  Correciones menores y mejoras de validacion en Fianzas Reales. 17/02/2022.
+**version 1.1.3.41**  Correciones menores y mejoras de validacion, se agrego el rechazo de solicitudes por Asesoria Legal DAF. 16/02/2022.
+**version 1.1.3.39**  Se agrego el diagrama de Flujo de Fianzas Reales en la pestaña Ayuda y la impresion de certificados de Fianzas reales para RRHH-DAF. 15/02/2022.
+**version 1.1.3.38**  Correcciones menores, mejoras de intefaz y seguridad en los codigos QR. 11/02/2022.
+**version 1.1.3.37**  Se realizo los reportes y la conciliacion de las Fianzas de Bienes Gravados. 07/02/2022.
+**version 1.1.2.34**  Correcciones menores y mejoras de interfaz, se concilio las fianzas al mes de diciembre 2021. 19/1/2022.
+**version 1.1.2.33**  Se corrigio la opcion de visualizar el manual del sistema para usuarios que no tienen adobe reader. 3/1/2021.
+**version 1.1.2.32**  Se corrigio el error en los tiempos de consulta de los mensajes en el panel de notificaciones en otros roles. 31/12/2021.
+**version 1.1.2.31**  Se migro el sistema actual a un nuevo servidor 28/12/2021.
+**version 1.1.2.30**  Se agrego el diagrama de Flujo de las fianzas en la pestaña Ayuda. 8/12/2021.
+Corte programado para el 28/12/2021 por migracion del sistema a un nuevo servidor.
+**version 1.1.2.29**  Modificacion en la descripcion "hasta cubrir la totalidad N salarios" del reporte de Solicitud de Fianza para RRHH C.M y D.A.F 27/09/2021.
+**version 1.1.2.28**  Se corrigio la edicion de decimales en reclacificacion para contabilidad 18/08/2021.
+**version 1.1.2.27**  Se agrego control de registro en solicitudes hasta pasados 60 dias para evitar duplicidad . 03/08/2021.

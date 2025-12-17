@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b4551100e15e471ea65cafb9561534d3" Name="Diagram1">
+        <EntityTypeShape EntityType="MidasDModel.AltasBajas" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Cargo" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.CargoOficina" Width="1.5" PointX="7.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Descuento" Width="1.5" PointX="12" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Devolucion" Width="1.5" PointX="10.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.DireccionAdministrativa" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Encargados" Width="1.5" PointX="10.5" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.EscalaSalarial" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Fianza" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Funcionario" Width="1.5" PointX="7.5" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Imagen" Width="1.5" PointX="10.5" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Menu" Width="1.5" PointX="14.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Oficina" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Persona" Width="1.5" PointX="8.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Reclasificacion" Width="1.5" PointX="2.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Rol" Width="1.5" PointX="14.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.RolMenu" Width="1.5" PointX="17" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.RolUsuario" Width="1.5" PointX="20" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Solicitudes" Width="1.5" PointX="13" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.SueldoMensual" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.sysdiagrams" Width="1.5" PointX="12.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.TipoDocumento" Width="1.5" PointX="6" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.TipoFianza" Width="1.5" PointX="7.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Transferencia" Width="1.5" PointX="10.75" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.UnidadEjecutora" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.Usuario" Width="1.5" PointX="17.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viMenu" Width="1.5" PointX="14.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viPersonaListar" Width="1.5" PointX="15.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viRol" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viRolMenu" Width="1.5" PointX="15.75" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viRolUsuario" Width="1.5" PointX="0.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viRolUsuarioListar" Width="1.5" PointX="2.75" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viUsuario" Width="1.5" PointX="16.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viUsuarioListarDatos" Width="1.5" PointX="4.75" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MidasDModel.viUsuarioMenu" Width="1.5" PointX="17.75" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="MidasDModel.FK_Cargo_EscalaSalarial" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_CargoOficina_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Encargados_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Funcionario_Cargo" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_CargoOficina_Oficina" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Descuento_Fianza1" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Solicitudes_Devolucion" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_DireccionAdministrativa_UnidadEjecutora" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Encargados_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_EscalaSalarial_HaberMensual" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Fianza_Funcionario" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Fianza_TipoFianza" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Funcionario_Oficina" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Imagen_Persona" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_RolMenu_Menu" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Oficina_UnidadEjecutora" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Persona_TipoDocumento" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_RolMenu_Rol" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_RolUsuario_Rol" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_RolUsuario_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="MidasDModel.FK_Solicitudes_Transferencia" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

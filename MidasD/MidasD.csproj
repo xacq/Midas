@@ -1,0 +1,2343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{111BDF19-5FE7-4495-9C38-5E9182AB230D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MidasD</RootNamespace>
+    <AssemblyName>MidasD</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>1.0.4.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A4579D53FCD6A8FA1810AD3D0A9852690D30B4F9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MidasD_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Ribbon.2, Version=2.0.20103.289, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder">
+      <HintPath>F:\Proyectos RIUKASAN\Todo Agro\TodoAgro\TodoAgro\TodoAgro\bin\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="Utils, Version=1.0.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Daf\Pandora\Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connected Services\SrArgos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\SrMidasD\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizacionHabilitar20Porciento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizacionHabilitar20Porciento.designer.cs">
+      <DependentUpon>FrmActualizacionHabilitar20Porciento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFlujoReales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlujoReales.Designer.cs">
+      <DependentUpon>FrmFlujoReales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFlujo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlujo.Designer.cs">
+      <DependentUpon>FrmFlujo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCertificadoImprimirReales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCertificadoImprimirReales.designer.cs">
+      <DependentUpon>FrmCertificadoImprimirReales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroFianzaBienesAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroFianzaBienesAdministrador.designer.cs">
+      <DependentUpon>FrmRegistroFianzaBienesAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidacionBienesGravamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValidacionBienesGravamenes.designer.cs">
+      <DependentUpon>FrmValidacionBienesGravamenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSueldoMensualEscalaSalarial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSueldoMensualEscalaSalarial.designer.cs">
+      <DependentUpon>FrmSueldoMensualEscalaSalarial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManualUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManualUsuario.designer.cs">
+      <DependentUpon>FrmManualUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransferenciasRealizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransferenciasRealizadas.designer.cs">
+      <DependentUpon>FrmTransferenciasRealizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargando.Designer.cs">
+      <DependentUpon>FrmCargando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFianzasUnidadEjecutora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFianzasUnidadEjecutora.designer.cs">
+      <DependentUpon>FrmFianzasUnidadEjecutora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDatosUsuario.Designer.cs">
+      <DependentUpon>FrmDatosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDevolucionContabilidadAdministradorDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDevolucionContabilidadAdministradorDatos.designer.cs">
+      <DependentUpon>FrmDevolucionContabilidadAdministradorDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEnDesarrollo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEnDesarrollo.Designer.cs">
+      <DependentUpon>FrmEnDesarrollo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcercaDe.designer.cs">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsesoriaLegalCorreccionDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesoriaLegalCorreccionDatos.designer.cs">
+      <DependentUpon>FrmAsesoriaLegalCorreccionDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContactos.designer.cs">
+      <DependentUpon>FrmContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadoFianzasActuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadoFianzasActuales.designer.cs">
+      <DependentUpon>FrmEstadoFianzasActuales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHabilitadoDescuentoCorreccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHabilitadoDescuentoCorreccion.designer.cs">
+      <DependentUpon>FrmHabilitadoDescuentoCorreccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLeyenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLeyenda.designer.cs">
+      <DependentUpon>FrmLeyenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualizacionDepositoEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizacionDepositoEfectivo.designer.cs">
+      <DependentUpon>FrmActualizacionDepositoEfectivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionarioFianzaAdministracionDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionarioFianzaAdministracionDatos.designer.cs">
+      <DependentUpon>FrmFuncionarioFianzaAdministracionDatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargos.designer.cs">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOficinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOficinas.designer.cs">
+      <DependentUpon>FrmOficinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersonaConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersonaConsulta.designer.cs">
+      <DependentUpon>FrmPersonaConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroSolicitudAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroSolicitudAdministrador.designer.cs">
+      <DependentUpon>FrmRegistroSolicitudAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroSolicitud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroSolicitud.designer.cs">
+      <DependentUpon>FrmRegistroSolicitud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOficinaCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOficinaCargo.designer.cs">
+      <DependentUpon>FrmOficinaCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionarFianzaPorPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccionarFianzaPorPersona.designer.cs">
+      <DependentUpon>FrmSeleccionarFianzaPorPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSueldoMensual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSueldoMensual.designer.cs">
+      <DependentUpon>FrmSueldoMensual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionarOficina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccionarOficina.designer.cs">
+      <DependentUpon>FrmSeleccionarOficina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidacionParaCertificadosHabilitado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValidacionParaCertificadosHabilitado.designer.cs">
+      <DependentUpon>FrmValidacionParaCertificadosHabilitado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidacionParaCertificadosContabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValidacionParaCertificadosContabilidad.designer.cs">
+      <DependentUpon>FrmValidacionParaCertificadosContabilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmValidarFianzaCompleta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmValidarFianzaCompleta.designer.cs">
+      <DependentUpon>FrmValidarFianzaCompleta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDevolucionContabilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDevolucionContabilidad.designer.cs">
+      <DependentUpon>FrmDevolucionContabilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContabilidadReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContabilidadReportes.designer.cs">
+      <DependentUpon>FrmContabilidadReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCertificadoImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCertificadoImprimir.designer.cs">
+      <DependentUpon>FrmCertificadoImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFianzaDeAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFianzaDeAlta.designer.cs">
+      <DependentUpon>FrmFianzaDeAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFianzaDeBaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFianzaDeBaja.designer.cs">
+      <DependentUpon>FrmFianzaDeBaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmImpresionCartillas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImpresionCartillas.designer.cs">
+      <DependentUpon>FrmImpresionCartillas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReclasificacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReclasificacion.designer.cs">
+      <DependentUpon>FrmReclasificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContabilidadValidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContabilidadValidacion.designer.cs">
+      <DependentUpon>FrmContabilidadValidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroFianzaTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroFianzaTotal.designer.cs">
+      <DependentUpon>FrmRegistroFianzaTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroFianzaBienes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroFianzaBienes.designer.cs">
+      <DependentUpon>FrmRegistroFianzaBienes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAuntenticacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAuntenticacion.designer.cs">
+      <DependentUpon>FrmAuntenticacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCambiarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambiarClave.designer.cs">
+      <DependentUpon>FrmCambiarClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaFuncionarios.designer.cs">
+      <DependentUpon>FrmListaFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPersona.designer.cs">
+      <DependentUpon>FrmPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsesoriaLegal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsesoriaLegal.designer.cs">
+      <DependentUpon>FrmAsesoriaLegal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.designer.cs">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRol.designer.cs">
+      <DependentUpon>FrmRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRolMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRolMenu.designer.cs">
+      <DependentUpon>FrmRolMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHabilitadoDescuento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHabilitadoDescuento.designer.cs">
+      <DependentUpon>FrmHabilitadoDescuento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccionarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccionarFuncionario.designer.cs">
+      <DependentUpon>FrmSeleccionarFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplash.designer.cs">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuario.designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioRol.designer.cs">
+      <DependentUpon>FrmUsuarioRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CrCartillaBienesGravados.cs">
+      <DependentUpon>CrCartillaBienesGravados.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrCartilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrCartilla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrCertificadoBienesGrabados.cs">
+      <DependentUpon>CrCertificadoBienesGrabados.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrCertificado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrCertificado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrDetalleFianzasReales.cs">
+      <DependentUpon>CrDetalleFianzasReales.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrDetalleFianzasCuentaContable.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrDetalleFianzasCuentaContable.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrTransferencias.cs">
+      <DependentUpon>CrTransferencias.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrEstadoSolicitudes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrEstadoSolicitudes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrFianzasUnidadEjecutora.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrFianzasUnidadEjecutora.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrDevoluciones.cs">
+      <DependentUpon>CrDevoluciones.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrReclasificaciones.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrReclasificaciones.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrSolicitudTransferenciaMontoSuperior.cs">
+      <DependentUpon>CrSolicitudTransferenciaMontoSuperior.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrSolicitudTransferenciaTotal.cs">
+      <DependentUpon>CrSolicitudTransferenciaTotal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrSolicitudTransferenciaDescuento.cs">
+      <DependentUpon>CrSolicitudTransferenciaDescuento.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrFormularioA2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrFormularioA2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrSCartilla.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrSCartilla.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrSolicitudDevolucion.cs">
+      <DependentUpon>CrSolicitudDevolucion.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrSolicitudFianzaTotal.cs">
+      <DependentUpon>CrSolicitudFianzaTotal.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Reportes\CrSolicitudFianza.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrSolicitudFianza.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrRecaTransDevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrRecaTransDevo.designer.cs">
+      <DependentUpon>FrmCrRecaTransDevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrEstadoSolicitudes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrEstadoSolicitudes.designer.cs">
+      <DependentUpon>FrmCrEstadoSolicitudes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrCartillaVerFianza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrCartillaVerFianza.designer.cs">
+      <DependentUpon>FrmCrCartillaVerFianza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrFianzasUnidadEjecutora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrFianzasUnidadEjecutora.designer.cs">
+      <DependentUpon>FrmCrFianzasUnidadEjecutora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrFormularioA2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrFormularioA2.designer.cs">
+      <DependentUpon>FrmCrFormularioA2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrCuentaContable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrCuentaContable.designer.cs">
+      <DependentUpon>FrmCrCuentaContable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrReporteSolFianza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrReporteSolFianza.designer.cs">
+      <DependentUpon>FrmCrReporteSolFianza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmCrCertificado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmCrCertificado.designer.cs">
+      <DependentUpon>FrmCrCertificado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes.cs">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Reportes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="FrmActualizacionHabilitar20Porciento.resx">
+      <DependentUpon>FrmActualizacionHabilitar20Porciento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlujoReales.resx">
+      <DependentUpon>FrmFlujoReales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlujo.resx">
+      <DependentUpon>FrmFlujo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCertificadoImprimirReales.resx">
+      <DependentUpon>FrmCertificadoImprimirReales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroFianzaBienesAdministrador.resx">
+      <DependentUpon>FrmRegistroFianzaBienesAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValidacionBienesGravamenes.resx">
+      <DependentUpon>FrmValidacionBienesGravamenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSueldoMensualEscalaSalarial.resx">
+      <DependentUpon>FrmSueldoMensualEscalaSalarial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManualUsuario.resx">
+      <DependentUpon>FrmManualUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransferenciasRealizadas.resx">
+      <DependentUpon>FrmTransferenciasRealizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargando.resx">
+      <DependentUpon>FrmCargando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFianzasUnidadEjecutora.resx">
+      <DependentUpon>FrmFianzasUnidadEjecutora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatosUsuario.resx">
+      <DependentUpon>FrmDatosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevolucionContabilidadAdministradorDatos.resx">
+      <DependentUpon>FrmDevolucionContabilidadAdministradorDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEnDesarrollo.resx">
+      <DependentUpon>FrmEnDesarrollo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAcercaDe.resx">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsesoriaLegalCorreccionDatos.resx">
+      <DependentUpon>FrmAsesoriaLegalCorreccionDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContactos.resx">
+      <DependentUpon>FrmContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadoFianzasActuales.resx">
+      <DependentUpon>FrmEstadoFianzasActuales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHabilitadoDescuentoCorreccion.resx">
+      <DependentUpon>FrmHabilitadoDescuentoCorreccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLeyenda.resx">
+      <DependentUpon>FrmLeyenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizacionDepositoEfectivo.resx">
+      <DependentUpon>FrmActualizacionDepositoEfectivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionarioFianzaAdministracionDatos.resx">
+      <DependentUpon>FrmFuncionarioFianzaAdministracionDatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargos.resx">
+      <DependentUpon>FrmCargos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOficinas.resx">
+      <DependentUpon>FrmOficinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersonaConsulta.resx">
+      <DependentUpon>FrmPersonaConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroSolicitudAdministrador.resx">
+      <DependentUpon>FrmRegistroSolicitudAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroSolicitud.resx">
+      <DependentUpon>FrmRegistroSolicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOficinaCargo.resx">
+      <DependentUpon>FrmOficinaCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionarFianzaPorPersona.resx">
+      <DependentUpon>FrmSeleccionarFianzaPorPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSueldoMensual.resx">
+      <DependentUpon>FrmSueldoMensual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionarOficina.resx">
+      <DependentUpon>FrmSeleccionarOficina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValidacionParaCertificadosHabilitado.resx">
+      <DependentUpon>FrmValidacionParaCertificadosHabilitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValidacionParaCertificadosContabilidad.resx">
+      <DependentUpon>FrmValidacionParaCertificadosContabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmValidarFianzaCompleta.resx">
+      <DependentUpon>FrmValidarFianzaCompleta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevolucionContabilidad.resx">
+      <DependentUpon>FrmDevolucionContabilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContabilidadReportes.resx">
+      <DependentUpon>FrmContabilidadReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCertificadoImprimir.resx">
+      <DependentUpon>FrmCertificadoImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFianzaDeAlta.resx">
+      <DependentUpon>FrmFianzaDeAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFianzaDeBaja.resx">
+      <DependentUpon>FrmFianzaDeBaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImpresionCartillas.resx">
+      <DependentUpon>FrmImpresionCartillas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReclasificacion.resx">
+      <DependentUpon>FrmReclasificacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContabilidadValidacion.resx">
+      <DependentUpon>FrmContabilidadValidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroFianzaTotal.resx">
+      <DependentUpon>FrmRegistroFianzaTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroFianzaBienes.resx">
+      <DependentUpon>FrmRegistroFianzaBienes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAuntenticacion.resx">
+      <DependentUpon>FrmAuntenticacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambiarClave.resx">
+      <DependentUpon>FrmCambiarClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaFuncionarios.resx">
+      <DependentUpon>FrmListaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPersona.resx">
+      <DependentUpon>FrmPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsesoriaLegal.resx">
+      <DependentUpon>FrmAsesoriaLegal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRol.resx">
+      <DependentUpon>FrmRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRolMenu.resx">
+      <DependentUpon>FrmRolMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHabilitadoDescuento.resx">
+      <DependentUpon>FrmHabilitadoDescuento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccionarFuncionario.resx">
+      <DependentUpon>FrmSeleccionarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplash.resx">
+      <DependentUpon>FrmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioRol.resx">
+      <DependentUpon>FrmUsuarioRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrCartillaBienesGravados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrCartillaBienesGravados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrCartilla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrCartilla.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrCertificadoBienesGrabados.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrCertificadoBienesGrabados.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrCertificado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrCertificado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrDetalleFianzasReales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDetalleFianzasReales.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrDetalleFianzasCuentaContable.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDetalleFianzasCuentaContable.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrTransferencias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrTransferencias.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrEstadoSolicitudes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrEstadoSolicitudes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrFianzasUnidadEjecutora.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrFianzasUnidadEjecutora.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrDevoluciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDevoluciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrReclasificaciones.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrReclasificaciones.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSolicitudTransferenciaMontoSuperior.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSolicitudTransferenciaMontoSuperior.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSolicitudTransferenciaTotal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSolicitudTransferenciaTotal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSolicitudTransferenciaDescuento.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSolicitudTransferenciaDescuento.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrFormularioA2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrFormularioA2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSCartilla.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSCartilla.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSolicitudDevolucion.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSolicitudDevolucion.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSolicitudFianzaTotal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSolicitudFianzaTotal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrSolicitudFianza.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrSolicitudFianza.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrRecaTransDevo.resx">
+      <DependentUpon>FrmCrRecaTransDevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrEstadoSolicitudes.resx">
+      <DependentUpon>FrmCrEstadoSolicitudes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrCartillaVerFianza.resx">
+      <DependentUpon>FrmCrCartillaVerFianza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrFianzasUnidadEjecutora.resx">
+      <DependentUpon>FrmCrFianzasUnidadEjecutora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrFormularioA2.resx">
+      <DependentUpon>FrmCrFormularioA2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrCuentaContable.resx">
+      <DependentUpon>FrmCrCuentaContable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrReporteSolFianza.resx">
+      <DependentUpon>FrmCrReporteSolFianza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmCrCertificado.resx">
+      <DependentUpon>FrmCrCertificado.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.BitacoraVehiculo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.CargoPersona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Consulta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Distrito.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.fnZeusListarPandora_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paConsultaHistorico_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paPersonaCargoListar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paPersonaListarPorDistrito_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paTarjetaListar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paUsuarioBuscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paVisitaPorOficina_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.paVisitaSalida_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Persona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Persona1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.RespuestaConsultaCertificacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Tarjeta.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Vehiculo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Visita.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\MidasD.SrArgos.Zeus.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrArgos\Service.wsdl" />
+    <None Include="Connected Services\SrArgos\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service1.wsdl" />
+    <None Include="Connected Services\SrArgos\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrArgos\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Cargo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.CargoOficina.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Contador_Impresion_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Descuento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Devolucion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.DireccionAdministrativa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Encargados.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.EscalaSalarial.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Fianza.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Funcionario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Imagen.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Menu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Oficina.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paEscalaSalarialGestion_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFianzasListarMesAnioContaVali_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFianzasListarMesAnioDescuentos_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFianzasPorFuncionarioBuscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarBaja_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarCartilla_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarContaVali_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarGeneralAdministrador_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarGeneral_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscaridFianza_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarMesAnioEditar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscarTipoFianza_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioFianzaActualBuscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paFuncionarioVerificaridFianzaCompleta_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListaCargoOficinaAdmin_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListaCargoOficina_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListaOficinaUnidadEjecutora_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasEconomicasReporteGlobal_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasEconomicasReporteT727_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasRealesReporteGlobal_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasReclasificacionPendientes_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasReclasificacionReporte_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasReclasificacion_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaConResolucionBienesGravados_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaConResolucion_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaDevolucionContabilidadReporte_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaDevolucionContabilidad_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaDevolucion_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaRRHH_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaTranferenciasReporte_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarFuncionariosFianzaTranferencias_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarSolicitudesFianzaDiasRestantesReporte_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarSolicitudesFianzaDiasRestantes_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paListarSolicitudesFianza_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paOficinaBuscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paOficinasListar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paPersonaBuscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteCartillaHabilitadoEditar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteCartillaT727_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteCartilla_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteFormularioA2_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteFuncionarioCertificadoidFianza_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteSolDevolucion_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteSolFianEconomicaNoRequiereFianza_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteSolFianEconomicaTotal_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paReporteSolFianEconomica_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paSueldosMensuales_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paUsuarioBuscar_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionEstadoFianzaContabilidad_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionEstadoFianzaHabilitado_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionEstadoFianzaRRHH_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionParaCertificadosContabilidad_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionParaCertificadosHabilitado_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionParaCertificadosRRHH_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.paValidacionRegistroSolicitudes_Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Persona.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Reclasificacion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Rol.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.RolMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.RolUsuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Solicitudes.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.SueldoMensual.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.TipoDocumento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.TipoFianza.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Transferencia.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.UnidadEjecutora.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.viPersonaListar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.viRolUsuarioListar.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.viUsuarioListarDatos.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\MidasD.SrMidasD.viUsuarioMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\SrMidasD\Service.wsdl" />
+    <None Include="Connected Services\SrMidasD\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrMidasD\Service1.wsdl" />
+    <None Include="Connected Services\SrMidasD\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrMidasD\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrMidasD\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\SrMidasD\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MidasD_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\SrArgos\" />
+    <WCFMetadataStorage Include="Connected Services\SrMidasD\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrMidasD\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrMidasD\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrMidasD\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\Reportes.xsc">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\Reportes.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reportes.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\Reportes.xss">
+      <DependentUpon>Reportes.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1441336448_ark2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1442855624_box-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin_person_user_man_4848.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ark2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arrow Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assign_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assign_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bar Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biometrico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biometrico_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\biometrico_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black2007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue2007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint sticky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blueprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolivia_escudo32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolivia_escudo321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bombillo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bootloader_users_person_people_4848.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonleve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camion_paquete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can-stock-photo_csp5986427.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\canton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash-register-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cdwait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientess.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clients-32531.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Comments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Components.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-23873_640.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\conf_cierre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consult.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consult_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\consult_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CPU.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Credit Card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database Active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database Inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\database4 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date_task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DatosEmpresa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbmin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbplus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddb8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delet_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletebaja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletebaja_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deletebaja_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfgdfg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_rotado488.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dpto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit Users1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empresamenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entradaArticulo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\escudoi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\español.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exclamation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitb_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitb_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exitb_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export To File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Favourite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File New.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter List.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Firewall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fleche Droite 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fleche Gauche 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder Open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder with Contents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_customer_91730.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_customer_91730.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gsdg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hard Disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hecho_bolivia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hecho_bolivia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hera.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoja.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hoja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono paloma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_zeus.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-atencion-cliente.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenes-Candado-PNG-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagenProducto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageready.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imprimir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ingles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\j0441400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letrero-lugar-equipado-con-camaras-de-seguridad-30x40-cm-D_NQ_NP_989815-MLC25328857080_022017-O.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Line Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\localidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginb_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginb_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_entel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\materia_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mision_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ojo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Persona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonaInactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonaLeve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pie Chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piscina-de-bolas-icono-6056.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Poker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portugues.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\precio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\presupuesto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer InkJet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer LaserJet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Protect Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Protect Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Protect Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Protect Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\provider1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proy_act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registroAutorizacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rep_provincia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rep_proy_act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rep_seccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rep_ue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rep_unidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_password_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reset_password_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rssblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rssgreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rssorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rulers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select_inactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\servicio-de-atención-al-cliente-25949675.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver2007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin_foto.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin_foto_f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin_foto_m.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin_imagen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound Mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop Sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\url.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urlgf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USB Stick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V Card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventasregistro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whmcs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Command Line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Left Panel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window Performance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom In.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrArgos\Service.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrArgos\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrArgos\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\SrArgos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="3.ico" />
+    <None Include="Resources\Flujo RRHH MIDAS + MARTILLEROS.png" />
+    <None Include="Resources\Flujo Reales.png" />
+    <None Include="Resources\Flujo RRHH MIDAS.png" />
+    <None Include="Resources\Flujo RRHH MIDAS.jpg" />
+    <None Include="Resources\Moneda.png" />
+    <None Include="Resources\Yanacocha1.png" />
+    <None Include="Resources\Yanacocha.png" />
+    <None Include="Resources\logo_oj.png" />
+    <None Include="Resources\Yanacocha.jpg" />
+    <None Include="Resources\manual.png" />
+    <None Include="Resources\notificaciones.png" />
+    <None Include="Resources\tenor.gif" />
+    <None Include="Resources\94340b4098a2b70115a376505d6fefdb_icon.png" />
+    <None Include="Connected Services\SrMidasD\Service.disco" />
+    <Content Include="Resources\DAF Blanco.jpg" />
+    <None Include="Resources\DAF Escudo1.png" />
+    <None Include="Resources\DAF Blanco1.jpg" />
+    <Content Include="Resources\DAF Escudo.png" />
+    <None Include="Resources\validar2.png" />
+    <None Include="Resources\validar1.png" />
+    <None Include="Resources\trabajando.jpg" />
+    <None Include="Resources\BloqueoX.png" />
+    <None Include="Resources\lupa.png" />
+    <None Include="Resources\deselect_inactive.png" />
+    <None Include="Resources\deselect.png" />
+    <None Include="Resources\deselect_hover.png" />
+    <None Include="Resources\validar_inactive.png" />
+    <None Include="Resources\validar_hover.png" />
+    <None Include="Resources\validar.png" />
+    <None Include="Resources\+32.png" />
+    <None Include="Resources\sin_foto.png" />
+    <None Include="Resources\vector-abstract-technology-background-technology-digital-world-of-business-information-futuristic-blue-virtual-graphic-interface.jpg" />
+    <None Include="Resources\1570-gold.png" />
+    <None Include="Resources\ayuda.png" />
+    <None Include="Resources\acercade.png" />
+    <None Include="Resources\orig_2292611.jpg" />
+    <None Include="Resources\orig_229261.jpg" />
+    <None Include="Resources\3091347-computer-code-source-de-programmation-sur-fond-bleu-électronique-.jpg" />
+    <None Include="Resources\fianzas_correccion.png" />
+    <None Include="Resources\personas.png" />
+    <None Include="Resources\MidasDPrincipal.png" />
+    <None Include="Resources\rs_Correccion.png" />
+    <None Include="Resources\buscar_Fianza.png" />
+    <None Include="Resources\funcionario_correcion.png" />
+    <None Include="Resources\Accept1.png" />
+    <None Include="Resources\admin_person_user_man_48481.png" />
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

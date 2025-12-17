@@ -1,0 +1,2385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MidasDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="fnSplitString_Result">
+    <Property Name="splitdata" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </ComplexType>
+  <EntityType Name="AltasBajas">
+    <Key>
+      <PropertyRef Name="idAltasBajas" />
+    </Key>
+    <Property Name="idAltasBajas" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha" Type="DateTime" Precision="0" />
+    <Property Name="estado" Type="Boolean" />
+    <Property Name="idFuncionario" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="idCargo" />
+    </Key>
+    <Property Name="idCargo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="denominacion_Puesto" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Puesto" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_Personal" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="idEscalaSalarial" Type="Int32" />
+    <Property Name="sigla" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="EscalaSalarial" Relationship="Self.FK_Cargo_EscalaSalarial" FromRole="Cargo" ToRole="EscalaSalarial" />
+    <NavigationProperty Name="CargoOficina" Relationship="Self.FK_CargoOficina_Cargo" FromRole="Cargo" ToRole="CargoOficina" />
+    <NavigationProperty Name="Encargados" Relationship="Self.FK_Encargados_Cargo" FromRole="Cargo" ToRole="Encargados" />
+    <NavigationProperty Name="Funcionario" Relationship="Self.FK_Funcionario_Cargo" FromRole="Cargo" ToRole="Funcionario" />
+  </EntityType>
+  <EntityType Name="CargoOficina">
+    <Key>
+      <PropertyRef Name="idCargoOficina" />
+    </Key>
+    <Property Name="idCargoOficina" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idCargo" Type="Int32" />
+    <Property Name="idOficina" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Cargo" Relationship="Self.FK_CargoOficina_Cargo" FromRole="CargoOficina" ToRole="Cargo" />
+    <NavigationProperty Name="Oficina" Relationship="Self.FK_CargoOficina_Oficina" FromRole="CargoOficina" ToRole="Oficina" />
+  </EntityType>
+  <EntityType Name="Descuento">
+    <Key>
+      <PropertyRef Name="idDescuento" />
+    </Key>
+    <Property Name="idDescuento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFianza" Type="Int32" />
+    <Property Name="monto_Beneficiario" Type="Double" />
+    <Property Name="t727" Type="Double" />
+    <Property Name="t727_Fianza_Real" Type="Double" />
+    <Property Name="c21" Type="Int32" />
+    <Property Name="mes" Type="Int32" />
+    <Property Name="anio" Type="Int32" />
+    <Property Name="validado" Type="Boolean" />
+    <Property Name="validado_Por" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Fianza" Relationship="Self.FK_Descuento_Fianza1" FromRole="Descuento" ToRole="Fianza" />
+  </EntityType>
+  <EntityType Name="Devolucion">
+    <Key>
+      <PropertyRef Name="idDevolucion" />
+    </Key>
+    <Property Name="idDevolucion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFianza" Type="Int32" />
+    <Property Name="idFuncionario" Type="Int32" />
+    <Property Name="resolucion_Administrativa" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="c31" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nro_Cheque" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="t727" Type="Double" />
+    <Property Name="monto_Devolucion" Type="Double" />
+    <Property Name="mes" Type="Int32" />
+    <Property Name="anio" Type="Int32" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Solicitudes" Relationship="Self.FK_Solicitudes_Devolucion" FromRole="Devolucion" ToRole="Solicitudes" />
+  </EntityType>
+  <EntityType Name="DireccionAdministrativa">
+    <Key>
+      <PropertyRef Name="idDireccionAdministrativa" />
+    </Key>
+    <Property Name="idDireccionAdministrativa" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="UnidadEjecutora" Relationship="Self.FK_DireccionAdministrativa_UnidadEjecutora" FromRole="DireccionAdministrativa" ToRole="UnidadEjecutora" />
+  </EntityType>
+  <EntityType Name="Encargados">
+    <Key>
+      <PropertyRef Name="idEncargado" />
+    </Key>
+    <Property Name="idEncargado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersona" Type="Int32" />
+    <Property Name="idCargo" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Cargo" Relationship="Self.FK_Encargados_Cargo" FromRole="Encargados" ToRole="Cargo" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Encargados_Persona" FromRole="Encargados" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="EscalaSalarial">
+    <Key>
+      <PropertyRef Name="idEscalaSalarial" />
+    </Key>
+    <Property Name="idEscalaSalarial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoria" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clase" Type="Int32" />
+    <Property Name="nivel_Salarial" Type="Int32" />
+    <Property Name="denominacion_Puesto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="numero_Items" Type="Int32" />
+    <Property Name="idSueldoMensual" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Cargo" Relationship="Self.FK_Cargo_EscalaSalarial" FromRole="EscalaSalarial" ToRole="Cargo" />
+    <NavigationProperty Name="SueldoMensual" Relationship="Self.FK_EscalaSalarial_HaberMensual" FromRole="EscalaSalarial" ToRole="SueldoMensual" />
+  </EntityType>
+  <EntityType Name="Fianza">
+    <Key>
+      <PropertyRef Name="idFianza" />
+    </Key>
+    <Property Name="idFianza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nro_Fianza" Type="Double" />
+    <Property Name="Nro_Fianza_Fianza_Real" Type="Double" />
+    <Property Name="idTipoFianza" Type="Int32" />
+    <Property Name="idFuncionario" Type="Int32" />
+    <Property Name="registro_Sigma" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Limite_Fianza" Type="DateTime" Precision="0" />
+    <Property Name="resolucion_Administrativa" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="comprobante_CPBTE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion_Tipo_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="ubicacion_Fianza_Real" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="folio_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="concepto_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="a_Favor_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="ultimo_Registro_Fianza_Real" Type="Double" />
+    <Property Name="tipo_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="a_Favor_2_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="estado_Bien_Inmueble_Fianza_Real" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="fianza_Completa_Habilitado" Type="Boolean" />
+    <Property Name="usuario_Completa_Habilitado" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Completa_Habilitado" Type="DateTime" Precision="3" />
+    <Property Name="fianza_Validada_Contabilidad" Type="Boolean" />
+    <Property Name="usuario_Validada_Contabilidad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Validada_Contabilidad" Type="DateTime" Precision="3" />
+    <Property Name="fianza_Devuelta_Contabilidad" Type="Boolean" />
+    <Property Name="usuario_Devuelta_Contabilidad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Devuelta_Contabilidad" Type="DateTime" Precision="3" />
+    <Property Name="fianza_Impresa_RRHH" Type="Boolean" />
+    <Property Name="usuario_Impresa_RRHH" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Impresa_RRHH" Type="DateTime" Precision="3" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_RRHH" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_RRHH" Type="DateTime" Precision="3" />
+    <Property Name="usuario_Resolucion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Resolucion" Type="DateTime" Precision="3" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Descuento" Relationship="Self.FK_Descuento_Fianza1" FromRole="Fianza" ToRole="Descuento" />
+    <NavigationProperty Name="Funcionario" Relationship="Self.FK_Fianza_Funcionario" FromRole="Fianza" ToRole="Funcionario" />
+    <NavigationProperty Name="TipoFianza" Relationship="Self.FK_Fianza_TipoFianza" FromRole="Fianza" ToRole="TipoFianza" />
+  </EntityType>
+  <EntityType Name="Funcionario">
+    <Key>
+      <PropertyRef Name="idFuncionario" />
+    </Key>
+    <Property Name="idFuncionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersona" Type="Int32" />
+    <Property Name="numero_Memorando" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_Contrato_Item" Type="Int32" />
+    <Property Name="vigencia_Contrato" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idCargo" Type="Int32" />
+    <Property Name="idOficina" Type="Int32" />
+    <Property Name="codigo_Distrito" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Memorando" Type="DateTime" Precision="0" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Cargo" Relationship="Self.FK_Funcionario_Cargo" FromRole="Funcionario" ToRole="Cargo" />
+    <NavigationProperty Name="Fianza" Relationship="Self.FK_Fianza_Funcionario" FromRole="Funcionario" ToRole="Fianza" />
+    <NavigationProperty Name="Oficina" Relationship="Self.FK_Funcionario_Oficina" FromRole="Funcionario" ToRole="Oficina" />
+  </EntityType>
+  <EntityType Name="Imagen">
+    <Key>
+      <PropertyRef Name="idImagen" />
+    </Key>
+    <Property Name="idImagen" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersona" Type="Int32" />
+    <Property Name="imagen1" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Imagen_Persona" FromRole="Imagen" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="idMenu" />
+    </Key>
+    <Property Name="idMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menu1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="RolMenu" Relationship="Self.FK_RolMenu_Menu" FromRole="Menu" ToRole="RolMenu" />
+  </EntityType>
+  <EntityType Name="Oficina">
+    <Key>
+      <PropertyRef Name="idOficina" />
+    </Key>
+    <Property Name="idOficina" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oficina1" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="codigo_Distrito" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="codigo_Zeus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idZeus" Type="Int32" />
+    <Property Name="idUnidadEjecutora" Type="Int32" />
+    <Property Name="cuantia" Type="Int32" />
+    <Property Name="porcentaje_Descuento" Type="Double" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="CargoOficina" Relationship="Self.FK_CargoOficina_Oficina" FromRole="Oficina" ToRole="CargoOficina" />
+    <NavigationProperty Name="Funcionario" Relationship="Self.FK_Funcionario_Oficina" FromRole="Oficina" ToRole="Funcionario" />
+    <NavigationProperty Name="UnidadEjecutora" Relationship="Self.FK_Oficina_UnidadEjecutora" FromRole="Oficina" ToRole="UnidadEjecutora" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="numero_Documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pais_Nacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="departamento_Nacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="localidad_Nacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="provincia_Nacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="paterno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="materno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="profesion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado_Civil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Nacimiento" Type="DateTime" Precision="0" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Encargados" Relationship="Self.FK_Encargados_Persona" FromRole="Persona" ToRole="Encargados" />
+    <NavigationProperty Name="Imagen" Relationship="Self.FK_Imagen_Persona" FromRole="Persona" ToRole="Imagen" />
+    <NavigationProperty Name="TipoDocumento" Relationship="Self.FK_Persona_TipoDocumento" FromRole="Persona" ToRole="TipoDocumento" />
+  </EntityType>
+  <EntityType Name="Reclasificacion">
+    <Key>
+      <PropertyRef Name="idReclasificacion" />
+    </Key>
+    <Property Name="idReclasificacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFianza" Type="Int32" />
+    <Property Name="monto_727" Type="Double" />
+    <Property Name="mes" Type="Int32" />
+    <Property Name="anio" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rol1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="RolMenu" Relationship="Self.FK_RolMenu_Rol" FromRole="Rol" ToRole="RolMenu" />
+    <NavigationProperty Name="RolUsuario" Relationship="Self.FK_RolUsuario_Rol" FromRole="Rol" ToRole="RolUsuario" />
+  </EntityType>
+  <EntityType Name="RolMenu">
+    <Key>
+      <PropertyRef Name="idRolMenu" />
+    </Key>
+    <Property Name="idRolMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idMenu" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_RolMenu_Menu" FromRole="RolMenu" ToRole="Menu" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_RolMenu_Rol" FromRole="RolMenu" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="RolUsuario">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+    </Key>
+    <Property Name="idRolUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idUsuario" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_RolUsuario_Rol" FromRole="RolUsuario" ToRole="Rol" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_RolUsuario_Usuario" FromRole="RolUsuario" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Solicitudes">
+    <Key>
+      <PropertyRef Name="idSolicitud" />
+    </Key>
+    <Property Name="idSolicitud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tipo_Solicitud_Fianza" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="numero_memorando" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Memorando" Type="DateTime" Precision="0" />
+    <Property Name="numero_Fianza_Solicitud" Type="Int32" />
+    <Property Name="gestion" Type="Int32" />
+    <Property Name="fecha_limite_presentacion" Type="DateTime" Precision="0" />
+    <Property Name="usuario_RRHH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Registro_RRHH" Type="DateTime" Precision="3" />
+    <Property Name="usuario_Asesor_Acepta" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="solicitud_Aceptada" Type="Boolean" />
+    <Property Name="fecha_Aceptacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idPersona" Type="Int32" />
+    <Property Name="idCargo" Type="Int32" />
+    <Property Name="idOficina" Type="Int32" />
+    <Property Name="idEscalaSalarial" Type="Int32" />
+    <Property Name="idSueldoMensual" Type="Int32" />
+    <Property Name="tipo_Contrato_Item" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="vigencia_Contrato" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idFianza_Transferir" Type="Int32" />
+    <Property Name="monto_Fianza_Transferir" Type="Double" />
+    <Property Name="idFianza_Nueva" Type="Int32" />
+    <Property Name="idTipoFianza" Type="Int32" />
+    <Property Name="idDevolucion_Registro" Type="Int32" />
+    <Property Name="idTransferencia_Nueva" Type="Int32" />
+    <Property Name="observacion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Devolucion" Relationship="Self.FK_Solicitudes_Devolucion" FromRole="Solicitudes" ToRole="Devolucion" />
+    <NavigationProperty Name="Transferencia" Relationship="Self.FK_Solicitudes_Transferencia" FromRole="Solicitudes" ToRole="Transferencia" />
+  </EntityType>
+  <EntityType Name="SueldoMensual">
+    <Key>
+      <PropertyRef Name="idSueldoMensual" />
+    </Key>
+    <Property Name="idSueldoMensual" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="monto" Type="Double" />
+    <Property Name="gestion" Type="Int32" />
+    <Property Name="incremento" Type="Double" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="EscalaSalarial" Relationship="Self.FK_EscalaSalarial_HaberMensual" FromRole="SueldoMensual" ToRole="EscalaSalarial" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TipoDocumento">
+    <Key>
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idTipoDocumento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_TipoDocumento" FromRole="TipoDocumento" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoFianza">
+    <Key>
+      <PropertyRef Name="idTipoFianza" />
+    </Key>
+    <Property Name="idTipoFianza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion_Fianza" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Fianza" Relationship="Self.FK_Fianza_TipoFianza" FromRole="TipoFianza" ToRole="Fianza" />
+  </EntityType>
+  <EntityType Name="Transferencia">
+    <Key>
+      <PropertyRef Name="idTransferencia" />
+    </Key>
+    <Property Name="idTransferencia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFianza" Type="Int32" />
+    <Property Name="idFuncionario" Type="Int32" />
+    <Property Name="idCargoAnterior" Type="Int32" />
+    <Property Name="numero_Memorando_Anterior" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Memorando_Anterior" Type="DateTime" Precision="0" />
+    <Property Name="tipo_Contrato_item_Anterior" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="vigencia_Contrato_Anterior" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="idTipoFianzaAnterior" Type="Int32" />
+    <Property Name="idOficinaAnterior" Type="Int32" />
+    <Property Name="idSueldoSueldoMensual" Type="Int32" />
+    <Property Name="fecha_LimiteFianza_Anterior" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="resolucion_Administrativa_Anterior" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_RRHH_Anterior" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_RRHH_Anterior" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_Resolucion_Anterior" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Resolucion_Anterior" Type="DateTime" Precision="0" />
+    <Property Name="usuario_Impresa_Anterior" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Impresa_Anterior" Type="DateTime" Precision="0" />
+    <Property Name="observacion_Anterior" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="monto_Fianza_Transferir" Type="Double" />
+    <Property Name="resolucion_Administrativa_Transferencia" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="usuario_Contabilidad_Transferencia" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Contabilidad_Transferencia" Type="DateTime" Precision="3" />
+    <Property Name="mes_Transferencia" Type="Int32" />
+    <Property Name="anio_Tranferencia" Type="Int32" />
+    <Property Name="observacion_Transferencia" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Solicitudes" Relationship="Self.FK_Solicitudes_Transferencia" FromRole="Transferencia" ToRole="Solicitudes" />
+  </EntityType>
+  <EntityType Name="UnidadEjecutora">
+    <Key>
+      <PropertyRef Name="idUnidadEjecutora" />
+    </Key>
+    <Property Name="idUnidadEjecutora" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idDireccionAdministrativa" Type="Int32" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="DireccionAdministrativa" Relationship="Self.FK_DireccionAdministrativa_UnidadEjecutora" FromRole="UnidadEjecutora" ToRole="DireccionAdministrativa" />
+    <NavigationProperty Name="Oficina" Relationship="Self.FK_Oficina_UnidadEjecutora" FromRole="UnidadEjecutora" ToRole="Oficina" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idCodigoZeus" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="RolUsuario" Relationship="Self.FK_RolUsuario_Usuario" FromRole="Usuario" ToRole="RolUsuario" />
+  </EntityType>
+  <EntityType Name="viMenu">
+    <Key>
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="menu" />
+      <PropertyRef Name="nombre_Elemento" />
+    </Key>
+    <Property Name="idMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viPersonaListar">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="paterno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="materno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_Completo" Type="String" MaxLength="452" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado_Civil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="numero_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Nacimiento" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="viRol">
+    <Key>
+      <PropertyRef Name="idRol" />
+      <PropertyRef Name="rol" />
+    </Key>
+    <Property Name="idRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viRolMenu">
+    <Key>
+      <PropertyRef Name="idRolMenu" />
+    </Key>
+    <Property Name="idRolMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idMenu" Type="Int32" />
+  </EntityType>
+  <EntityType Name="viRolUsuario">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+    </Key>
+    <Property Name="idRolUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idUsuario" Type="Int32" />
+  </EntityType>
+  <EntityType Name="viRolUsuarioListar">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+      <PropertyRef Name="rol" />
+    </Key>
+    <Property Name="idRolUsuario" Type="Int32" Nullable="false" />
+    <Property Name="idUsuario" Type="Int32" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viUsuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="clave" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre_Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viUsuarioListarDatos">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="clave" />
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="nombre_Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="Int32" Nullable="false" />
+    <Property Name="paterno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="materno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_Completo" Type="String" MaxLength="452" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado_Civil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_Nacimiento" Type="DateTime" Precision="0" />
+    <Property Name="numero_Documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="viUsuarioMenu">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="menu" />
+      <PropertyRef Name="nombre_Elemento" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="nombre_Usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="idMenu" Type="Int32" Nullable="false" />
+    <Property Name="menu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Cargo_EscalaSalarial">
+    <End Role="EscalaSalarial" Type="Self.EscalaSalarial" Multiplicity="0..1" />
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EscalaSalarial">
+        <PropertyRef Name="idEscalaSalarial" />
+      </Principal>
+      <Dependent Role="Cargo">
+        <PropertyRef Name="idEscalaSalarial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CargoOficina_Cargo">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="0..1" />
+    <End Role="CargoOficina" Type="Self.CargoOficina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="CargoOficina">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Encargados_Cargo">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="0..1" />
+    <End Role="Encargados" Type="Self.Encargados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="Encargados">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Funcionario_Cargo">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="0..1" />
+    <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="Funcionario">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CargoOficina_Oficina">
+    <End Role="Oficina" Type="Self.Oficina" Multiplicity="0..1" />
+    <End Role="CargoOficina" Type="Self.CargoOficina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oficina">
+        <PropertyRef Name="idOficina" />
+      </Principal>
+      <Dependent Role="CargoOficina">
+        <PropertyRef Name="idOficina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Descuento_Fianza1">
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="0..1" />
+    <End Role="Descuento" Type="Self.Descuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fianza">
+        <PropertyRef Name="idFianza" />
+      </Principal>
+      <Dependent Role="Descuento">
+        <PropertyRef Name="idFianza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitudes_Devolucion">
+    <End Role="Devolucion" Type="Self.Devolucion" Multiplicity="0..1" />
+    <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Devolucion">
+        <PropertyRef Name="idDevolucion" />
+      </Principal>
+      <Dependent Role="Solicitudes">
+        <PropertyRef Name="idDevolucion_Registro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DireccionAdministrativa_UnidadEjecutora">
+    <End Role="DireccionAdministrativa" Type="Self.DireccionAdministrativa" Multiplicity="1" />
+    <End Role="UnidadEjecutora" Type="Self.UnidadEjecutora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DireccionAdministrativa">
+        <PropertyRef Name="idDireccionAdministrativa" />
+      </Principal>
+      <Dependent Role="UnidadEjecutora">
+        <PropertyRef Name="idDireccionAdministrativa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Encargados_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Encargados" Type="Self.Encargados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Encargados">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EscalaSalarial_HaberMensual">
+    <End Role="SueldoMensual" Type="Self.SueldoMensual" Multiplicity="0..1" />
+    <End Role="EscalaSalarial" Type="Self.EscalaSalarial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SueldoMensual">
+        <PropertyRef Name="idSueldoMensual" />
+      </Principal>
+      <Dependent Role="EscalaSalarial">
+        <PropertyRef Name="idSueldoMensual" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fianza_Funcionario">
+    <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="0..1" />
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Funcionario">
+        <PropertyRef Name="idFuncionario" />
+      </Principal>
+      <Dependent Role="Fianza">
+        <PropertyRef Name="idFuncionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fianza_TipoFianza">
+    <End Role="TipoFianza" Type="Self.TipoFianza" Multiplicity="0..1" />
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoFianza">
+        <PropertyRef Name="idTipoFianza" />
+      </Principal>
+      <Dependent Role="Fianza">
+        <PropertyRef Name="idTipoFianza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Funcionario_Oficina">
+    <End Role="Oficina" Type="Self.Oficina" Multiplicity="0..1" />
+    <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oficina">
+        <PropertyRef Name="idOficina" />
+      </Principal>
+      <Dependent Role="Funcionario">
+        <PropertyRef Name="idOficina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Imagen_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Imagen" Type="Self.Imagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Imagen">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolMenu_Menu">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="RolMenu" Type="Self.RolMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="idMenu" />
+      </Principal>
+      <Dependent Role="RolMenu">
+        <PropertyRef Name="idMenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oficina_UnidadEjecutora">
+    <End Role="UnidadEjecutora" Type="Self.UnidadEjecutora" Multiplicity="0..1" />
+    <End Role="Oficina" Type="Self.Oficina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnidadEjecutora">
+        <PropertyRef Name="idUnidadEjecutora" />
+      </Principal>
+      <Dependent Role="Oficina">
+        <PropertyRef Name="idUnidadEjecutora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_TipoDocumento">
+    <End Role="TipoDocumento" Type="Self.TipoDocumento" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDocumento">
+        <PropertyRef Name="idTipoDocumento" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolMenu_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="RolMenu" Type="Self.RolMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="RolMenu">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolUsuario_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="RolUsuario" Type="Self.RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="RolUsuario">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolUsuario_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="RolUsuario" Type="Self.RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="RolUsuario">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitudes_Transferencia">
+    <End Role="Transferencia" Type="Self.Transferencia" Multiplicity="0..1" />
+    <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transferencia">
+        <PropertyRef Name="idTransferencia" />
+      </Principal>
+      <Dependent Role="Solicitudes">
+        <PropertyRef Name="idTransferencia_Nueva" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MidasDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AltasBajas" EntityType="Self.AltasBajas" />
+    <EntitySet Name="Cargo" EntityType="Self.Cargo" />
+    <EntitySet Name="CargoOficina" EntityType="Self.CargoOficina" />
+    <EntitySet Name="Descuento" EntityType="Self.Descuento" />
+    <EntitySet Name="Devolucion" EntityType="Self.Devolucion" />
+    <EntitySet Name="DireccionAdministrativa" EntityType="Self.DireccionAdministrativa" />
+    <EntitySet Name="Encargados" EntityType="Self.Encargados" />
+    <EntitySet Name="EscalaSalarial" EntityType="Self.EscalaSalarial" />
+    <EntitySet Name="Fianza" EntityType="Self.Fianza" />
+    <EntitySet Name="Funcionario" EntityType="Self.Funcionario" />
+    <EntitySet Name="Imagen" EntityType="Self.Imagen" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" />
+    <EntitySet Name="Oficina" EntityType="Self.Oficina" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Reclasificacion" EntityType="Self.Reclasificacion" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <EntitySet Name="RolMenu" EntityType="Self.RolMenu" />
+    <EntitySet Name="RolUsuario" EntityType="Self.RolUsuario" />
+    <EntitySet Name="Solicitudes" EntityType="Self.Solicitudes" />
+    <EntitySet Name="SueldoMensual" EntityType="Self.SueldoMensual" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" />
+    <EntitySet Name="TipoFianza" EntityType="Self.TipoFianza" />
+    <EntitySet Name="Transferencia" EntityType="Self.Transferencia" />
+    <EntitySet Name="UnidadEjecutora" EntityType="Self.UnidadEjecutora" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="viMenu" EntityType="Self.viMenu" />
+    <EntitySet Name="viPersonaListar" EntityType="Self.viPersonaListar" />
+    <EntitySet Name="viRol" EntityType="Self.viRol" />
+    <EntitySet Name="viRolMenu" EntityType="Self.viRolMenu" />
+    <EntitySet Name="viRolUsuario" EntityType="Self.viRolUsuario" />
+    <EntitySet Name="viRolUsuarioListar" EntityType="Self.viRolUsuarioListar" />
+    <EntitySet Name="viUsuario" EntityType="Self.viUsuario" />
+    <EntitySet Name="viUsuarioListarDatos" EntityType="Self.viUsuarioListarDatos" />
+    <EntitySet Name="viUsuarioMenu" EntityType="Self.viUsuarioMenu" />
+    <AssociationSet Name="FK_Cargo_EscalaSalarial" Association="Self.FK_Cargo_EscalaSalarial">
+      <End Role="EscalaSalarial" EntitySet="EscalaSalarial" />
+      <End Role="Cargo" EntitySet="Cargo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CargoOficina_Cargo" Association="Self.FK_CargoOficina_Cargo">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="CargoOficina" EntitySet="CargoOficina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Encargados_Cargo" Association="Self.FK_Encargados_Cargo">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Encargados" EntitySet="Encargados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Funcionario_Cargo" Association="Self.FK_Funcionario_Cargo">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Funcionario" EntitySet="Funcionario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CargoOficina_Oficina" Association="Self.FK_CargoOficina_Oficina">
+      <End Role="Oficina" EntitySet="Oficina" />
+      <End Role="CargoOficina" EntitySet="CargoOficina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Descuento_Fianza1" Association="Self.FK_Descuento_Fianza1">
+      <End Role="Fianza" EntitySet="Fianza" />
+      <End Role="Descuento" EntitySet="Descuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitudes_Devolucion" Association="Self.FK_Solicitudes_Devolucion">
+      <End Role="Devolucion" EntitySet="Devolucion" />
+      <End Role="Solicitudes" EntitySet="Solicitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DireccionAdministrativa_UnidadEjecutora" Association="Self.FK_DireccionAdministrativa_UnidadEjecutora">
+      <End Role="DireccionAdministrativa" EntitySet="DireccionAdministrativa" />
+      <End Role="UnidadEjecutora" EntitySet="UnidadEjecutora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Encargados_Persona" Association="Self.FK_Encargados_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Encargados" EntitySet="Encargados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EscalaSalarial_HaberMensual" Association="Self.FK_EscalaSalarial_HaberMensual">
+      <End Role="SueldoMensual" EntitySet="SueldoMensual" />
+      <End Role="EscalaSalarial" EntitySet="EscalaSalarial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fianza_Funcionario" Association="Self.FK_Fianza_Funcionario">
+      <End Role="Funcionario" EntitySet="Funcionario" />
+      <End Role="Fianza" EntitySet="Fianza" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fianza_TipoFianza" Association="Self.FK_Fianza_TipoFianza">
+      <End Role="TipoFianza" EntitySet="TipoFianza" />
+      <End Role="Fianza" EntitySet="Fianza" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Funcionario_Oficina" Association="Self.FK_Funcionario_Oficina">
+      <End Role="Oficina" EntitySet="Oficina" />
+      <End Role="Funcionario" EntitySet="Funcionario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Imagen_Persona" Association="Self.FK_Imagen_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Imagen" EntitySet="Imagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolMenu_Menu" Association="Self.FK_RolMenu_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="RolMenu" EntitySet="RolMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oficina_UnidadEjecutora" Association="Self.FK_Oficina_UnidadEjecutora">
+      <End Role="UnidadEjecutora" EntitySet="UnidadEjecutora" />
+      <End Role="Oficina" EntitySet="Oficina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_TipoDocumento" Association="Self.FK_Persona_TipoDocumento">
+      <End Role="TipoDocumento" EntitySet="TipoDocumento" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolMenu_Rol" Association="Self.FK_RolMenu_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolMenu" EntitySet="RolMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolUsuario_Rol" Association="Self.FK_RolUsuario_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolUsuario" EntitySet="RolUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolUsuario_Usuario" Association="Self.FK_RolUsuario_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="RolUsuario" EntitySet="RolUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitudes_Transferencia" Association="Self.FK_Solicitudes_Transferencia">
+      <End Role="Transferencia" EntitySet="Transferencia" />
+      <End Role="Solicitudes" EntitySet="Solicitudes" />
+    </AssociationSet>
+    <FunctionImport Name="fnSplitString" IsComposable="true" ReturnType="Collection(MidasDModel.fnSplitString_Result)">
+      <Parameter Name="string" Mode="In" Type="String" />
+      <Parameter Name="delimiter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Contador_Impresion" ReturnType="Collection(MidasDModel.Contador_Impresion_Result)" />
+    <FunctionImport Name="paAuditoriaRUD">
+      <Parameter Name="tabla" Mode="In" Type="String" />
+      <Parameter Name="idTabla" Mode="In" Type="String" />
+      <Parameter Name="host" Mode="In" Type="String" />
+      <Parameter Name="mac" Mode="In" Type="String" />
+      <Parameter Name="aplicacion" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paContarDevolucionesPendientes" ReturnType="Collection(Int32)" />
+    <FunctionImport Name="paDescuentoEditarEliminarFisico">
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paDescuentoEditarEliminarFisicoEditar">
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paEscalaSalarialGestion" ReturnType="Collection(MidasDModel.paEscalaSalarialGestion_Result)">
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFechaActual" ReturnType="Collection(DateTime)" />
+    <FunctionImport Name="paFianzasListarMesAnioContaVali" ReturnType="Collection(MidasDModel.paFianzasListarMesAnioContaVali_Result)">
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+      <Parameter Name="tipoFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFianzasListarMesAnioDescuentos" ReturnType="Collection(MidasDModel.paFianzasListarMesAnioDescuentos_Result)">
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+      <Parameter Name="tipoFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFianzasPorFuncionarioBuscar" ReturnType="Collection(MidasDModel.paFianzasPorFuncionarioBuscar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paFianzaVerificarEnCurso" ReturnType="Collection(MidasDModel.paFianzaVerificarEnCurso_Result)">
+      <Parameter Name="idFuncionario" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscar" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idUnidadEjecurota" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarBaja" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarBaja_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idUnidadEjecurota" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarCartilla" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarCartilla_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idUnidadEjecurota" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarContaVali" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarContaVali_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idUnidadEjecurota" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarGeneral" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarGeneral_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarGeneralAdministrador" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarGeneralAdministrador_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscaridFianza" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscaridFianza_Result)">
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarMesAnioEditar" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarMesAnioEditar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idUnidadEjecurota" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarTipoFianza" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarTipoFianza_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado" ReturnType="Collection(MidasDModel.paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="estadoValidado" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paFuncionarioVerificaridFianzaCompleta" ReturnType="Collection(MidasDModel.paFuncionarioVerificaridFianzaCompleta_Result)">
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paGetFecha" ReturnType="Collection(DateTime)" />
+    <FunctionImport Name="paListaCargoOficina" ReturnType="Collection(MidasDModel.paListaCargoOficina_Result)">
+      <Parameter Name="idOficina" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListaCargoOficinaAdmin" ReturnType="Collection(MidasDModel.paListaCargoOficinaAdmin_Result)">
+      <Parameter Name="idOficina" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListaOficinaUnidadEjecutora" ReturnType="Collection(MidasDModel.paListaOficinaUnidadEjecutora_Result)">
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasReporteGlobal" ReturnType="Collection(MidasDModel.paListarFianzasEconomicasReporteGlobal_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasReporteGlobalDevolver">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora" ReturnType="Collection(MidasDModel.paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasReporteGlobalUnidadEjecutoraDevolver">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasReporteT727" ReturnType="Collection(MidasDModel.paListarFianzasEconomicasReporteT727_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasReporteT727Devolver">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasEconomicasVisualizar" ReturnType="Collection(MidasDModel.paListarFianzasEconomicasVisualizar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasPersona" ReturnType="Collection(MidasDModel.paListarFianzasPersona_Result)">
+      <Parameter Name="numeroDocumento" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasRealesReporteGlobal" ReturnType="Collection(MidasDModel.paListarFianzasRealesReporteGlobal_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasRealesReporteGlobalDevolver">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza1" Mode="In" Type="Int32" />
+      <Parameter Name="idTipoFianza2" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasReclasificacion" ReturnType="Collection(MidasDModel.paListarFianzasReclasificacion_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasReclasificacionPendientes" ReturnType="Collection(MidasDModel.paListarFianzasReclasificacionPendientes_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasReclasificacionReporte" ReturnType="Collection(MidasDModel.paListarFianzasReclasificacionReporte_Result)">
+      <Parameter Name="fecha1" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha2" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado" ReturnType="Collection(MidasDModel.paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaConResolucion" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaConResolucion_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaConResolucionBienesGravados" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaConResolucionBienesGravados_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaDevolucion" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaDevolucion_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaDevolucionContabilidad" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaDevolucionContabilidad_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaDevolucionContabilidadReporte" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaDevolucionContabilidadReporte_Result)">
+      <Parameter Name="fecha1" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha2" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaRRHH" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaRRHH_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaTranferencias" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaTranferencias_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarFuncionariosFianzaTranferenciasReporte" ReturnType="Collection(MidasDModel.paListarFuncionariosFianzaTranferenciasReporte_Result)">
+      <Parameter Name="fecha1" Mode="In" Type="DateTime" />
+      <Parameter Name="fecha2" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="paListarSolicitudesFianza" ReturnType="Collection(MidasDModel.paListarSolicitudesFianza_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarSolicitudesFianzaDiasRestantes" ReturnType="Collection(MidasDModel.paListarSolicitudesFianzaDiasRestantes_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="dia1" Mode="In" Type="Int32" />
+      <Parameter Name="dia2" Mode="In" Type="Int32" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paListarSolicitudesFianzaDiasRestantesReporte" ReturnType="Collection(MidasDModel.paListarSolicitudesFianzaDiasRestantesReporte_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="dia1" Mode="In" Type="Int32" />
+      <Parameter Name="dia2" Mode="In" Type="Int32" />
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paMenuCargar" ReturnType="Collection(MidasDModel.paMenuCargar_Result)">
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paOficinaBuscar" ReturnType="Collection(MidasDModel.paOficinaBuscar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paOficinasListar" ReturnType="Collection(MidasDModel.paOficinasListar_Result)">
+      <Parameter Name="letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paPersonaBuscar" ReturnType="Collection(MidasDModel.paPersonaBuscar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteCartilla" ReturnType="Collection(MidasDModel.paReporteCartilla_Result)">
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteCartillaHabilitadoEditar" ReturnType="Collection(MidasDModel.paReporteCartillaHabilitadoEditar_Result)">
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteCartillaT727" ReturnType="Collection(MidasDModel.paReporteCartillaT727_Result)">
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteFormularioA2" ReturnType="Collection(MidasDModel.paReporteFormularioA2_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteFormularioA2Reconsulta" ReturnType="Collection(MidasDModel.paReporteFormularioA2Reconsulta_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="mes" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteFuncionarioCertificadoidFianza" ReturnType="Collection(MidasDModel.paReporteFuncionarioCertificadoidFianza_Result)">
+      <Parameter Name="idUnidadEjecutora" Mode="In" Type="Int32" />
+      <Parameter Name="idFianza" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteSolDevolucion" ReturnType="Collection(MidasDModel.paReporteSolDevolucion_Result)">
+      <Parameter Name="idSolicitud" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteSolDevolucionNoRequiere" ReturnType="Collection(MidasDModel.paReporteSolDevolucionNoRequiere_Result)">
+      <Parameter Name="idSolicitud" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteSolFianEconomica" ReturnType="Collection(MidasDModel.paReporteSolFianEconomica_Result)">
+      <Parameter Name="idSolicitud" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteSolFianEconomicaNoRequiereFianza" ReturnType="Collection(MidasDModel.paReporteSolFianEconomicaNoRequiereFianza_Result)">
+      <Parameter Name="idSolicitud" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paReporteSolFianEconomicaTotal" ReturnType="Collection(MidasDModel.paReporteSolFianEconomicaTotal_Result)">
+      <Parameter Name="idSolicitud" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paSueldosMensuales" ReturnType="Collection(MidasDModel.paSueldosMensuales_Result)">
+      <Parameter Name="anio" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paUsuarioBuscar" ReturnType="Collection(MidasDModel.paUsuarioBuscar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionEstadoFianzaContabilidad" ReturnType="Collection(MidasDModel.paValidacionEstadoFianzaContabilidad_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionEstadoFianzaHabilitado" ReturnType="Collection(MidasDModel.paValidacionEstadoFianzaHabilitado_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionEstadoFianzaRRHH" ReturnType="Collection(MidasDModel.paValidacionEstadoFianzaRRHH_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionParaCertificados" ReturnType="Collection(MidasDModel.paValidacionParaCertificados_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionParaCertificadosContabilidad" ReturnType="Collection(MidasDModel.paValidacionParaCertificadosContabilidad_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionParaCertificadosHabilitado" ReturnType="Collection(MidasDModel.paValidacionParaCertificadosHabilitado_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionParaCertificadosRRHH" ReturnType="Collection(MidasDModel.paValidacionParaCertificadosRRHH_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+      <Parameter Name="idTipoFianza" Mode="In" Type="Int32" />
+      <Parameter Name="gestion" Mode="In" Type="Int32" />
+      <Parameter Name="unidadEjecutora" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="paValidacionRegistroSolicitudes" ReturnType="Collection(MidasDModel.paValidacionRegistroSolicitudes_Result)">
+      <Parameter Name="NRODOCUMENTO" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="Contador_Impresion_Result">
+    <Property Type="Int32" Name="idUnidadEjecutora" Nullable="false" />
+    <Property Type="String" Name="unidad_Ejecutora" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="cantidad" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paEscalaSalarialGestion_Result">
+    <Property Type="Int32" Name="idEscalaSalarial" Nullable="false" />
+    <Property Type="Int32" Name="idSueldoMensual" Nullable="true" />
+    <Property Type="String" Name="categoria" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="clase" Nullable="true" />
+    <Property Type="Int32" Name="nivel_Salarial" Nullable="true" />
+    <Property Type="String" Name="denominacion_Puesto" Nullable="true" />
+    <Property Type="Int32" Name="numero_Items" Nullable="true" />
+    <Property Type="Double" Name="sueldo_mensual" Nullable="true" />
+    <Property Type="Double" Name="incremento" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFianzasListarMesAnioContaVali_Result">
+    <Property Type="Int32" Name="idUnidadEjecutora" Nullable="true" />
+    <Property Type="String" Name="Unidad_Ejecutora" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="mes" Nullable="true" />
+    <Property Type="Int32" Name="anio" Nullable="true" />
+    <Property Type="String" Name="Funcionarios" Nullable="true" />
+    <Property Type="String" Name="Registrado_Por" Nullable="true" />
+    <Property Type="String" Name="Validado_Por" Nullable="true" />
+    <Property Type="String" Name="todos_Validados" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="paFianzasListarMesAnioDescuentos_Result">
+    <Property Type="Int32" Name="idUnidadEjecutora" Nullable="true" />
+    <Property Type="String" Name="Unidad_Ejecutora" Nullable="false" MaxLength="150" />
+    <Property Type="Int32" Name="mes" Nullable="true" />
+    <Property Type="Int32" Name="anio" Nullable="true" />
+    <Property Type="String" Name="Funcionarios" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFianzasPorFuncionarioBuscar_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="descripcion_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="t727" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="String" Name="Estado_Fianza" Nullable="false" MaxLength="8" />
+  </ComplexType>
+  <ComplexType Name="paFianzaVerificarEnCurso_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Int32" Name="idDescuento" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscar_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+    <Property Type="Double" Name="a_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarBaja_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+    <Property Type="Double" Name="a_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarCartilla_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarContaVali_Result">
+    <Property Type="Int32" Name="idDescuento" Nullable="false" />
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="Cargo" Nullable="true" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" />
+    <Property Type="String" Name="haber_Mensual" Nullable="true" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" />
+    <Property Type="String" Name="total_Descontar" Nullable="true" />
+    <Property Type="String" Name="falta_Descontar" Nullable="true" />
+    <Property Type="String" Name="a_Validar" Nullable="true" />
+    <Property Type="String" Name="c_21" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarGeneral_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+    <Property Type="Double" Name="a_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarGeneralAdministrador_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+    <Property Type="Double" Name="a_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscaridFianza_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+    <Property Type="Double" Name="a_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarMesAnioEditar_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+    <Property Type="Double" Name="a_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarTipoFianza_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cpbte" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="registro_Sigma" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="tipo" Nullable="true" MaxLength="300" />
+    <Property Type="Double" Name="monto_Beneficiario" Nullable="true" />
+    <Property Type="String" Name="tipo_Bien" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="ubicacion" Nullable="true" />
+    <Property Type="String" Name="folio" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="concepto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="a_Favor" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cpbte" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="registro_Sigma" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="tipo" Nullable="true" MaxLength="300" />
+    <Property Type="Int32" Name="c21" Nullable="true" />
+    <Property Type="Int32" Name="mes" Nullable="true" />
+    <Property Type="Int32" Name="anio" Nullable="true" />
+    <Property Type="Double" Name="monto_Beneficiario" Nullable="true" />
+    <Property Type="String" Name="tipo_Bien" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="ubicacion" Nullable="true" />
+    <Property Type="String" Name="folio" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="concepto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="a_Favor" Nullable="true" MaxLength="300" />
+  </ComplexType>
+  <ComplexType Name="paFuncionarioVerificaridFianzaCompleta_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="haber_mensual" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListaCargoOficina_Result">
+    <Property Type="Int32" Name="idCargo" Nullable="false" />
+    <Property Type="Int32" Name="idCargoOficina" Nullable="false" />
+    <Property Type="String" Name="Cargo" Nullable="true" MaxLength="411" />
+  </ComplexType>
+  <ComplexType Name="paListaCargoOficinaAdmin_Result">
+    <Property Type="Int32" Name="idCargo" Nullable="false" />
+    <Property Type="Int32" Name="idCargoOficina" Nullable="false" />
+    <Property Type="String" Name="Cargo" Nullable="true" MaxLength="411" />
+  </ComplexType>
+  <ComplexType Name="paListaOficinaUnidadEjecutora_Result">
+    <Property Type="Int32" Name="idOficina" Nullable="false" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasEconomicasReporteGlobal_Result">
+    <Property Type="String" Name="idFianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t_727" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21DP" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="diciembreP" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21E" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="enero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21F" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="febrero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21M" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="marzo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21A" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="abril" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21MA" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mayo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21J" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="junio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21JU" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="julio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21AG" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="agosto" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21S" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="septiembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21O" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="octubre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21N" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="noviembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mes_Actual_Descuentos" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_31" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nro_cheque" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t_727D" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="beneficiarioD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t727_Gestion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result">
+    <Property Type="String" Name="idFianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="oficina" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasEconomicasReporteT727_Result">
+    <Property Type="String" Name="idFianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t_727" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21DP" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="diciembreP" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21E" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="enero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21F" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="febrero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21M" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="marzo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21A" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="abril" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21MA" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mayo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21J" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="junio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21JU" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="julio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21AG" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="agosto" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21S" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="septiembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21O" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="octubre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_21N" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="noviembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mes_Actual_Descuentos" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c_31" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nro_cheque" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t_727D" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="beneficiarioD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t727_Gestion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasEconomicasVisualizar_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="300" />
+    <Property Type="Double" Name="t_727" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Int32" Name="c_21D" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Int32" Name="c_21E" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Int32" Name="c_21F" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Int32" Name="c_21M" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Int32" Name="c_21A" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Int32" Name="c_21MA" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Int32" Name="c_21J" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Int32" Name="c_21JU" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Int32" Name="c_21AG" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Int32" Name="c_21S" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Int32" Name="c_21O" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Int32" Name="c_21N" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Int32" Name="c_21D1" Nullable="true" />
+    <Property Type="Double" Name="diciembre1" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasPersona_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="Int32" Name="tipo_Contrato_Item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fianza_Completa_Habilitado" Nullable="true" MaxLength="105" />
+    <Property Type="String" Name="fianza_Validada_Contabilidad" Nullable="true" MaxLength="105" />
+    <Property Type="String" Name="fianza_Devuelta_Contabilidad" Nullable="true" MaxLength="105" />
+    <Property Type="String" Name="fianza_impresa" Nullable="true" MaxLength="105" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="Double" Name="falta_descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasRealesReporteGlobal_Result">
+    <Property Type="String" Name="idFianza" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CPBTE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="Ci" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Cargo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Tipo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="t_727" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="registro_mes_enero" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_febrero" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_marzo" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_abril" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_mayo" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_junio" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_julio" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_agosto" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_septiembre" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_octubre" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_noviembre" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="registro_mes_diciembre" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="mes_Actual_Descuentos" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="c_31" Nullable="true" MaxLength="3" />
+    <Property Type="String" Name="inf_Resol" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="t_727D" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="beneficiarioD" Nullable="true" MaxLength="10" />
+    <Property Type="String" Name="Tipo_" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Ubicacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="folio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="concepto" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="a_favor" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ultimo_Registro" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="a_favor_" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Bien_Inmueble" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Actual" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasReclasificacion_Result">
+    <Property Type="Int32" Name="idReclasificacion" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="300" />
+    <Property Type="Double" Name="monto_727" Nullable="true" />
+    <Property Type="String" Name="monto_Beneficiario" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="mes" Nullable="true" />
+    <Property Type="Int32" Name="anio" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasReclasificacionPendientes_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="t727" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="monto_Beneficiario" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasReclasificacionReporte_Result">
+    <Property Type="Int32" Name="idReclasificacion" Nullable="false" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="sigma" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="monto_727" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="monto_Beneficiario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mes" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="anio" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaConResolucion_Result">
+    <Property Type="Int32" Name="idFuncionario" Nullable="true" />
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_limite_Fianza" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="haber_Mensual" Nullable="true" />
+    <Property Type="Int32" Name="tipo_contrato_item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="String" Name="usuario_RRHH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="usuario_Asesor" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Resolucion" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaConResolucionBienesGravados_Result">
+    <Property Type="Int32" Name="idFuncionario" Nullable="true" />
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="Cpbte" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="tipo" Nullable="true" MaxLength="300" />
+    <Property Type="Double" Name="t727" Nullable="true" />
+    <Property Type="Double" Name="monto_Beneficiario" Nullable="true" />
+    <Property Type="String" Name="tipo_t" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="ubicacion" Nullable="true" />
+    <Property Type="String" Name="folio" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="concepto" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="a_favor" Nullable="true" MaxLength="300" />
+    <Property Type="Double" Name="ultimo_registro" Nullable="true" />
+    <Property Type="String" Name="a_favor_a" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="estado_Bien_Inmueble" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="estado_Actual" Nullable="false" MaxLength="9" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+    <Property Type="Int32" Name="tipo_contrato_item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Resolucion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="usuario_Asesor" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="fianza_Validada_Contabilidad" Nullable="true" />
+    <Property Type="String" Name="observacion" Nullable="true" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaDevolucion_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="true" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="Int32" Name="tipo_contrato_item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="Double" Name="haber_Mensual" Nullable="true" />
+    <Property Type="Double" Name="monto_beneficiario" Nullable="true" />
+    <Property Type="Boolean" Name="estado_Fianza" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaDevolucionContabilidad_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="true" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="Int32" Name="tipo_contrato_item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="Double" Name="haber_Mensual" Nullable="true" />
+    <Property Type="Double" Name="monto_beneficiario" Nullable="true" />
+    <Property Type="String" Name="c31" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nro_Cheque" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="mes" Nullable="true" />
+    <Property Type="Int32" Name="anio" Nullable="true" />
+    <Property Type="String" Name="observacion" Nullable="true" />
+    <Property Type="Boolean" Name="estado_Fianza" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaDevolucionContabilidadReporte_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="String" Name="gestion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="idFuncionario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" />
+    <Property Type="String" Name="tipo_contrato_item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="haber_Mensual" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="monto_beneficiario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="c31" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nro_Cheque" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mes" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="anio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="observacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Fianza" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaRRHH_Result">
+    <Property Type="Int32" Name="idFuncionario" Nullable="true" />
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="DateTime" Name="fecha_limite_Fianza" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="String" Name="resolucion_Administrativa" Nullable="true" MaxLength="100" />
+    <Property Type="Double" Name="haber_Mensual" Nullable="true" />
+    <Property Type="Int32" Name="tipo_contrato_item" Nullable="true" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" />
+    <Property Type="String" Name="usuario_RRHH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="usuario_Asesor" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Resolucion" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaTranferencias_Result">
+    <Property Type="Int32" Name="idTransferencia" Nullable="false" />
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Int32" Name="idFuncionario" Nullable="true" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="Fianza_Anterior" Nullable="true" />
+    <Property Type="String" Name="Fianza_Actual" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa_Transferencia" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="usuario_Contabilidad_Transferencia" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fecha_Contabilidad_Transferencia" Nullable="true" Precision="23" />
+    <Property Type="Int32" Name="mes_Transferencia" Nullable="true" />
+    <Property Type="Int32" Name="anio_Tranferencia" Nullable="true" />
+    <Property Type="String" Name="observacion_Transferencia" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarFuncionariosFianzaTranferenciasReporte_Result">
+    <Property Type="Int32" Name="idTransferencia" Nullable="false" />
+    <Property Type="String" Name="idFianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="idFuncionario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" />
+    <Property Type="String" Name="Fianza_Anterior" Nullable="true" />
+    <Property Type="String" Name="Fianza_Actual" Nullable="true" />
+    <Property Type="String" Name="resolucion_Administrativa_Transferencia" Nullable="true" />
+    <Property Type="String" Name="usuario_Contabilidad_Transferencia" Nullable="true" />
+    <Property Type="String" Name="fecha_Contabilidad_Transferencia" Nullable="true" />
+    <Property Type="String" Name="mes_Transferencia" Nullable="true" />
+    <Property Type="String" Name="anio_Tranferencia" Nullable="true" />
+    <Property Type="String" Name="observacion_Transferencia" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarSolicitudesFianza_Result">
+    <Property Type="Int32" Name="idSolicitud" Nullable="false" />
+    <Property Type="Int32" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="tipo_Solicitud_Fianza" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha_limite_Presentacion" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="Double" Name="haber_basico" Nullable="true" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="tipo_contrato_item" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="usuario_RRHH" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_Registro_RRHH" Nullable="true" Precision="23" />
+    <Property Type="String" Name="usuario_Asesor_Acepta" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_Aceptacion" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="solicitud_Aceptada" Nullable="true" />
+    <Property Type="String" Name="observacion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarSolicitudesFianzaDiasRestantes_Result">
+    <Property Type="Int32" Name="idSolicitud" Nullable="false" />
+    <Property Type="Int32" Name="numero_Fianza_Solicitud" Nullable="true" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="tipo_Solicitud_Fianza" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha_limite_Presentacion" Nullable="true" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="303" />
+    <Property Type="Double" Name="haber_basico" Nullable="true" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="fecha_Memorando" Nullable="true" />
+    <Property Type="String" Name="tipo_contrato_item" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="usuario_RRHH" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_Registro_RRHH" Nullable="true" Precision="23" />
+    <Property Type="String" Name="usuario_Asesor_Acepta" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_Aceptacion" Nullable="false" Precision="23" />
+    <Property Type="Boolean" Name="solicitud_Aceptada" Nullable="true" />
+    <Property Type="String" Name="observacion" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paListarSolicitudesFianzaDiasRestantesReporte_Result">
+    <Property Type="Int32" Name="idSolicitud" Nullable="false" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="gestion" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="tipo_Solicitud_Fianza" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="fecha_limite_Presentacion" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="haber_basico" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="tipo_contrato_item" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="vigencia_Contrato" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="usuario_RRHH" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="fecha_Registro_RRHH" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="usuario_Asesor_Acepta" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="fecha_Aceptacion" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="solicitud_Aceptada" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="observacion" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="paMenuCargar_Result">
+    <Property Type="Int32" Name="idMenu" Nullable="false" />
+    <Property Type="String" Name="menu" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="nombre_Elemento" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="paOficinaBuscar_Result">
+    <Property Type="Int32" Name="idOficina" Nullable="false" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="paOficinasListar_Result">
+    <Property Type="Int32" Name="idOficina" Nullable="false" />
+    <Property Type="String" Name="oficina" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="unidad_Ejecutora" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="codigo_Distrito" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="codigo_Zeus" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="cuantia" Nullable="true" />
+    <Property Type="Double" Name="porcentaje_Descuento" Nullable="true" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="registroActivo" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paPersonaBuscar_Result">
+    <Property Type="Int32" Name="idPersona" Nullable="false" />
+    <Property Type="String" Name="Nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="Direccion" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Sexo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Estado_Civil" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="tipo_documento" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="numero_documento" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_Nacimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paReporteCartilla_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mes_anio" Nullable="true" MaxLength="106" />
+    <Property Type="String" Name="importe_descontado_s_g_ofrecimiento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_descontado_en_planilla" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="saldo_a_Descontar" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="observacion" Nullable="true" MaxLength="700" />
+  </ComplexType>
+  <ComplexType Name="paReporteCartillaHabilitadoEditar_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="Int32" Name="mes" Nullable="true" />
+    <Property Type="Int32" Name="anio" Nullable="true" />
+    <Property Type="Double" Name="monto_Beneficiario" Nullable="true" />
+    <Property Type="Double" Name="t727" Nullable="true" />
+    <Property Type="Int32" Name="c21" Nullable="true" />
+    <Property Type="Boolean" Name="validado" Nullable="true" />
+    <Property Type="String" Name="validado_Por" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="observacion" Nullable="true" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="true" Precision="23" />
+    <Property Type="Boolean" Name="registroActivo" Nullable="true" />
+    <Property Type="String" Name="total_descontado_en_planilla" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="saldo_a_Descontar" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteCartillaT727_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mes_anio" Nullable="true" MaxLength="106" />
+    <Property Type="String" Name="t727" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="observacion" Nullable="true" MaxLength="700" />
+  </ComplexType>
+  <ComplexType Name="paReporteFormularioA2_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="h_b" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="enero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="febrero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="marzo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="abril" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mayo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="junio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="julio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="agosto" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="septiembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="octubre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="noviembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="diciembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descontar" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteFormularioA2Reconsulta_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="h_b" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="enero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="febrero" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="marzo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="abril" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="mayo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="junio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="julio" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="agosto" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="septiembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="octubre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="noviembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="diciembre" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descontar" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteFuncionarioCertificadoidFianza_Result">
+    <Property Type="String" Name="idFianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Nro_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="601" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Documento" Nullable="false" MaxLength="6" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="departamento_Nacimiento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Descuento" Nullable="true" />
+    <Property Type="String" Name="total_DescuentoLetra" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paReporteSolDevolucion_Result">
+    <Property Type="String" Name="idSolicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nro_FianzaDevolucion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="año_Impresa_RRHH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombres" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="paterno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="materno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Documento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="lugar_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="601" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="204" />
+    <Property Type="String" Name="Item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_descontado_en_planilla" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_descontado_en_planilla_literal" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteSolDevolucionNoRequiere_Result">
+    <Property Type="String" Name="idSolicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nro_FianzaDevolucion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="año_Impresa_RRHH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombres" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="paterno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="materno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Documento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="lugar_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="601" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="204" />
+    <Property Type="String" Name="Item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_descontado_en_planilla" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_descontado_en_planilla_literal" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteSolFianEconomica_Result">
+    <Property Type="String" Name="idSolicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombres" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="paterno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="materno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Documento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="lugar_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="601" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="204" />
+    <Property Type="String" Name="Item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="sueldo_Mensual" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="totalidad_Salario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="porcentaje" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteSolFianEconomicaNoRequiereFianza_Result">
+    <Property Type="String" Name="idSolicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombres" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="paterno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="materno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Documento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="lugar_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="601" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="204" />
+    <Property Type="String" Name="Item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="sueldo_Mensual" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="totalidad_Salario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="porcentaje" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paReporteSolFianEconomicaTotal_Result">
+    <Property Type="String" Name="idSolicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Fianza_Solicitud" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="nombres" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="paterno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="materno" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Documento" Nullable="false" MaxLength="4" />
+    <Property Type="String" Name="lugar_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="601" />
+    <Property Type="String" Name="numero_Memorando" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="fecha_Memorando" Nullable="true" MaxLength="204" />
+    <Property Type="String" Name="Item" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="sueldo_Mensual" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="totalidad_Salario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="porcentaje" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="total_Fianza" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="tipo_Fianza" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paSueldosMensuales_Result">
+    <Property Type="Int32" Name="idSueldoMensual" Nullable="false" />
+    <Property Type="String" Name="monto" Nullable="true" MaxLength="105" />
+    <Property Type="Int32" Name="gestion" Nullable="true" />
+    <Property Type="String" Name="incremento" Nullable="true" MaxLength="102" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paUsuarioBuscar_Result">
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="domicilio" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="nombre_Usuario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="sexo" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="paValidacionEstadoFianzaContabilidad_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="totalDescuento" Nullable="true" />
+    <Property Type="Double" Name="totalDescontar" Nullable="true" />
+    <Property Type="String" Name="Validado_Por_Habilitacion" Nullable="false" MaxLength="11" />
+    <Property Type="DateTime" Name="fecha_Habilitacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usuario_Habilitacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Validado_Por_Contabilidad" Nullable="false" MaxLength="11" />
+    <Property Type="DateTime" Name="fecha_Contabilidad" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usuario_Contabilidad" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paValidacionEstadoFianzaHabilitado_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="totalDescuento" Nullable="true" />
+    <Property Type="Double" Name="totalDescontar" Nullable="true" />
+    <Property Type="String" Name="Validado_Por_Habilitacion" Nullable="false" MaxLength="11" />
+    <Property Type="DateTime" Name="fecha_Habilitacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usuario_Habilitacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Validado_Por_Contabilidad" Nullable="false" MaxLength="11" />
+    <Property Type="DateTime" Name="fecha_Contabilidad" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usuario_Contabilidad" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paValidacionEstadoFianzaRRHH_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="totalDescuento" Nullable="true" />
+    <Property Type="Double" Name="totalDescontar" Nullable="true" />
+    <Property Type="String" Name="Validado_Por_Habilitacion" Nullable="false" MaxLength="11" />
+    <Property Type="DateTime" Name="fecha_Habilitacion" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usuario_Habilitacion" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="Validado_Por_Contabilidad" Nullable="false" MaxLength="11" />
+    <Property Type="DateTime" Name="fecha_Contabilidad" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Usuario_Contabilidad" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="paValidacionParaCertificados_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="totalDescuento" Nullable="true" />
+    <Property Type="Double" Name="totalDescontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paValidacionParaCertificadosContabilidad_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paValidacionParaCertificadosHabilitado_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paValidacionParaCertificadosRRHH_Result">
+    <Property Type="Int32" Name="idFianza" Nullable="false" />
+    <Property Type="Double" Name="Nro_Fianza" Nullable="true" />
+    <Property Type="String" Name="cargo" Nullable="true" MaxLength="651" />
+    <Property Type="String" Name="apellidos_Y_Nombres" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="ci" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="item" Nullable="true" />
+    <Property Type="Double" Name="h_b" Nullable="true" />
+    <Property Type="Double" Name="estado_Cuenta_Gestion_Pasada" Nullable="true" />
+    <Property Type="Double" Name="enero" Nullable="true" />
+    <Property Type="Double" Name="febrero" Nullable="true" />
+    <Property Type="Double" Name="marzo" Nullable="true" />
+    <Property Type="Double" Name="abril" Nullable="true" />
+    <Property Type="Double" Name="mayo" Nullable="true" />
+    <Property Type="Double" Name="junio" Nullable="true" />
+    <Property Type="Double" Name="julio" Nullable="true" />
+    <Property Type="Double" Name="agosto" Nullable="true" />
+    <Property Type="Double" Name="septiembre" Nullable="true" />
+    <Property Type="Double" Name="octubre" Nullable="true" />
+    <Property Type="Double" Name="noviembre" Nullable="true" />
+    <Property Type="Double" Name="diciembre" Nullable="true" />
+    <Property Type="Double" Name="total_Descuento" Nullable="true" />
+    <Property Type="Double" Name="total_Descontar" Nullable="true" />
+    <Property Type="String" Name="fianza_impresa" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="paValidacionRegistroSolicitudes_Result">
+    <Property Type="Int32" Name="idSolicitud" Nullable="false" />
+    <Property Type="Int32" Name="Dias" Nullable="true" />
+  </ComplexType>
+</Schema>

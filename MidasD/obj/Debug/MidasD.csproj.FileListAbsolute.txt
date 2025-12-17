@@ -1,0 +1,624 @@
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\MidasD.exe.config
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\MidasD.exe.manifest
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\MidasD.application
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\MidasD.exe
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\MidasD.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\AxInterop.AcroPDFLib.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\EntityFramework.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\FlashControlV71.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\QRCoder.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\Utils.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\itextsharp.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\stdole.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\EntityFramework.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmAcercaDe.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegalCorreccionDatos.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmAyuda.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaEditarCompleta.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFuncionarioCorreccionDatos.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuentoCorreccion.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmLeyenda.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionFianza.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosHabilitado.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosContabilidad.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmValidarFianzaCompleta.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmVerFianza.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmTransferenciaAsesoriaLegal.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidad.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionAsesoriaLegal.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadReportes.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimir.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeAlta.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeBaja.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmImpresionCartillas.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmReclasificacion.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionBienesGravamenes.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadValidacion.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaTotal.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienes.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmAuntenticacion.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmCambiarClave.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmListaFuncionarios.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmMenu.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmPersona.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegal.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFuncionarios.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmPrincipal.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmRol.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmRolMenu.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuento.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmEstadoFianzasActuales.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFuncionario.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmSplash.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmUsuario.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.FrmUsuarioRol.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.Properties.Resources.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCartillaVerFianza.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFormularioA2.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCuentaContable.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrSolicitudFianza.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCertificado.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.csproj.GenerateResource.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.exe.licenses
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.csproj.CoreCompileInputs.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.TrustInfo.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.exe.manifest
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.application
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.csproj.CopyComplete
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.exe
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\MidasD\obj\Debug\MidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe.config
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe.manifest
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.application
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.Shared.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\FlashControlV71.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\QRCoder.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\Utils.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\ShockwaveFlashObjects.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\itextsharp.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\stdole.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csprojAssemblyReference.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCargando.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzasUnidadEjecutora.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDatosUsuario.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidadAdministradorDatos.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmEnDesarrollo.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAcercaDe.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegalCorreccionDatos.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAyuda.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmEstadoFianzasActuales.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuentoCorreccion.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmLeyenda.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFuncionarioFianzaAdministracionDatos.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCargos.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmOficinas.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPersonaConsulta.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitudAdministrador.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitud.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmOficinaCargo.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensual.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarOficina.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosHabilitado.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosContabilidad.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidarFianzaCompleta.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidad.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadReportes.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimir.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeAlta.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeBaja.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmImpresionCartillas.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmReclasificacion.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionBienesGravamenes.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadValidacion.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaTotal.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienes.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAuntenticacion.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCambiarClave.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmListaFuncionarios.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmMenu.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPersona.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegal.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPrincipal.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRol.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRolMenu.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuento.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFuncionario.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSplash.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmUsuario.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmUsuarioRol.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Properties.Resources.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCartillaVerFianza.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFianzasUnidadEjecutora.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFormularioA2.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCuentaContable.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrSolicitudFianza.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCertificado.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.GenerateResource.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe.licenses
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.CoreCompileInputs.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.TrustInfo.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe.manifest
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.application
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.CopyComplete
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.pdb
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\MidasD.exe.config
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\MidasD.exe.manifest
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\MidasD.application
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\MidasD.exe
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\MidasD.pdb
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.Shared.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\EntityFramework.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\FlashControlV71.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\ShockwaveFlashObjects.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\stdole.dll
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.xml
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\EntityFramework.xml
+D:\MidasCuarentena\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.xml
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.csprojAssemblyReference.cache
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionHabilitar20Porciento.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmTransferenciasRealizadas.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmCargando.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmFianzasUnidadEjecutora.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmDatosUsuario.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidadAdministradorDatos.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmEnDesarrollo.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmAcercaDe.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegalCorreccionDatos.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmAyuda.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmEstadoFianzasActuales.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuentoCorreccion.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmLeyenda.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionDepositoEfectivo.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmFuncionarioFianzaAdministracionDatos.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmCargos.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmOficinas.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmPersonaConsulta.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitudAdministrador.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitud.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmOficinaCargo.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFianzaPorPersona.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensual.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarOficina.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosHabilitado.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosContabilidad.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmValidarFianzaCompleta.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidad.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadReportes.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimir.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeAlta.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeBaja.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmImpresionCartillas.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmReclasificacion.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionBienesGravamenes.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadValidacion.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaTotal.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienes.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmAuntenticacion.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmCambiarClave.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmListaFuncionarios.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmMenu.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmPersona.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegal.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmPrincipal.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmRol.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmRolMenu.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuento.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFuncionario.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmSplash.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmUsuario.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.FrmUsuarioRol.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Properties.Resources.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCartillaVerFianza.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFianzasUnidadEjecutora.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFormularioA2.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCuentaContable.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrSolicitudFianza.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCertificado.resources
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.csproj.GenerateResource.cache
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.exe.licenses
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.csproj.CoreCompileInputs.cache
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.TrustInfo.xml
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.exe.manifest
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.application
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.csproj.CopyComplete
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.exe
+D:\MidasCuarentena\MidasD\MidasD\obj\Debug\MidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\MidasD.exe.config
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\MidasD.exe.manifest
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\MidasD.application
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\MidasD.exe
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\MidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\AxInterop.AcroPDFLib.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.Shared.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\EntityFramework.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\FlashControlV71.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\QRCoder.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\Utils.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\ShockwaveFlashObjects.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\itextsharp.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\stdole.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\EntityFramework.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.csprojAssemblyReference.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionHabilitar20Porciento.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmTransferenciasRealizadas.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmCargando.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmFianzasUnidadEjecutora.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmDatosUsuario.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidadAdministradorDatos.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmEnDesarrollo.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmAcercaDe.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegalCorreccionDatos.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmAyuda.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmEstadoFianzasActuales.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuentoCorreccion.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmLeyenda.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionDepositoEfectivo.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmFuncionarioFianzaAdministracionDatos.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmCargos.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmOficinas.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmPersonaConsulta.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitudAdministrador.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitud.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmOficinaCargo.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFianzaPorPersona.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensual.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarOficina.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosHabilitado.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosContabilidad.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmValidarFianzaCompleta.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidad.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadReportes.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimir.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeAlta.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeBaja.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmImpresionCartillas.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmReclasificacion.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionBienesGravamenes.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadValidacion.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaTotal.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienes.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmAuntenticacion.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmCambiarClave.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmListaFuncionarios.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmMenu.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmPersona.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegal.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmPrincipal.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmRol.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmRolMenu.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuento.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFuncionario.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmSplash.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmUsuario.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.FrmUsuarioRol.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Properties.Resources.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCartillaVerFianza.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFianzasUnidadEjecutora.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFormularioA2.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCuentaContable.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrSolicitudFianza.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCertificado.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.csproj.GenerateResource.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.exe.licenses
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.csproj.CoreCompileInputs.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.TrustInfo.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.exe.manifest
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.application
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.csproj.CopyComplete
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.exe
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\MidasD\obj\Debug\MidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionHabilitar20Porciento.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmTransferenciasRealizadas.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionDepositoEfectivo.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFianzaPorPersona.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe.config
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe.manifest
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.application
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.Shared.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\FlashControlV71.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\ICSharpCode.SharpZipLib.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\QRCoder.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\Utils.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\ShockwaveFlashObjects.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\itextsharp.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\stdole.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\Interop.AcroPDFLib.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csprojAssemblyReference.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\Interop.AcroPDFLib.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\AxInterop.AcroPDFLib.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.ResolveComReference.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionHabilitar20Porciento.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFlujoReales.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFlujo.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimirReales.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienesAdministrador.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionBienesGravamenes.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensualEscalaSalarial.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmManualUsuario.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmTransferenciasRealizadas.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCargando.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzasUnidadEjecutora.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDatosUsuario.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidadAdministradorDatos.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmEnDesarrollo.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAcercaDe.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegalCorreccionDatos.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContactos.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmEstadoFianzasActuales.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuentoCorreccion.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmLeyenda.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionDepositoEfectivo.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFuncionarioFianzaAdministracionDatos.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCargos.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmOficinas.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPersonaConsulta.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitudAdministrador.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitud.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmOficinaCargo.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFianzaPorPersona.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensual.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarOficina.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosHabilitado.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosContabilidad.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidarFianzaCompleta.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidad.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadReportes.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimir.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeAlta.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeBaja.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmImpresionCartillas.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmReclasificacion.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadValidacion.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaTotal.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienes.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAuntenticacion.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCambiarClave.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmListaFuncionarios.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmMenu.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPersona.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegal.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPrincipal.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRol.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRolMenu.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuento.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFuncionario.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSplash.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmUsuario.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmUsuarioRol.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Properties.Resources.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrRecaTransDevo.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrEstadoSolicitudes.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCartillaVerFianza.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFianzasUnidadEjecutora.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFormularioA2.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCuentaContable.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrSolicitudFianza.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCertificado.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.GenerateResource.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe.licenses
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.CoreCompileInputs.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.TrustInfo.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe.manifest
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.application
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.CopyComplete
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.pdb
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe.config
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe.manifest
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.application
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.exe
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\MidasD.pdb
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.Shared.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\FlashControlV71.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\ShockwaveFlashObjects.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\stdole.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\C1.Win.C1Ribbon.2.xml
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.xml
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\EntityFramework.SqlServer.xml
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\Interop.AcroPDFLib.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\bin\Debug\AxInterop.AcroPDFLib.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\Interop.AcroPDFLib.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\AxInterop.AcroPDFLib.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.ResolveComReference.cache
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionHabilitar20Porciento.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFlujoReales.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFlujo.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimirReales.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienesAdministrador.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionBienesGravamenes.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensualEscalaSalarial.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmManualUsuario.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmTransferenciasRealizadas.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCargando.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzasUnidadEjecutora.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDatosUsuario.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidadAdministradorDatos.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmEnDesarrollo.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAcercaDe.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegalCorreccionDatos.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContactos.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmEstadoFianzasActuales.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuentoCorreccion.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmLeyenda.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmActualizacionDepositoEfectivo.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFuncionarioFianzaAdministracionDatos.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCargos.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmOficinas.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPersonaConsulta.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitudAdministrador.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroSolicitud.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmOficinaCargo.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFianzaPorPersona.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSueldoMensual.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarOficina.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosHabilitado.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidacionParaCertificadosContabilidad.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmValidarFianzaCompleta.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmDevolucionContabilidad.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadReportes.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCertificadoImprimir.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeAlta.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmFianzaDeBaja.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmImpresionCartillas.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmReclasificacion.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmContabilidadValidacion.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaTotal.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRegistroFianzaBienes.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAuntenticacion.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmCambiarClave.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmListaFuncionarios.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmMenu.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPersona.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmAsesoriaLegal.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmPrincipal.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRol.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmRolMenu.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmHabilitadoDescuento.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSeleccionarFuncionario.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmSplash.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmUsuario.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.FrmUsuarioRol.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Properties.Resources.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrRecaTransDevo.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrEstadoSolicitudes.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCartillaVerFianza.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFianzasUnidadEjecutora.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrFormularioA2.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCuentaContable.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrSolicitudFianza.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.Reportes.FrmCrCertificado.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.GenerateResource.cache
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe.licenses
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.CoreCompileInputs.cache
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.TrustInfo.xml
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe.manifest
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.application
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csproj.CopyComplete
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.exe
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.pdb
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\MidasD\obj\Debug\MidasD.csprojAssemblyReference.cache

@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="WcfArgos" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="WcfArgos" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="WcfArgos/Imports">
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd0" namespace="WcfArgos" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfArgos" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/CadArgos" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Convenio.Core.Modelo.Dto.Proceso.ServicioExterno" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Framework.Comun.Resultado" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/WcfSegipConsulta" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/CadSegipConsulta" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/CadZeus" />
+      <xsd:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/WcfZeus" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ArgosService_consultaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultaEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultaListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:consultaGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_consultaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:consultaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:distritoInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:distritoInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:distritoEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:distritoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:distritoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:distritoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:distritoListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:distritoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:distritoGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_distritoGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:distritoGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaGetPorNroDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaGetPorNroDocumento" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaGetPorNroDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaGetPorNroDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaListarPorDistrito_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaListarPorDistrito" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_personaListarPorDistrito_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaListarPorDistritoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaGetPorCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaGetPorCodigo" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaGetPorCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaGetPorCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaListarPorDistrito_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaListarPorDistrito" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaListarPorDistrito_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaListarPorDistritoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaActivar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_tarjetaActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tarjetaActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioGetPorUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetPorUser" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioGetPorUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetPorUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioValidar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioValidar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioActivar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioCambiarClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioCambiarClave" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioCambiarClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioCambiarClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioBuscar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioGetContraseña_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetContraseña" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_usuarioGetContraseña_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetContraseñaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_getFecha_InputMessage">
+    <wsdl:part name="parameters" element="tns:getFecha" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_getFecha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaSalida_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaSalida" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaSalida_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaSalidaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaSalidas_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaSalidas" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaSalidas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaSalidasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaReporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:visitaReporte" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_visitaReporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:visitaReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsultaPdf_InputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaPdf" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsultaPdf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaPdfResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsulta_InputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsulta" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsulta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsultaUsuarioInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaUsuarioInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsultaUsuarioInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaUsuarioInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsultaHistorico_InputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaHistorico" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipConsultaHistorico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:segipConsultaHistoricoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipActualizarDatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:segipActualizarDatos" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_segipActualizarDatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:segipActualizarDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_zeusListarPandora_InputMessage">
+    <wsdl:part name="parameters" element="tns:zeusListarPandora" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_zeusListarPandora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:zeusListarPandoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_zeusGetPorCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:zeusGetPorCodigo" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_zeusGetPorCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:zeusGetPorCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_bitacoraVehiculoGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bitacoraVehiculoGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoGetQr_InputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoGetQr" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_vehiculoGetQr_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vehiculoGetQrResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaEditar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaListar" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaListarPA_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaListarPA" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaListarPA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaListarPAResponse" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaGet" />
+  </wsdl:message>
+  <wsdl:message name="ArgosService_cargoPersonaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoPersonaGetResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ArgosService">
+    <wsdl:operation name="consultaInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/consultaInsertar" message="tns:ArgosService_consultaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/consultaInsertarResponse" message="tns:ArgosService_consultaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/consultaEditar" message="tns:ArgosService_consultaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/consultaEditarResponse" message="tns:ArgosService_consultaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/consultaEliminar" message="tns:ArgosService_consultaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/consultaEliminarResponse" message="tns:ArgosService_consultaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/consultaListar" message="tns:ArgosService_consultaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/consultaListarResponse" message="tns:ArgosService_consultaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/consultaGet" message="tns:ArgosService_consultaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/consultaGetResponse" message="tns:ArgosService_consultaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="distritoInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/distritoInsertar" message="tns:ArgosService_distritoInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/distritoInsertarResponse" message="tns:ArgosService_distritoInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="distritoEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/distritoEditar" message="tns:ArgosService_distritoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/distritoEditarResponse" message="tns:ArgosService_distritoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="distritoEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/distritoEliminar" message="tns:ArgosService_distritoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/distritoEliminarResponse" message="tns:ArgosService_distritoEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="distritoListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/distritoListar" message="tns:ArgosService_distritoListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/distritoListarResponse" message="tns:ArgosService_distritoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="distritoGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/distritoGet" message="tns:ArgosService_distritoGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/distritoGetResponse" message="tns:ArgosService_distritoGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaInsertar" message="tns:ArgosService_personaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaInsertarResponse" message="tns:ArgosService_personaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaEditar" message="tns:ArgosService_personaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaEditarResponse" message="tns:ArgosService_personaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaEliminar" message="tns:ArgosService_personaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaEliminarResponse" message="tns:ArgosService_personaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaListar" message="tns:ArgosService_personaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaListarResponse" message="tns:ArgosService_personaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaGet" message="tns:ArgosService_personaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaGetResponse" message="tns:ArgosService_personaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaGetPorNroDocumento">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaGetPorNroDocumento" message="tns:ArgosService_personaGetPorNroDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaGetPorNroDocumentoResponse" message="tns:ArgosService_personaGetPorNroDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaListarPorDistrito">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/personaListarPorDistrito" message="tns:ArgosService_personaListarPorDistrito_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/personaListarPorDistritoResponse" message="tns:ArgosService_personaListarPorDistrito_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaInsertar" message="tns:ArgosService_tarjetaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaInsertarResponse" message="tns:ArgosService_tarjetaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaEditar" message="tns:ArgosService_tarjetaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaEditarResponse" message="tns:ArgosService_tarjetaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaEliminar" message="tns:ArgosService_tarjetaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaEliminarResponse" message="tns:ArgosService_tarjetaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaListar" message="tns:ArgosService_tarjetaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaListarResponse" message="tns:ArgosService_tarjetaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaGet" message="tns:ArgosService_tarjetaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaGetResponse" message="tns:ArgosService_tarjetaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaGetPorCodigo">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaGetPorCodigo" message="tns:ArgosService_tarjetaGetPorCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaGetPorCodigoResponse" message="tns:ArgosService_tarjetaGetPorCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaListarPorDistrito">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaListarPorDistrito" message="tns:ArgosService_tarjetaListarPorDistrito_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaListarPorDistritoResponse" message="tns:ArgosService_tarjetaListarPorDistrito_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tarjetaActivar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/tarjetaActivar" message="tns:ArgosService_tarjetaActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/tarjetaActivarResponse" message="tns:ArgosService_tarjetaActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioInsertar" message="tns:ArgosService_usuarioInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioInsertarResponse" message="tns:ArgosService_usuarioInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioEditar" message="tns:ArgosService_usuarioEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioEditarResponse" message="tns:ArgosService_usuarioEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioEliminar" message="tns:ArgosService_usuarioEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioEliminarResponse" message="tns:ArgosService_usuarioEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioListar" message="tns:ArgosService_usuarioListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioListarResponse" message="tns:ArgosService_usuarioListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioGet" message="tns:ArgosService_usuarioGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioGetResponse" message="tns:ArgosService_usuarioGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGetPorUser">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioGetPorUser" message="tns:ArgosService_usuarioGetPorUser_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioGetPorUserResponse" message="tns:ArgosService_usuarioGetPorUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioValidar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioValidar" message="tns:ArgosService_usuarioValidar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioValidarResponse" message="tns:ArgosService_usuarioValidar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioValidarNuevo">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioValidarNuevo" message="tns:ArgosService_usuarioValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioValidarNuevoResponse" message="tns:ArgosService_usuarioValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioActivar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioActivar" message="tns:ArgosService_usuarioActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioActivarResponse" message="tns:ArgosService_usuarioActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioCambiarClave">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioCambiarClave" message="tns:ArgosService_usuarioCambiarClave_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioCambiarClaveResponse" message="tns:ArgosService_usuarioCambiarClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioBuscar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioBuscar" message="tns:ArgosService_usuarioBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioBuscarResponse" message="tns:ArgosService_usuarioBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGetContraseña">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/usuarioGetContraseña" message="tns:ArgosService_usuarioGetContraseña_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/usuarioGetContraseñaResponse" message="tns:ArgosService_usuarioGetContraseña_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getFecha">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/getFecha" message="tns:ArgosService_getFecha_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/getFechaResponse" message="tns:ArgosService_getFecha_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaInsertar" message="tns:ArgosService_visitaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaInsertarResponse" message="tns:ArgosService_visitaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaEditar" message="tns:ArgosService_visitaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaEditarResponse" message="tns:ArgosService_visitaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaEliminar" message="tns:ArgosService_visitaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaEliminarResponse" message="tns:ArgosService_visitaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaListar" message="tns:ArgosService_visitaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaListarResponse" message="tns:ArgosService_visitaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaGet" message="tns:ArgosService_visitaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaGetResponse" message="tns:ArgosService_visitaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaSalida">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaSalida" message="tns:ArgosService_visitaSalida_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaSalidaResponse" message="tns:ArgosService_visitaSalida_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaSalidas">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaSalidas" message="tns:ArgosService_visitaSalidas_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaSalidasResponse" message="tns:ArgosService_visitaSalidas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="visitaReporte">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/visitaReporte" message="tns:ArgosService_visitaReporte_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/visitaReporteResponse" message="tns:ArgosService_visitaReporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="segipConsultaPdf">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/segipConsultaPdf" message="tns:ArgosService_segipConsultaPdf_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/segipConsultaPdfResponse" message="tns:ArgosService_segipConsultaPdf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="segipConsulta">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/segipConsulta" message="tns:ArgosService_segipConsulta_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/segipConsultaResponse" message="tns:ArgosService_segipConsulta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="segipConsultaUsuarioInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/segipConsultaUsuarioInsertar" message="tns:ArgosService_segipConsultaUsuarioInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/segipConsultaUsuarioInsertarResponse" message="tns:ArgosService_segipConsultaUsuarioInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="segipConsultaHistorico">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/segipConsultaHistorico" message="tns:ArgosService_segipConsultaHistorico_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/segipConsultaHistoricoResponse" message="tns:ArgosService_segipConsultaHistorico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="segipActualizarDatos">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/segipActualizarDatos" message="tns:ArgosService_segipActualizarDatos_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/segipActualizarDatosResponse" message="tns:ArgosService_segipActualizarDatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="zeusListarPandora">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/zeusListarPandora" message="tns:ArgosService_zeusListarPandora_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/zeusListarPandoraResponse" message="tns:ArgosService_zeusListarPandora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="zeusGetPorCodigo">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/zeusGetPorCodigo" message="tns:ArgosService_zeusGetPorCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/zeusGetPorCodigoResponse" message="tns:ArgosService_zeusGetPorCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bitacoraVehiculoInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoInsertar" message="tns:ArgosService_bitacoraVehiculoInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoInsertarResponse" message="tns:ArgosService_bitacoraVehiculoInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bitacoraVehiculoEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoEditar" message="tns:ArgosService_bitacoraVehiculoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoEditarResponse" message="tns:ArgosService_bitacoraVehiculoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bitacoraVehiculoEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoEliminar" message="tns:ArgosService_bitacoraVehiculoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoEliminarResponse" message="tns:ArgosService_bitacoraVehiculoEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bitacoraVehiculoListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoListar" message="tns:ArgosService_bitacoraVehiculoListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoListarResponse" message="tns:ArgosService_bitacoraVehiculoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bitacoraVehiculoGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoGet" message="tns:ArgosService_bitacoraVehiculoGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/bitacoraVehiculoGetResponse" message="tns:ArgosService_bitacoraVehiculoGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vehiculoInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/vehiculoInsertar" message="tns:ArgosService_vehiculoInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/vehiculoInsertarResponse" message="tns:ArgosService_vehiculoInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vehiculoEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/vehiculoEditar" message="tns:ArgosService_vehiculoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/vehiculoEditarResponse" message="tns:ArgosService_vehiculoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vehiculoEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/vehiculoEliminar" message="tns:ArgosService_vehiculoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/vehiculoEliminarResponse" message="tns:ArgosService_vehiculoEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vehiculoListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/vehiculoListar" message="tns:ArgosService_vehiculoListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/vehiculoListarResponse" message="tns:ArgosService_vehiculoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vehiculoGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/vehiculoGet" message="tns:ArgosService_vehiculoGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/vehiculoGetResponse" message="tns:ArgosService_vehiculoGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vehiculoGetQr">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/vehiculoGetQr" message="tns:ArgosService_vehiculoGetQr_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/vehiculoGetQrResponse" message="tns:ArgosService_vehiculoGetQr_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoPersonaInsertar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/cargoPersonaInsertar" message="tns:ArgosService_cargoPersonaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/cargoPersonaInsertarResponse" message="tns:ArgosService_cargoPersonaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoPersonaEditar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/cargoPersonaEditar" message="tns:ArgosService_cargoPersonaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/cargoPersonaEditarResponse" message="tns:ArgosService_cargoPersonaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoPersonaEliminar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/cargoPersonaEliminar" message="tns:ArgosService_cargoPersonaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/cargoPersonaEliminarResponse" message="tns:ArgosService_cargoPersonaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoPersonaListar">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/cargoPersonaListar" message="tns:ArgosService_cargoPersonaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/cargoPersonaListarResponse" message="tns:ArgosService_cargoPersonaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoPersonaListarPA">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/cargoPersonaListarPA" message="tns:ArgosService_cargoPersonaListarPA_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/cargoPersonaListarPAResponse" message="tns:ArgosService_cargoPersonaListarPA_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoPersonaGet">
+      <wsdl:input wsaw:Action="WcfArgos/ArgosService/cargoPersonaGet" message="tns:ArgosService_cargoPersonaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfArgos/ArgosService/cargoPersonaGetResponse" message="tns:ArgosService_cargoPersonaGet_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

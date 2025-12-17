@@ -1,0 +1,1935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MidasDModelStoreContainer" CdmEntityContainer="MidasDEntities">
+    <EntitySetMapping Name="AltasBajas">
+      <EntityTypeMapping TypeName="MidasDModel.AltasBajas">
+        <MappingFragment StoreEntitySet="AltasBajas">
+          <ScalarProperty Name="idAltasBajas" ColumnName="idAltasBajas" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cargo">
+      <EntityTypeMapping TypeName="MidasDModel.Cargo">
+        <MappingFragment StoreEntitySet="Cargo">
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="denominacion_Puesto" ColumnName="denominacion_Puesto" />
+          <ScalarProperty Name="descripcion_Puesto" ColumnName="descripcion_Puesto" />
+          <ScalarProperty Name="tipo_Personal" ColumnName="tipo_Personal" />
+          <ScalarProperty Name="idEscalaSalarial" ColumnName="idEscalaSalarial" />
+          <ScalarProperty Name="sigla" ColumnName="sigla" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CargoOficina">
+      <EntityTypeMapping TypeName="MidasDModel.CargoOficina">
+        <MappingFragment StoreEntitySet="CargoOficina">
+          <ScalarProperty Name="idCargoOficina" ColumnName="idCargoOficina" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Descuento">
+      <EntityTypeMapping TypeName="MidasDModel.Descuento">
+        <MappingFragment StoreEntitySet="Descuento">
+          <ScalarProperty Name="idDescuento" ColumnName="idDescuento" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="t727_Fianza_Real" ColumnName="t727_Fianza_Real" />
+          <ScalarProperty Name="c21" ColumnName="c21" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="validado" ColumnName="validado" />
+          <ScalarProperty Name="validado_Por" ColumnName="validado_Por" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Devolucion">
+      <EntityTypeMapping TypeName="MidasDModel.Devolucion">
+        <MappingFragment StoreEntitySet="Devolucion">
+          <ScalarProperty Name="idDevolucion" ColumnName="idDevolucion" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="c31" ColumnName="c31" />
+          <ScalarProperty Name="nro_Cheque" ColumnName="nro_Cheque" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="monto_Devolucion" ColumnName="monto_Devolucion" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DireccionAdministrativa">
+      <EntityTypeMapping TypeName="MidasDModel.DireccionAdministrativa">
+        <MappingFragment StoreEntitySet="DireccionAdministrativa">
+          <ScalarProperty Name="idDireccionAdministrativa" ColumnName="idDireccionAdministrativa" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Encargados">
+      <EntityTypeMapping TypeName="MidasDModel.Encargados">
+        <MappingFragment StoreEntitySet="Encargados">
+          <ScalarProperty Name="idEncargado" ColumnName="idEncargado" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EscalaSalarial">
+      <EntityTypeMapping TypeName="MidasDModel.EscalaSalarial">
+        <MappingFragment StoreEntitySet="EscalaSalarial">
+          <ScalarProperty Name="idEscalaSalarial" ColumnName="idEscalaSalarial" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="clase" ColumnName="clase" />
+          <ScalarProperty Name="nivel_Salarial" ColumnName="nivel_Salarial" />
+          <ScalarProperty Name="denominacion_Puesto" ColumnName="denominacion_Puesto" />
+          <ScalarProperty Name="numero_Items" ColumnName="numero_Items" />
+          <ScalarProperty Name="idSueldoMensual" ColumnName="idSueldoMensual" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fianza">
+      <EntityTypeMapping TypeName="MidasDModel.Fianza">
+        <MappingFragment StoreEntitySet="Fianza">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="Nro_Fianza_Fianza_Real" ColumnName="Nro_Fianza_Fianza_Real" />
+          <ScalarProperty Name="idTipoFianza" ColumnName="idTipoFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="registro_Sigma" ColumnName="registro_Sigma" />
+          <ScalarProperty Name="fecha_Limite_Fianza" ColumnName="fecha_Limite_Fianza" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="comprobante_CPBTE" ColumnName="comprobante_CPBTE" />
+          <ScalarProperty Name="descripcion_Tipo_Fianza_Real" ColumnName="descripcion_Tipo_Fianza_Real" />
+          <ScalarProperty Name="ubicacion_Fianza_Real" ColumnName="ubicacion_Fianza_Real" />
+          <ScalarProperty Name="folio_Fianza_Real" ColumnName="folio_Fianza_Real" />
+          <ScalarProperty Name="concepto_Fianza_Real" ColumnName="concepto_Fianza_Real" />
+          <ScalarProperty Name="a_Favor_Fianza_Real" ColumnName="a_Favor_Fianza_Real" />
+          <ScalarProperty Name="ultimo_Registro_Fianza_Real" ColumnName="ultimo_Registro_Fianza_Real" />
+          <ScalarProperty Name="tipo_Fianza_Real" ColumnName="tipo_Fianza_Real" />
+          <ScalarProperty Name="a_Favor_2_Fianza_Real" ColumnName="a_Favor_2_Fianza_Real" />
+          <ScalarProperty Name="estado_Bien_Inmueble_Fianza_Real" ColumnName="estado_Bien_Inmueble_Fianza_Real" />
+          <ScalarProperty Name="fianza_Completa_Habilitado" ColumnName="fianza_Completa_Habilitado" />
+          <ScalarProperty Name="usuario_Completa_Habilitado" ColumnName="usuario_Completa_Habilitado" />
+          <ScalarProperty Name="fecha_Completa_Habilitado" ColumnName="fecha_Completa_Habilitado" />
+          <ScalarProperty Name="fianza_Validada_Contabilidad" ColumnName="fianza_Validada_Contabilidad" />
+          <ScalarProperty Name="usuario_Validada_Contabilidad" ColumnName="usuario_Validada_Contabilidad" />
+          <ScalarProperty Name="fecha_Validada_Contabilidad" ColumnName="fecha_Validada_Contabilidad" />
+          <ScalarProperty Name="fianza_Devuelta_Contabilidad" ColumnName="fianza_Devuelta_Contabilidad" />
+          <ScalarProperty Name="usuario_Devuelta_Contabilidad" ColumnName="usuario_Devuelta_Contabilidad" />
+          <ScalarProperty Name="fecha_Devuelta_Contabilidad" ColumnName="fecha_Devuelta_Contabilidad" />
+          <ScalarProperty Name="fianza_Impresa_RRHH" ColumnName="fianza_Impresa_RRHH" />
+          <ScalarProperty Name="usuario_Impresa_RRHH" ColumnName="usuario_Impresa_RRHH" />
+          <ScalarProperty Name="fecha_Impresa_RRHH" ColumnName="fecha_Impresa_RRHH" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="fecha_RRHH" ColumnName="fecha_RRHH" />
+          <ScalarProperty Name="usuario_Resolucion" ColumnName="usuario_Resolucion" />
+          <ScalarProperty Name="fecha_Resolucion" ColumnName="fecha_Resolucion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Funcionario">
+      <EntityTypeMapping TypeName="MidasDModel.Funcionario">
+        <MappingFragment StoreEntitySet="Funcionario">
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="tipo_Contrato_Item" ColumnName="tipo_Contrato_Item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="codigo_Distrito" ColumnName="codigo_Distrito" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Imagen">
+      <EntityTypeMapping TypeName="MidasDModel.Imagen">
+        <MappingFragment StoreEntitySet="Imagen">
+          <ScalarProperty Name="idImagen" ColumnName="idImagen" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="imagen1" ColumnName="imagen" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Menu">
+      <EntityTypeMapping TypeName="MidasDModel.Menu">
+        <MappingFragment StoreEntitySet="Menu">
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="menu1" ColumnName="menu" />
+          <ScalarProperty Name="nombre_Elemento" ColumnName="nombre_Elemento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oficina">
+      <EntityTypeMapping TypeName="MidasDModel.Oficina">
+        <MappingFragment StoreEntitySet="Oficina">
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="oficina1" ColumnName="oficina" />
+          <ScalarProperty Name="codigo_Distrito" ColumnName="codigo_Distrito" />
+          <ScalarProperty Name="codigo_Zeus" ColumnName="codigo_Zeus" />
+          <ScalarProperty Name="idZeus" ColumnName="idZeus" />
+          <ScalarProperty Name="idUnidadEjecutora" ColumnName="idUnidadEjecutora" />
+          <ScalarProperty Name="cuantia" ColumnName="cuantia" />
+          <ScalarProperty Name="porcentaje_Descuento" ColumnName="porcentaje_Descuento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Persona">
+      <EntityTypeMapping TypeName="MidasDModel.Persona">
+        <MappingFragment StoreEntitySet="Persona">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="pais_Nacimiento" ColumnName="pais_Nacimiento" />
+          <ScalarProperty Name="departamento_Nacimiento" ColumnName="departamento_Nacimiento" />
+          <ScalarProperty Name="localidad_Nacimiento" ColumnName="localidad_Nacimiento" />
+          <ScalarProperty Name="provincia_Nacimiento" ColumnName="provincia_Nacimiento" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+          <ScalarProperty Name="profesion" ColumnName="profesion" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="estado_Civil" ColumnName="estado_Civil" />
+          <ScalarProperty Name="fecha_Nacimiento" ColumnName="fecha_Nacimiento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reclasificacion">
+      <EntityTypeMapping TypeName="MidasDModel.Reclasificacion">
+        <MappingFragment StoreEntitySet="Reclasificacion">
+          <ScalarProperty Name="idReclasificacion" ColumnName="idReclasificacion" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="monto_727" ColumnName="monto_727" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rol">
+      <EntityTypeMapping TypeName="MidasDModel.Rol">
+        <MappingFragment StoreEntitySet="Rol">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="rol1" ColumnName="rol" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolMenu">
+      <EntityTypeMapping TypeName="MidasDModel.RolMenu">
+        <MappingFragment StoreEntitySet="RolMenu">
+          <ScalarProperty Name="idRolMenu" ColumnName="idRolMenu" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RolUsuario">
+      <EntityTypeMapping TypeName="MidasDModel.RolUsuario">
+        <MappingFragment StoreEntitySet="RolUsuario">
+          <ScalarProperty Name="idRolUsuario" ColumnName="idRolUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Solicitudes">
+      <EntityTypeMapping TypeName="MidasDModel.Solicitudes">
+        <MappingFragment StoreEntitySet="Solicitudes">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="tipo_Solicitud_Fianza" ColumnName="tipo_Solicitud_Fianza" />
+          <ScalarProperty Name="numero_memorando" ColumnName="numero_memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="fecha_limite_presentacion" ColumnName="fecha_limite_presentacion" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="fecha_Registro_RRHH" ColumnName="fecha_Registro_RRHH" />
+          <ScalarProperty Name="usuario_Asesor_Acepta" ColumnName="usuario_Asesor_Acepta" />
+          <ScalarProperty Name="solicitud_Aceptada" ColumnName="solicitud_Aceptada" />
+          <ScalarProperty Name="fecha_Aceptacion" ColumnName="fecha_Aceptacion" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="idEscalaSalarial" ColumnName="idEscalaSalarial" />
+          <ScalarProperty Name="idSueldoMensual" ColumnName="idSueldoMensual" />
+          <ScalarProperty Name="tipo_Contrato_Item" ColumnName="tipo_Contrato_Item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="idFianza_Transferir" ColumnName="idFianza_Transferir" />
+          <ScalarProperty Name="monto_Fianza_Transferir" ColumnName="monto_Fianza_Transferir" />
+          <ScalarProperty Name="idFianza_Nueva" ColumnName="idFianza_Nueva" />
+          <ScalarProperty Name="idTipoFianza" ColumnName="idTipoFianza" />
+          <ScalarProperty Name="idDevolucion_Registro" ColumnName="idDevolucion_Registro" />
+          <ScalarProperty Name="idTransferencia_Nueva" ColumnName="idTransferencia_Nueva" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SueldoMensual">
+      <EntityTypeMapping TypeName="MidasDModel.SueldoMensual">
+        <MappingFragment StoreEntitySet="SueldoMensual">
+          <ScalarProperty Name="idSueldoMensual" ColumnName="idSueldoMensual" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="incremento" ColumnName="incremento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="MidasDModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoDocumento">
+      <EntityTypeMapping TypeName="MidasDModel.TipoDocumento">
+        <MappingFragment StoreEntitySet="TipoDocumento">
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoFianza">
+      <EntityTypeMapping TypeName="MidasDModel.TipoFianza">
+        <MappingFragment StoreEntitySet="TipoFianza">
+          <ScalarProperty Name="idTipoFianza" ColumnName="idTipoFianza" />
+          <ScalarProperty Name="descripcion_Fianza" ColumnName="descripcion_Fianza" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transferencia">
+      <EntityTypeMapping TypeName="MidasDModel.Transferencia">
+        <MappingFragment StoreEntitySet="Transferencia">
+          <ScalarProperty Name="idTransferencia" ColumnName="idTransferencia" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="idCargoAnterior" ColumnName="idCargoAnterior" />
+          <ScalarProperty Name="numero_Memorando_Anterior" ColumnName="numero_Memorando_Anterior" />
+          <ScalarProperty Name="fecha_Memorando_Anterior" ColumnName="fecha_Memorando_Anterior" />
+          <ScalarProperty Name="tipo_Contrato_item_Anterior" ColumnName="tipo_Contrato_item_Anterior" />
+          <ScalarProperty Name="vigencia_Contrato_Anterior" ColumnName="vigencia_Contrato_Anterior" />
+          <ScalarProperty Name="idTipoFianzaAnterior" ColumnName="idTipoFianzaAnterior" />
+          <ScalarProperty Name="idOficinaAnterior" ColumnName="idOficinaAnterior" />
+          <ScalarProperty Name="idSueldoSueldoMensual" ColumnName="idSueldoSueldoMensual" />
+          <ScalarProperty Name="fecha_LimiteFianza_Anterior" ColumnName="fecha_LimiteFianza_Anterior" />
+          <ScalarProperty Name="resolucion_Administrativa_Anterior" ColumnName="resolucion_Administrativa_Anterior" />
+          <ScalarProperty Name="usuario_RRHH_Anterior" ColumnName="usuario_RRHH_Anterior" />
+          <ScalarProperty Name="fecha_RRHH_Anterior" ColumnName="fecha_RRHH_Anterior" />
+          <ScalarProperty Name="usuario_Resolucion_Anterior" ColumnName="usuario_Resolucion_Anterior" />
+          <ScalarProperty Name="fecha_Resolucion_Anterior" ColumnName="fecha_Resolucion_Anterior" />
+          <ScalarProperty Name="usuario_Impresa_Anterior" ColumnName="usuario_Impresa_Anterior" />
+          <ScalarProperty Name="fecha_Impresa_Anterior" ColumnName="fecha_Impresa_Anterior" />
+          <ScalarProperty Name="observacion_Anterior" ColumnName="observacion_Anterior" />
+          <ScalarProperty Name="monto_Fianza_Transferir" ColumnName="monto_Fianza_Transferir" />
+          <ScalarProperty Name="resolucion_Administrativa_Transferencia" ColumnName="resolucion_Administrativa_Transferencia" />
+          <ScalarProperty Name="usuario_Contabilidad_Transferencia" ColumnName="usuario_Contabilidad_Transferencia" />
+          <ScalarProperty Name="fecha_Contabilidad_Transferencia" ColumnName="fecha_Contabilidad_Transferencia" />
+          <ScalarProperty Name="mes_Transferencia" ColumnName="mes_Transferencia" />
+          <ScalarProperty Name="anio_Tranferencia" ColumnName="anio_Tranferencia" />
+          <ScalarProperty Name="observacion_Transferencia" ColumnName="observacion_Transferencia" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnidadEjecutora">
+      <EntityTypeMapping TypeName="MidasDModel.UnidadEjecutora">
+        <MappingFragment StoreEntitySet="UnidadEjecutora">
+          <ScalarProperty Name="idUnidadEjecutora" ColumnName="idUnidadEjecutora" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="idDireccionAdministrativa" ColumnName="idDireccionAdministrativa" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="MidasDModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre_Usuario" ColumnName="nombre_Usuario" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+          <ScalarProperty Name="idCodigoZeus" ColumnName="idCodigoZeus" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viMenu">
+      <EntityTypeMapping TypeName="MidasDModel.viMenu">
+        <MappingFragment StoreEntitySet="viMenu">
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="menu" ColumnName="menu" />
+          <ScalarProperty Name="nombre_Elemento" ColumnName="nombre_Elemento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viPersonaListar">
+      <EntityTypeMapping TypeName="MidasDModel.viPersonaListar">
+        <MappingFragment StoreEntitySet="viPersonaListar">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="estado_Civil" ColumnName="estado_Civil" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="numero_documento" ColumnName="numero_documento" />
+          <ScalarProperty Name="fecha_Nacimiento" ColumnName="fecha_Nacimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viRol">
+      <EntityTypeMapping TypeName="MidasDModel.viRol">
+        <MappingFragment StoreEntitySet="viRol">
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viRolMenu">
+      <EntityTypeMapping TypeName="MidasDModel.viRolMenu">
+        <MappingFragment StoreEntitySet="viRolMenu">
+          <ScalarProperty Name="idRolMenu" ColumnName="idRolMenu" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viRolUsuario">
+      <EntityTypeMapping TypeName="MidasDModel.viRolUsuario">
+        <MappingFragment StoreEntitySet="viRolUsuario">
+          <ScalarProperty Name="idRolUsuario" ColumnName="idRolUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viRolUsuarioListar">
+      <EntityTypeMapping TypeName="MidasDModel.viRolUsuarioListar">
+        <MappingFragment StoreEntitySet="viRolUsuarioListar">
+          <ScalarProperty Name="idRolUsuario" ColumnName="idRolUsuario" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="idRol" ColumnName="idRol" />
+          <ScalarProperty Name="rol" ColumnName="rol" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viUsuario">
+      <EntityTypeMapping TypeName="MidasDModel.viUsuario">
+        <MappingFragment StoreEntitySet="viUsuario">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre_Usuario" ColumnName="nombre_Usuario" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viUsuarioListarDatos">
+      <EntityTypeMapping TypeName="MidasDModel.viUsuarioListarDatos">
+        <MappingFragment StoreEntitySet="viUsuarioListarDatos">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre_Usuario" ColumnName="nombre_Usuario" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="idTipoDocumento" ColumnName="idTipoDocumento" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+          <ScalarProperty Name="estado_Civil" ColumnName="estado_Civil" />
+          <ScalarProperty Name="fecha_Nacimiento" ColumnName="fecha_Nacimiento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="viUsuarioMenu">
+      <EntityTypeMapping TypeName="MidasDModel.viUsuarioMenu">
+        <MappingFragment StoreEntitySet="viUsuarioMenu">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre_Usuario" ColumnName="nombre_Usuario" />
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="menu" ColumnName="menu" />
+          <ScalarProperty Name="nombre_Elemento" ColumnName="nombre_Elemento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="MidasDModel.Store.fnSplitString" FunctionImportName="fnSplitString">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.fnSplitString_Result">
+          <ScalarProperty Name="splitdata" ColumnName="splitdata" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Contador_Impresion" FunctionName="MidasDModel.Store.Contador_Impresion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.Contador_Impresion_Result">
+          <ScalarProperty Name="idUnidadEjecutora" ColumnName="idUnidadEjecutora" />
+          <ScalarProperty Name="unidad_Ejecutora" ColumnName="unidad_Ejecutora" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paAuditoriaRUD" FunctionName="MidasDModel.Store.paAuditoriaRUD" />
+    <FunctionImportMapping FunctionImportName="paContarDevolucionesPendientes" FunctionName="MidasDModel.Store.paContarDevolucionesPendientes" />
+    <FunctionImportMapping FunctionImportName="paDescuentoEditarEliminarFisico" FunctionName="MidasDModel.Store.paDescuentoEditarEliminarFisico" />
+    <FunctionImportMapping FunctionImportName="paDescuentoEditarEliminarFisicoEditar" FunctionName="MidasDModel.Store.paDescuentoEditarEliminarFisicoEditar" />
+    <FunctionImportMapping FunctionImportName="paEscalaSalarialGestion" FunctionName="MidasDModel.Store.paEscalaSalarialGestion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paEscalaSalarialGestion_Result">
+          <ScalarProperty Name="idEscalaSalarial" ColumnName="idEscalaSalarial" />
+          <ScalarProperty Name="idSueldoMensual" ColumnName="idSueldoMensual" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+          <ScalarProperty Name="clase" ColumnName="clase" />
+          <ScalarProperty Name="nivel_Salarial" ColumnName="nivel_Salarial" />
+          <ScalarProperty Name="denominacion_Puesto" ColumnName="denominacion_Puesto" />
+          <ScalarProperty Name="numero_Items" ColumnName="numero_Items" />
+          <ScalarProperty Name="sueldo_mensual" ColumnName="sueldo_mensual" />
+          <ScalarProperty Name="incremento" ColumnName="incremento" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFechaActual" FunctionName="MidasDModel.Store.paFechaActual" />
+    <FunctionImportMapping FunctionImportName="paFianzasListarMesAnioContaVali" FunctionName="MidasDModel.Store.paFianzasListarMesAnioContaVali">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFianzasListarMesAnioContaVali_Result">
+          <ScalarProperty Name="idUnidadEjecutora" ColumnName="idUnidadEjecutora" />
+          <ScalarProperty Name="Unidad_Ejecutora" ColumnName="Unidad_Ejecutora" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="Funcionarios" ColumnName="Funcionarios" />
+          <ScalarProperty Name="Registrado_Por" ColumnName="Registrado_Por" />
+          <ScalarProperty Name="Validado_Por" ColumnName="Validado_Por" />
+          <ScalarProperty Name="todos_Validados" ColumnName="todos_Validados" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFianzasListarMesAnioDescuentos" FunctionName="MidasDModel.Store.paFianzasListarMesAnioDescuentos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFianzasListarMesAnioDescuentos_Result">
+          <ScalarProperty Name="idUnidadEjecutora" ColumnName="idUnidadEjecutora" />
+          <ScalarProperty Name="Unidad_Ejecutora" ColumnName="Unidad_Ejecutora" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="Funcionarios" ColumnName="Funcionarios" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFianzasPorFuncionarioBuscar" FunctionName="MidasDModel.Store.paFianzasPorFuncionarioBuscar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFianzasPorFuncionarioBuscar_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="descripcion_Fianza" ColumnName="descripcion_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="Estado_Fianza" ColumnName="Estado_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFianzaVerificarEnCurso" FunctionName="MidasDModel.Store.paFianzaVerificarEnCurso">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFianzaVerificarEnCurso_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idDescuento" ColumnName="idDescuento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscar" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscar_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+          <ScalarProperty Name="a_Descontar" ColumnName="a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarBaja" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarBaja">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarBaja_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+          <ScalarProperty Name="a_Descontar" ColumnName="a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarCartilla" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarCartilla">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarCartilla_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarContaVali" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarContaVali">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarContaVali_Result">
+          <ScalarProperty Name="idDescuento" ColumnName="idDescuento" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="haber_Mensual" ColumnName="haber_Mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_Descontar" ColumnName="falta_Descontar" />
+          <ScalarProperty Name="a_Validar" ColumnName="a_Validar" />
+          <ScalarProperty Name="c_21" ColumnName="c_21" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarGeneral" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarGeneral">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarGeneral_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+          <ScalarProperty Name="a_Descontar" ColumnName="a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarGeneralAdministrador" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarGeneralAdministrador">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarGeneralAdministrador_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+          <ScalarProperty Name="a_Descontar" ColumnName="a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscaridFianza" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscaridFianza">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscaridFianza_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+          <ScalarProperty Name="a_Descontar" ColumnName="a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarMesAnioEditar" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarMesAnioEditar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarMesAnioEditar_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+          <ScalarProperty Name="a_Descontar" ColumnName="a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarTipoFianza" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarTipoFianza">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarTipoFianza_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cpbte" ColumnName="cpbte" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="registro_Sigma" ColumnName="registro_Sigma" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="tipo_Bien" ColumnName="tipo_Bien" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="concepto" ColumnName="concepto" />
+          <ScalarProperty Name="a_Favor" ColumnName="a_Favor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado" FunctionName="MidasDModel.Store.paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cpbte" ColumnName="cpbte" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="registro_Sigma" ColumnName="registro_Sigma" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="c21" ColumnName="c21" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="tipo_Bien" ColumnName="tipo_Bien" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="concepto" ColumnName="concepto" />
+          <ScalarProperty Name="a_Favor" ColumnName="a_Favor" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paFuncionarioVerificaridFianzaCompleta" FunctionName="MidasDModel.Store.paFuncionarioVerificaridFianzaCompleta">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paFuncionarioVerificaridFianzaCompleta_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="haber_mensual" ColumnName="haber_mensual" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paGetFecha" FunctionName="MidasDModel.Store.paGetFecha" />
+    <FunctionImportMapping FunctionImportName="paListaCargoOficina" FunctionName="MidasDModel.Store.paListaCargoOficina">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListaCargoOficina_Result">
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idCargoOficina" ColumnName="idCargoOficina" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListaCargoOficinaAdmin" FunctionName="MidasDModel.Store.paListaCargoOficinaAdmin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListaCargoOficinaAdmin_Result">
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="idCargoOficina" ColumnName="idCargoOficina" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListaOficinaUnidadEjecutora" FunctionName="MidasDModel.Store.paListaOficinaUnidadEjecutora">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListaOficinaUnidadEjecutora_Result">
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasReporteGlobal" FunctionName="MidasDModel.Store.paListarFianzasEconomicasReporteGlobal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasEconomicasReporteGlobal_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="t_727" ColumnName="t_727" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="c_21DP" ColumnName="c_21DP" />
+          <ScalarProperty Name="diciembreP" ColumnName="diciembreP" />
+          <ScalarProperty Name="c_21E" ColumnName="c_21E" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="c_21F" ColumnName="c_21F" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="c_21M" ColumnName="c_21M" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="c_21A" ColumnName="c_21A" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="c_21MA" ColumnName="c_21MA" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="c_21J" ColumnName="c_21J" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="c_21JU" ColumnName="c_21JU" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="c_21AG" ColumnName="c_21AG" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="c_21S" ColumnName="c_21S" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="c_21O" ColumnName="c_21O" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="c_21N" ColumnName="c_21N" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="mes_Actual_Descuentos" ColumnName="mes_Actual_Descuentos" />
+          <ScalarProperty Name="c_31" ColumnName="c_31" />
+          <ScalarProperty Name="nro_cheque" ColumnName="nro_cheque" />
+          <ScalarProperty Name="t_727D" ColumnName="t_727D" />
+          <ScalarProperty Name="beneficiarioD" ColumnName="beneficiarioD" />
+          <ScalarProperty Name="t727_Gestion" ColumnName="t727_Gestion" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasReporteGlobalDevolver" FunctionName="MidasDModel.Store.paListarFianzasEconomicasReporteGlobalDevolver" />
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasReporteGlobalUnidadEjecutora" FunctionName="MidasDModel.Store.paListarFianzasEconomicasReporteGlobalUnidadEjecutora">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasReporteGlobalUnidadEjecutoraDevolver" FunctionName="MidasDModel.Store.paListarFianzasEconomicasReporteGlobalUnidadEjecutoraDevolver" />
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasReporteT727" FunctionName="MidasDModel.Store.paListarFianzasEconomicasReporteT727">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasEconomicasReporteT727_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="t_727" ColumnName="t_727" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="c_21DP" ColumnName="c_21DP" />
+          <ScalarProperty Name="diciembreP" ColumnName="diciembreP" />
+          <ScalarProperty Name="c_21E" ColumnName="c_21E" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="c_21F" ColumnName="c_21F" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="c_21M" ColumnName="c_21M" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="c_21A" ColumnName="c_21A" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="c_21MA" ColumnName="c_21MA" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="c_21J" ColumnName="c_21J" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="c_21JU" ColumnName="c_21JU" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="c_21AG" ColumnName="c_21AG" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="c_21S" ColumnName="c_21S" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="c_21O" ColumnName="c_21O" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="c_21N" ColumnName="c_21N" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="mes_Actual_Descuentos" ColumnName="mes_Actual_Descuentos" />
+          <ScalarProperty Name="c_31" ColumnName="c_31" />
+          <ScalarProperty Name="nro_cheque" ColumnName="nro_cheque" />
+          <ScalarProperty Name="t_727D" ColumnName="t_727D" />
+          <ScalarProperty Name="beneficiarioD" ColumnName="beneficiarioD" />
+          <ScalarProperty Name="t727_Gestion" ColumnName="t727_Gestion" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasReporteT727Devolver" FunctionName="MidasDModel.Store.paListarFianzasEconomicasReporteT727Devolver" />
+    <FunctionImportMapping FunctionImportName="paListarFianzasEconomicasVisualizar" FunctionName="MidasDModel.Store.paListarFianzasEconomicasVisualizar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasEconomicasVisualizar_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="t_727" ColumnName="t_727" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="c_21D" ColumnName="c_21D" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="c_21E" ColumnName="c_21E" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="c_21F" ColumnName="c_21F" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="c_21M" ColumnName="c_21M" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="c_21A" ColumnName="c_21A" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="c_21MA" ColumnName="c_21MA" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="c_21J" ColumnName="c_21J" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="c_21JU" ColumnName="c_21JU" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="c_21AG" ColumnName="c_21AG" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="c_21S" ColumnName="c_21S" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="c_21O" ColumnName="c_21O" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="c_21N" ColumnName="c_21N" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="c_21D1" ColumnName="c_21D1" />
+          <ScalarProperty Name="diciembre1" ColumnName="diciembre1" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasPersona" FunctionName="MidasDModel.Store.paListarFianzasPersona">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasPersona_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="tipo_Contrato_Item" ColumnName="tipo_Contrato_Item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="fianza_Completa_Habilitado" ColumnName="fianza_Completa_Habilitado" />
+          <ScalarProperty Name="fianza_Validada_Contabilidad" ColumnName="fianza_Validada_Contabilidad" />
+          <ScalarProperty Name="fianza_Devuelta_Contabilidad" ColumnName="fianza_Devuelta_Contabilidad" />
+          <ScalarProperty Name="fianza_impresa" ColumnName="fianza_impresa" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="falta_descontar" ColumnName="falta_descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasRealesReporteGlobal" FunctionName="MidasDModel.Store.paListarFianzasRealesReporteGlobal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasRealesReporteGlobal_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="CPBTE" ColumnName="CPBTE" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="Ci" ColumnName="Ci" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="t_727" ColumnName="t_727" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="registro_mes_enero" ColumnName="registro_mes_enero" />
+          <ScalarProperty Name="registro_mes_febrero" ColumnName="registro_mes_febrero" />
+          <ScalarProperty Name="registro_mes_marzo" ColumnName="registro_mes_marzo" />
+          <ScalarProperty Name="registro_mes_abril" ColumnName="registro_mes_abril" />
+          <ScalarProperty Name="registro_mes_mayo" ColumnName="registro_mes_mayo" />
+          <ScalarProperty Name="registro_mes_junio" ColumnName="registro_mes_junio" />
+          <ScalarProperty Name="registro_mes_julio" ColumnName="registro_mes_julio" />
+          <ScalarProperty Name="registro_mes_agosto" ColumnName="registro_mes_agosto" />
+          <ScalarProperty Name="registro_mes_septiembre" ColumnName="registro_mes_septiembre" />
+          <ScalarProperty Name="registro_mes_octubre" ColumnName="registro_mes_octubre" />
+          <ScalarProperty Name="registro_mes_noviembre" ColumnName="registro_mes_noviembre" />
+          <ScalarProperty Name="registro_mes_diciembre" ColumnName="registro_mes_diciembre" />
+          <ScalarProperty Name="mes_Actual_Descuentos" ColumnName="mes_Actual_Descuentos" />
+          <ScalarProperty Name="c_31" ColumnName="c_31" />
+          <ScalarProperty Name="inf_Resol" ColumnName="inf_Resol" />
+          <ScalarProperty Name="t_727D" ColumnName="t_727D" />
+          <ScalarProperty Name="beneficiarioD" ColumnName="beneficiarioD" />
+          <ScalarProperty Name="Tipo_" ColumnName="Tipo_" />
+          <ScalarProperty Name="Ubicacion" ColumnName="Ubicacion" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="concepto" ColumnName="concepto" />
+          <ScalarProperty Name="a_favor" ColumnName="a_favor" />
+          <ScalarProperty Name="ultimo_Registro" ColumnName="ultimo_Registro" />
+          <ScalarProperty Name="a_favor_" ColumnName="a_favor_" />
+          <ScalarProperty Name="estado_Bien_Inmueble" ColumnName="estado_Bien_Inmueble" />
+          <ScalarProperty Name="estado_Actual" ColumnName="estado_Actual" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasRealesReporteGlobalDevolver" FunctionName="MidasDModel.Store.paListarFianzasRealesReporteGlobalDevolver" />
+    <FunctionImportMapping FunctionImportName="paListarFianzasReclasificacion" FunctionName="MidasDModel.Store.paListarFianzasReclasificacion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasReclasificacion_Result">
+          <ScalarProperty Name="idReclasificacion" ColumnName="idReclasificacion" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="monto_727" ColumnName="monto_727" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasReclasificacionPendientes" FunctionName="MidasDModel.Store.paListarFianzasReclasificacionPendientes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasReclasificacionPendientes_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasReclasificacionReporte" FunctionName="MidasDModel.Store.paListarFianzasReclasificacionReporte">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasReclasificacionReporte_Result">
+          <ScalarProperty Name="idReclasificacion" ColumnName="idReclasificacion" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="sigma" ColumnName="sigma" />
+          <ScalarProperty Name="monto_727" ColumnName="monto_727" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado" FunctionName="MidasDModel.Store.paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaConResolucion" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaConResolucion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaConResolucion_Result">
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="fecha_limite_Fianza" ColumnName="fecha_limite_Fianza" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="haber_Mensual" ColumnName="haber_Mensual" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="usuario_Asesor" ColumnName="usuario_Asesor" />
+          <ScalarProperty Name="fecha_Resolucion" ColumnName="fecha_Resolucion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaConResolucionBienesGravados" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaConResolucionBienesGravados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaConResolucionBienesGravados_Result">
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="Cpbte" ColumnName="Cpbte" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="tipo_t" ColumnName="tipo_t" />
+          <ScalarProperty Name="ubicacion" ColumnName="ubicacion" />
+          <ScalarProperty Name="folio" ColumnName="folio" />
+          <ScalarProperty Name="concepto" ColumnName="concepto" />
+          <ScalarProperty Name="a_favor" ColumnName="a_favor" />
+          <ScalarProperty Name="ultimo_registro" ColumnName="ultimo_registro" />
+          <ScalarProperty Name="a_favor_a" ColumnName="a_favor_a" />
+          <ScalarProperty Name="estado_Bien_Inmueble" ColumnName="estado_Bien_Inmueble" />
+          <ScalarProperty Name="estado_Actual" ColumnName="estado_Actual" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="fecha_Resolucion" ColumnName="fecha_Resolucion" />
+          <ScalarProperty Name="usuario_Asesor" ColumnName="usuario_Asesor" />
+          <ScalarProperty Name="fianza_Validada_Contabilidad" ColumnName="fianza_Validada_Contabilidad" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaDevolucion" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaDevolucion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaDevolucion_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="haber_Mensual" ColumnName="haber_Mensual" />
+          <ScalarProperty Name="monto_beneficiario" ColumnName="monto_beneficiario" />
+          <ScalarProperty Name="estado_Fianza" ColumnName="estado_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaDevolucionContabilidad" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaDevolucionContabilidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaDevolucionContabilidad_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="haber_Mensual" ColumnName="haber_Mensual" />
+          <ScalarProperty Name="monto_beneficiario" ColumnName="monto_beneficiario" />
+          <ScalarProperty Name="c31" ColumnName="c31" />
+          <ScalarProperty Name="nro_Cheque" ColumnName="nro_Cheque" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="estado_Fianza" ColumnName="estado_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaDevolucionContabilidadReporte" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaDevolucionContabilidadReporte">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaDevolucionContabilidadReporte_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="haber_Mensual" ColumnName="haber_Mensual" />
+          <ScalarProperty Name="monto_beneficiario" ColumnName="monto_beneficiario" />
+          <ScalarProperty Name="c31" ColumnName="c31" />
+          <ScalarProperty Name="nro_Cheque" ColumnName="nro_Cheque" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="estado_Fianza" ColumnName="estado_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaRRHH" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaRRHH">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaRRHH_Result">
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="fecha_limite_Fianza" ColumnName="fecha_limite_Fianza" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="resolucion_Administrativa" ColumnName="resolucion_Administrativa" />
+          <ScalarProperty Name="haber_Mensual" ColumnName="haber_Mensual" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="usuario_Asesor" ColumnName="usuario_Asesor" />
+          <ScalarProperty Name="fecha_Resolucion" ColumnName="fecha_Resolucion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaTranferencias" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaTranferencias">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaTranferencias_Result">
+          <ScalarProperty Name="idTransferencia" ColumnName="idTransferencia" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="Fianza_Anterior" ColumnName="Fianza_Anterior" />
+          <ScalarProperty Name="Fianza_Actual" ColumnName="Fianza_Actual" />
+          <ScalarProperty Name="resolucion_Administrativa_Transferencia" ColumnName="resolucion_Administrativa_Transferencia" />
+          <ScalarProperty Name="usuario_Contabilidad_Transferencia" ColumnName="usuario_Contabilidad_Transferencia" />
+          <ScalarProperty Name="fecha_Contabilidad_Transferencia" ColumnName="fecha_Contabilidad_Transferencia" />
+          <ScalarProperty Name="mes_Transferencia" ColumnName="mes_Transferencia" />
+          <ScalarProperty Name="anio_Tranferencia" ColumnName="anio_Tranferencia" />
+          <ScalarProperty Name="observacion_Transferencia" ColumnName="observacion_Transferencia" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarFuncionariosFianzaTranferenciasReporte" FunctionName="MidasDModel.Store.paListarFuncionariosFianzaTranferenciasReporte">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarFuncionariosFianzaTranferenciasReporte_Result">
+          <ScalarProperty Name="idTransferencia" ColumnName="idTransferencia" />
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="idFuncionario" ColumnName="idFuncionario" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="Fianza_Anterior" ColumnName="Fianza_Anterior" />
+          <ScalarProperty Name="Fianza_Actual" ColumnName="Fianza_Actual" />
+          <ScalarProperty Name="resolucion_Administrativa_Transferencia" ColumnName="resolucion_Administrativa_Transferencia" />
+          <ScalarProperty Name="usuario_Contabilidad_Transferencia" ColumnName="usuario_Contabilidad_Transferencia" />
+          <ScalarProperty Name="fecha_Contabilidad_Transferencia" ColumnName="fecha_Contabilidad_Transferencia" />
+          <ScalarProperty Name="mes_Transferencia" ColumnName="mes_Transferencia" />
+          <ScalarProperty Name="anio_Tranferencia" ColumnName="anio_Tranferencia" />
+          <ScalarProperty Name="observacion_Transferencia" ColumnName="observacion_Transferencia" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarSolicitudesFianza" FunctionName="MidasDModel.Store.paListarSolicitudesFianza">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarSolicitudesFianza_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="tipo_Solicitud_Fianza" ColumnName="tipo_Solicitud_Fianza" />
+          <ScalarProperty Name="fecha_limite_Presentacion" ColumnName="fecha_limite_Presentacion" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="haber_basico" ColumnName="haber_basico" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="fecha_Registro_RRHH" ColumnName="fecha_Registro_RRHH" />
+          <ScalarProperty Name="usuario_Asesor_Acepta" ColumnName="usuario_Asesor_Acepta" />
+          <ScalarProperty Name="fecha_Aceptacion" ColumnName="fecha_Aceptacion" />
+          <ScalarProperty Name="solicitud_Aceptada" ColumnName="solicitud_Aceptada" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarSolicitudesFianzaDiasRestantes" FunctionName="MidasDModel.Store.paListarSolicitudesFianzaDiasRestantes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarSolicitudesFianzaDiasRestantes_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="tipo_Solicitud_Fianza" ColumnName="tipo_Solicitud_Fianza" />
+          <ScalarProperty Name="fecha_limite_Presentacion" ColumnName="fecha_limite_Presentacion" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="haber_basico" ColumnName="haber_basico" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="fecha_Registro_RRHH" ColumnName="fecha_Registro_RRHH" />
+          <ScalarProperty Name="usuario_Asesor_Acepta" ColumnName="usuario_Asesor_Acepta" />
+          <ScalarProperty Name="fecha_Aceptacion" ColumnName="fecha_Aceptacion" />
+          <ScalarProperty Name="solicitud_Aceptada" ColumnName="solicitud_Aceptada" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paListarSolicitudesFianzaDiasRestantesReporte" FunctionName="MidasDModel.Store.paListarSolicitudesFianzaDiasRestantesReporte">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paListarSolicitudesFianzaDiasRestantesReporte_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="tipo_Solicitud_Fianza" ColumnName="tipo_Solicitud_Fianza" />
+          <ScalarProperty Name="fecha_limite_Presentacion" ColumnName="fecha_limite_Presentacion" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="haber_basico" ColumnName="haber_basico" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="tipo_contrato_item" ColumnName="tipo_contrato_item" />
+          <ScalarProperty Name="vigencia_Contrato" ColumnName="vigencia_Contrato" />
+          <ScalarProperty Name="usuario_RRHH" ColumnName="usuario_RRHH" />
+          <ScalarProperty Name="fecha_Registro_RRHH" ColumnName="fecha_Registro_RRHH" />
+          <ScalarProperty Name="usuario_Asesor_Acepta" ColumnName="usuario_Asesor_Acepta" />
+          <ScalarProperty Name="fecha_Aceptacion" ColumnName="fecha_Aceptacion" />
+          <ScalarProperty Name="solicitud_Aceptada" ColumnName="solicitud_Aceptada" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paMenuCargar" FunctionName="MidasDModel.Store.paMenuCargar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paMenuCargar_Result">
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="menu" ColumnName="menu" />
+          <ScalarProperty Name="nombre_Elemento" ColumnName="nombre_Elemento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paOficinaBuscar" FunctionName="MidasDModel.Store.paOficinaBuscar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paOficinaBuscar_Result">
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paOficinasListar" FunctionName="MidasDModel.Store.paOficinasListar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paOficinasListar_Result">
+          <ScalarProperty Name="idOficina" ColumnName="idOficina" />
+          <ScalarProperty Name="oficina" ColumnName="oficina" />
+          <ScalarProperty Name="unidad_Ejecutora" ColumnName="unidad_Ejecutora" />
+          <ScalarProperty Name="codigo_Distrito" ColumnName="codigo_Distrito" />
+          <ScalarProperty Name="codigo_Zeus" ColumnName="codigo_Zeus" />
+          <ScalarProperty Name="cuantia" ColumnName="cuantia" />
+          <ScalarProperty Name="porcentaje_Descuento" ColumnName="porcentaje_Descuento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paPersonaBuscar" FunctionName="MidasDModel.Store.paPersonaBuscar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paPersonaBuscar_Result">
+          <ScalarProperty Name="idPersona" ColumnName="idPersona" />
+          <ScalarProperty Name="Nombre_Completo" ColumnName="Nombre_Completo" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Estado_Civil" ColumnName="Estado_Civil" />
+          <ScalarProperty Name="tipo_documento" ColumnName="tipo_documento" />
+          <ScalarProperty Name="numero_documento" ColumnName="numero_documento" />
+          <ScalarProperty Name="fecha_Nacimiento" ColumnName="fecha_Nacimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteCartilla" FunctionName="MidasDModel.Store.paReporteCartilla">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteCartilla_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="mes_anio" ColumnName="mes_anio" />
+          <ScalarProperty Name="importe_descontado_s_g_ofrecimiento" ColumnName="importe_descontado_s_g_ofrecimiento" />
+          <ScalarProperty Name="total_descontado_en_planilla" ColumnName="total_descontado_en_planilla" />
+          <ScalarProperty Name="saldo_a_Descontar" ColumnName="saldo_a_Descontar" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteCartillaHabilitadoEditar" FunctionName="MidasDModel.Store.paReporteCartillaHabilitadoEditar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteCartillaHabilitadoEditar_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="monto_Beneficiario" ColumnName="monto_Beneficiario" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="c21" ColumnName="c21" />
+          <ScalarProperty Name="validado" ColumnName="validado" />
+          <ScalarProperty Name="validado_Por" ColumnName="validado_Por" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+          <ScalarProperty Name="fechaRegistro" ColumnName="fechaRegistro" />
+          <ScalarProperty Name="registroActivo" ColumnName="registroActivo" />
+          <ScalarProperty Name="total_descontado_en_planilla" ColumnName="total_descontado_en_planilla" />
+          <ScalarProperty Name="saldo_a_Descontar" ColumnName="saldo_a_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteCartillaT727" FunctionName="MidasDModel.Store.paReporteCartillaT727">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteCartillaT727_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="mes_anio" ColumnName="mes_anio" />
+          <ScalarProperty Name="t727" ColumnName="t727" />
+          <ScalarProperty Name="observacion" ColumnName="observacion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteFormularioA2" FunctionName="MidasDModel.Store.paReporteFormularioA2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteFormularioA2_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteFormularioA2Reconsulta" FunctionName="MidasDModel.Store.paReporteFormularioA2Reconsulta">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteFormularioA2Reconsulta_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteFuncionarioCertificadoidFianza" FunctionName="MidasDModel.Store.paReporteFuncionarioCertificadoidFianza">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteFuncionarioCertificadoidFianza_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="tipo_Documento" ColumnName="tipo_Documento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="departamento_Nacimiento" ColumnName="departamento_Nacimiento" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_DescuentoLetra" ColumnName="total_DescuentoLetra" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteSolDevolucion" FunctionName="MidasDModel.Store.paReporteSolDevolucion">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteSolDevolucion_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="nro_FianzaDevolucion" ColumnName="nro_FianzaDevolucion" />
+          <ScalarProperty Name="año_Impresa_RRHH" ColumnName="año_Impresa_RRHH" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="tipo_Documento" ColumnName="tipo_Documento" />
+          <ScalarProperty Name="lugar_Documento" ColumnName="lugar_Documento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="total_descontado_en_planilla" ColumnName="total_descontado_en_planilla" />
+          <ScalarProperty Name="total_descontado_en_planilla_literal" ColumnName="total_descontado_en_planilla_literal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteSolDevolucionNoRequiere" FunctionName="MidasDModel.Store.paReporteSolDevolucionNoRequiere">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteSolDevolucionNoRequiere_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="nro_FianzaDevolucion" ColumnName="nro_FianzaDevolucion" />
+          <ScalarProperty Name="año_Impresa_RRHH" ColumnName="año_Impresa_RRHH" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="tipo_Documento" ColumnName="tipo_Documento" />
+          <ScalarProperty Name="lugar_Documento" ColumnName="lugar_Documento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+          <ScalarProperty Name="total_descontado_en_planilla" ColumnName="total_descontado_en_planilla" />
+          <ScalarProperty Name="total_descontado_en_planilla_literal" ColumnName="total_descontado_en_planilla_literal" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteSolFianEconomica" FunctionName="MidasDModel.Store.paReporteSolFianEconomica">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteSolFianEconomica_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="tipo_Documento" ColumnName="tipo_Documento" />
+          <ScalarProperty Name="lugar_Documento" ColumnName="lugar_Documento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="sueldo_Mensual" ColumnName="sueldo_Mensual" />
+          <ScalarProperty Name="totalidad_Salario" ColumnName="totalidad_Salario" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteSolFianEconomicaNoRequiereFianza" FunctionName="MidasDModel.Store.paReporteSolFianEconomicaNoRequiereFianza">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteSolFianEconomicaNoRequiereFianza_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="tipo_Documento" ColumnName="tipo_Documento" />
+          <ScalarProperty Name="lugar_Documento" ColumnName="lugar_Documento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="sueldo_Mensual" ColumnName="sueldo_Mensual" />
+          <ScalarProperty Name="totalidad_Salario" ColumnName="totalidad_Salario" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paReporteSolFianEconomicaTotal" FunctionName="MidasDModel.Store.paReporteSolFianEconomicaTotal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paReporteSolFianEconomicaTotal_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="numero_Fianza_Solicitud" ColumnName="numero_Fianza_Solicitud" />
+          <ScalarProperty Name="nombres" ColumnName="nombres" />
+          <ScalarProperty Name="paterno" ColumnName="paterno" />
+          <ScalarProperty Name="materno" ColumnName="materno" />
+          <ScalarProperty Name="tipo_Documento" ColumnName="tipo_Documento" />
+          <ScalarProperty Name="lugar_Documento" ColumnName="lugar_Documento" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="numero_Memorando" ColumnName="numero_Memorando" />
+          <ScalarProperty Name="fecha_Memorando" ColumnName="fecha_Memorando" />
+          <ScalarProperty Name="Item" ColumnName="Item" />
+          <ScalarProperty Name="sueldo_Mensual" ColumnName="sueldo_Mensual" />
+          <ScalarProperty Name="totalidad_Salario" ColumnName="totalidad_Salario" />
+          <ScalarProperty Name="porcentaje" ColumnName="porcentaje" />
+          <ScalarProperty Name="total_Fianza" ColumnName="total_Fianza" />
+          <ScalarProperty Name="tipo_Fianza" ColumnName="tipo_Fianza" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paSueldosMensuales" FunctionName="MidasDModel.Store.paSueldosMensuales">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paSueldosMensuales_Result">
+          <ScalarProperty Name="idSueldoMensual" ColumnName="idSueldoMensual" />
+          <ScalarProperty Name="monto" ColumnName="monto" />
+          <ScalarProperty Name="gestion" ColumnName="gestion" />
+          <ScalarProperty Name="incremento" ColumnName="incremento" />
+          <ScalarProperty Name="usuarioRegistro" ColumnName="usuarioRegistro" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paUsuarioBuscar" FunctionName="MidasDModel.Store.paUsuarioBuscar">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paUsuarioBuscar_Result">
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+          <ScalarProperty Name="nombre_Completo" ColumnName="nombre_Completo" />
+          <ScalarProperty Name="numero_Documento" ColumnName="numero_Documento" />
+          <ScalarProperty Name="domicilio" ColumnName="domicilio" />
+          <ScalarProperty Name="nombre_Usuario" ColumnName="nombre_Usuario" />
+          <ScalarProperty Name="sexo" ColumnName="sexo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionEstadoFianzaContabilidad" FunctionName="MidasDModel.Store.paValidacionEstadoFianzaContabilidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionEstadoFianzaContabilidad_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="totalDescuento" ColumnName="totalDescuento" />
+          <ScalarProperty Name="totalDescontar" ColumnName="totalDescontar" />
+          <ScalarProperty Name="Validado_Por_Habilitacion" ColumnName="Validado_Por_Habilitacion" />
+          <ScalarProperty Name="fecha_Habilitacion" ColumnName="fecha_Habilitacion" />
+          <ScalarProperty Name="Usuario_Habilitacion" ColumnName="Usuario_Habilitacion" />
+          <ScalarProperty Name="Validado_Por_Contabilidad" ColumnName="Validado_Por_Contabilidad" />
+          <ScalarProperty Name="fecha_Contabilidad" ColumnName="fecha_Contabilidad" />
+          <ScalarProperty Name="Usuario_Contabilidad" ColumnName="Usuario_Contabilidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionEstadoFianzaHabilitado" FunctionName="MidasDModel.Store.paValidacionEstadoFianzaHabilitado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionEstadoFianzaHabilitado_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="totalDescuento" ColumnName="totalDescuento" />
+          <ScalarProperty Name="totalDescontar" ColumnName="totalDescontar" />
+          <ScalarProperty Name="Validado_Por_Habilitacion" ColumnName="Validado_Por_Habilitacion" />
+          <ScalarProperty Name="fecha_Habilitacion" ColumnName="fecha_Habilitacion" />
+          <ScalarProperty Name="Usuario_Habilitacion" ColumnName="Usuario_Habilitacion" />
+          <ScalarProperty Name="Validado_Por_Contabilidad" ColumnName="Validado_Por_Contabilidad" />
+          <ScalarProperty Name="fecha_Contabilidad" ColumnName="fecha_Contabilidad" />
+          <ScalarProperty Name="Usuario_Contabilidad" ColumnName="Usuario_Contabilidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionEstadoFianzaRRHH" FunctionName="MidasDModel.Store.paValidacionEstadoFianzaRRHH">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionEstadoFianzaRRHH_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="totalDescuento" ColumnName="totalDescuento" />
+          <ScalarProperty Name="totalDescontar" ColumnName="totalDescontar" />
+          <ScalarProperty Name="Validado_Por_Habilitacion" ColumnName="Validado_Por_Habilitacion" />
+          <ScalarProperty Name="fecha_Habilitacion" ColumnName="fecha_Habilitacion" />
+          <ScalarProperty Name="Usuario_Habilitacion" ColumnName="Usuario_Habilitacion" />
+          <ScalarProperty Name="Validado_Por_Contabilidad" ColumnName="Validado_Por_Contabilidad" />
+          <ScalarProperty Name="fecha_Contabilidad" ColumnName="fecha_Contabilidad" />
+          <ScalarProperty Name="Usuario_Contabilidad" ColumnName="Usuario_Contabilidad" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionParaCertificados" FunctionName="MidasDModel.Store.paValidacionParaCertificados">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionParaCertificados_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="totalDescuento" ColumnName="totalDescuento" />
+          <ScalarProperty Name="totalDescontar" ColumnName="totalDescontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionParaCertificadosContabilidad" FunctionName="MidasDModel.Store.paValidacionParaCertificadosContabilidad">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionParaCertificadosContabilidad_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionParaCertificadosHabilitado" FunctionName="MidasDModel.Store.paValidacionParaCertificadosHabilitado">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionParaCertificadosHabilitado_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionParaCertificadosRRHH" FunctionName="MidasDModel.Store.paValidacionParaCertificadosRRHH">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionParaCertificadosRRHH_Result">
+          <ScalarProperty Name="idFianza" ColumnName="idFianza" />
+          <ScalarProperty Name="Nro_Fianza" ColumnName="Nro_Fianza" />
+          <ScalarProperty Name="cargo" ColumnName="cargo" />
+          <ScalarProperty Name="apellidos_Y_Nombres" ColumnName="apellidos_Y_Nombres" />
+          <ScalarProperty Name="ci" ColumnName="ci" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="h_b" ColumnName="h_b" />
+          <ScalarProperty Name="estado_Cuenta_Gestion_Pasada" ColumnName="estado_Cuenta_Gestion_Pasada" />
+          <ScalarProperty Name="enero" ColumnName="enero" />
+          <ScalarProperty Name="febrero" ColumnName="febrero" />
+          <ScalarProperty Name="marzo" ColumnName="marzo" />
+          <ScalarProperty Name="abril" ColumnName="abril" />
+          <ScalarProperty Name="mayo" ColumnName="mayo" />
+          <ScalarProperty Name="junio" ColumnName="junio" />
+          <ScalarProperty Name="julio" ColumnName="julio" />
+          <ScalarProperty Name="agosto" ColumnName="agosto" />
+          <ScalarProperty Name="septiembre" ColumnName="septiembre" />
+          <ScalarProperty Name="octubre" ColumnName="octubre" />
+          <ScalarProperty Name="noviembre" ColumnName="noviembre" />
+          <ScalarProperty Name="diciembre" ColumnName="diciembre" />
+          <ScalarProperty Name="total_Descuento" ColumnName="total_Descuento" />
+          <ScalarProperty Name="total_Descontar" ColumnName="total_Descontar" />
+          <ScalarProperty Name="fianza_impresa" ColumnName="fianza_impresa" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="paValidacionRegistroSolicitudes" FunctionName="MidasDModel.Store.paValidacionRegistroSolicitudes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MidasDModel.paValidacionRegistroSolicitudes_Result">
+          <ScalarProperty Name="idSolicitud" ColumnName="idSolicitud" />
+          <ScalarProperty Name="Dias" ColumnName="Dias" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

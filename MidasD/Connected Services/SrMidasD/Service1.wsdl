@@ -1,0 +1,2314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="WcfMidasD" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="WcfMidasD" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="WcfMidasD/Imports">
+      <xsd:import schemaLocation="http://192.168.43.91/WcfMidasD/Service.svc?xsd=xsd0" namespace="WcfMidasD" />
+      <xsd:import schemaLocation="http://192.168.43.91/WcfMidasD/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.43.91/WcfMidasD/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ClnMidasD" />
+      <xsd:import schemaLocation="http://192.168.43.91/WcfMidasD/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WcfMidasD" />
+      <xsd:import schemaLocation="http://192.168.43.91/WcfMidasD/Service.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/CadMidasD" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MidasDService_transferenciaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_transferenciaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:transferenciaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaTranferencias_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaTranferencias" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaTranferencias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaTranferenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaTranferenciasReporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaTranferenciasReporte" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaTranferenciasReporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaTranferenciasReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuListarPorRol_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuListarPorRol" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuListarPorRol_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuListarPorRolResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuEliminarMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuEliminarMenu" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolMenuEliminarMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolMenuEliminarMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioGetIdUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioGetIdUsuario" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioGetIdUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioGetIdUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioListarRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioListarRoles" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolUsuarioListarRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolUsuarioListarRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paSueldosMensuales_InputMessage">
+    <wsdl:part name="parameters" element="tns:paSueldosMensuales" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paSueldosMensuales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paSueldosMensualesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualActivar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_sueldoMensualValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sueldoMensualValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoDocumentoGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoDocumentoGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_tipoFianzaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:tipoFianzaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_unidadEjecutoraGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:unidadEjecutoraGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioPersonaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioPersonaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioPersonaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioPersonaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioGetId_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetId" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioGetId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioGetIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioCambiarClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioCambiarClave" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioCambiarClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioCambiarClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioListarMenu_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListarMenu" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioListarMenu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListarMenuResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioListarDatosUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListarDatosUsuario" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioListarDatosUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioListarDatosUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioValidarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioValidarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioValidarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioActivar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_usuarioBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:usuarioBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_idUsuarioClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:idUsuarioClave" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_idUsuarioClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:idUsuarioClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fechaServidor_InputMessage">
+    <wsdl:part name="parameters" element="tns:fechaServidor" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fechaServidor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fechaServidorResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasSinResolucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasSinResolucion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasSinResolucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasSinResolucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contardevolucionesPendientesContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:contardevolucionesPendientesContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contardevolucionesPendientesContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contardevolucionesPendientesContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasCompletasValidacionCertificacionHabilitado_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasCompletasValidacionCertificacionHabilitado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasCompletasValidacionCertificacionHabilitado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasCompletasValidacionCertificacionHabilitadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasCompletasValidacionCertificacionContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasCompletasValidacionCertificacionContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasCompletasValidacionCertificacionContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasCompletasValidacionCertificacionContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarMesDescuentoHabilitado_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarMesDescuentoHabilitado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarMesDescuentoHabilitado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarMesDescuentoHabilitadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarTransferenciasContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarTransferenciasContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarTransferenciasContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarTransferenciasContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarValidarMesDescuentoContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarValidarMesDescuentoContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarValidarMesDescuentoContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarValidarMesDescuentoContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasValidacionBienesGravadosContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasValidacionBienesGravadosContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasValidacionBienesGravadosContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasValidacionBienesGravadosContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasTotalesValidacionContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasTotalesValidacionContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasTotalesValidacionContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasTotalesValidacionContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_funcionarioValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:funcionarioValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarGeneral_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarGeneral" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarGeneral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarGeneralAdministrador_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarGeneralAdministrador" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarGeneralAdministrador_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarGeneralAdministradorResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarBaja" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarCartilla_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarCartilla" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarCartilla_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarCartillaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarContaVali_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarContaVali" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscarContaVali_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscarContaValiResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscaridFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscaridFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafuncionarioFianzaActualBuscaridFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafuncionarioFianzaActualBuscaridFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioVerificaridFianzaCompleta_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioVerificaridFianzaCompleta" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioVerificaridFianzaCompleta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioVerificaridFianzaCompletaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paReporteCertificadoidFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:paReporteCertificadoidFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paReporteCertificadoidFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paReporteCertificadoidFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:imagenInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imagenInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:imagenEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imagenEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:imagenEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imagenEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:imagenListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imagenListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:imagenGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imagenGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenGetidPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:imagenGetidPersona" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_imagenGetidPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:imagenGetidPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:menuActivar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_menuActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:menuActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaListarUnidadEjecutora_InputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaListarUnidadEjecutora" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaListarUnidadEjecutora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaListarUnidadEjecutoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_OficinasListarBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:OficinasListarBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_OficinasListarBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OficinasListarBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_oficinaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:oficinaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paoficinaBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:paoficinaBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paoficinaBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paoficinaBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaListarVista_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaListarVista" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaListarVista_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaListarVistaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaActivar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaGetPorNumeroDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaGetPorNumeroDocumento" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaGetPorNumeroDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaGetPorNumeroDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:personaBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_personaBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:personaBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionGetidFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionGetidFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_reclasificacionGetidFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:reclasificacionGetidFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasReclasificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasReclasificacion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasReclasificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasReclasificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasReclasificacionPendientes_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasReclasificacionPendientes" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasReclasificacionPendientes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasReclasificacionPendientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasReclasificacionReporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasReclasificacionReporte" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasReclasificacionReporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasReclasificacionReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolValidarNuevo_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolValidarNuevo" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolValidarNuevo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolValidarNuevoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:rolActivar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_rolActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:rolActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_solicitudesGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:solicitudesGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_palistarSolicitudesFianzaBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:palistarSolicitudesFianzaBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_palistarSolicitudesFianzaBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:palistarSolicitudesFianzaBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_ultimoNumeroSolicitud_InputMessage">
+    <wsdl:part name="parameters" element="tns:ultimoNumeroSolicitud" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_ultimoNumeroSolicitud_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ultimoNumeroSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarSolicitudesFianzaDiasRestantes_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarSolicitudesFianzaDiasRestantes" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarSolicitudesFianzaDiasRestantes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarSolicitudesFianzaDiasRestantesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarSolicitudesFianzaDiasRestantesReporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarSolicitudesFianzaDiasRestantesReporte" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarSolicitudesFianzaDiasRestantesReporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarSolicitudesFianzaDiasRestantesReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paReporteSolDevolucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:paReporteSolDevolucion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paReporteSolDevolucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paReporteSolDevolucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomica_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioFianzaActpaReporteSolFianEconomica" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioFianzaActpaReporteSolFianEconomicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomicaTotal_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioFianzaActpaReporteSolFianEconomicaTotal" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomicaTotal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioFianzaActpaReporteSolFianEconomicaTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioFianzaActpaReporteSolNoRequiereFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioFianzaActpaReporteSolNoRequiereFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFuncionarioFianzaActpaReporteSolNoRequiereFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFuncionarioFianzaActpaReporteSolNoRequiereFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionRegistroSolicitudes_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionRegistroSolicitudes" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionRegistroSolicitudes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionRegistroSolicitudesResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoListarOficina_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoListarOficina" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoListarOficina_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoListarOficinaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoListarOficinaAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoListarOficinaAdmin" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoListarOficinaAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoListarOficinaAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_cargoOficinaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cargoOficinaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoGetIdFianzaReclasificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoGetIdFianzaReclasificacion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoGetIdFianzaReclasificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoGetIdFianzaReclasificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEliminarfisico_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEliminarfisico" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEliminarfisico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEliminarfisicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEliminarfisicoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEliminarfisicoEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoEliminarfisicoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoEliminarfisicoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoVerificarMesRegistrado_InputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoVerificarMesRegistrado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_descuentoVerificarMesRegistrado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:descuentoVerificarMesRegistradoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionGetidFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionGetidFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_devolucionGetidFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:devolucionGetidFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaDevolucionContabilidadReporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaDevolucionContabilidadReporte" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaDevolucionContabilidadReporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaDevolucionContabilidadReporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_direccionAdministrativaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:direccionAdministrativaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosGetIdEncargado_InputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosGetIdEncargado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_encargadosGetIdEncargado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encargadosGetIdEncargadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialId_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialId" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalarialId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalarialIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paEscalaSalarialGestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:paEscalaSalarialGestion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paEscalaSalarialGestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paEscalaSalarialGestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalariallActivar_InputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalariallActivar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_escalaSalariallActivar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:escalaSalariallActivarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaInsertar_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaInsertar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaInsertar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaInsertarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_ultimoNumeroFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:ultimoNumeroFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_ultimoNumeroFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ultimoNumeroFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_ultimoNumeroFianzaBienesGravados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ultimoNumeroFianzaBienesGravados" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_ultimoNumeroFianzaBienesGravados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ultimoNumeroFianzaBienesGravadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaEliminar_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaEliminar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaEliminar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaEliminarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaListar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarRRHH_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarRRHH" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarRRHH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarRRHHResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaConResolucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaConResolucion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaConResolucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaConResolucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaConResolucionBienesGravados_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaConResolucionBienesGravados" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFuncionariosFianzaConResolucionBienesGravados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFuncionariosFianzaConResolucionBienesGravadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarDevolucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarDevolucion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarDevolucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarDevolucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarDevolucionContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarDevolucionContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarDevolucionContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarDevolucionContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarTipoFianza_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarTipoFianza" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarTipoFianza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarTipoFianzaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFianzasMesAnioDescuentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFianzasMesAnioDescuentos" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFianzasMesAnioDescuentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFianzasMesAnioDescuentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFianzasMesAnioContaVali_InputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFianzasMesAnioContaVali" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_pafianzaListarFianzasMesAnioContaVali_OutputMessage">
+    <wsdl:part name="parameters" element="tns:pafianzaListarFianzasMesAnioContaValiResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_palistarFianzasMesAnioEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:palistarFianzasMesAnioEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_palistarFianzasMesAnioEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:palistarFianzasMesAnioEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaGet" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaIdFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaIdFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaIdFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaIdFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaVerificarEnCurso_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaVerificarEnCurso" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaVerificarEnCurso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaVerificarEnCursoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaVerificarDevueltaContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaVerificarDevueltaContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_fianzaVerificarDevueltaContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fianzaVerificarDevueltaContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionEstadoFianzaHabilitado_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionEstadoFianzaHabilitado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionEstadoFianzaHabilitado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionEstadoFianzaHabilitadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionEstadoFianzaContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionEstadoFianzaContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionEstadoFianzaContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionEstadoFianzaContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionEstadoFianzaRRHH_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionEstadoFianzaRRHH" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionEstadoFianzaRRHH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionEstadoFianzaRRHHResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionParaCertificadosRRHH_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionParaCertificadosRRHH" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionParaCertificadosRRHH_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionParaCertificadosRRHHResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionParaCertificadosHabilitado_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionParaCertificadosHabilitado" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionParaCertificadosHabilitado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionParaCertificadosHabilitadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionParaCertificadosContabilidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionParaCertificadosContabilidad" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paValidacionParaCertificadosContabilidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paValidacionParaCertificadosContabilidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasEconomicasReporteGlobal_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasEconomicasReporteGlobal" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasEconomicasReporteGlobal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasEconomicasReporteGlobalResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasRealesReporteGlobal_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasRealesReporteGlobal" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasRealesReporteGlobal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasRealesReporteGlobalResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasEconomicasReporteT727_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasEconomicasReporteT727" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasEconomicasReporteT727_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasEconomicasReporteT727Response" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteCartilla_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteCartilla" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteCartilla_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteCartillaResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteCartillaT727_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteCartillaT727" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteCartillaT727_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteCartillaT727Response" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzasPorFuncionarioBuscar_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzasPorFuncionarioBuscar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzasPorFuncionarioBuscar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzasPorFuncionarioBuscarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteCartillaHabilitadoEditar_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteCartillaHabilitadoEditar" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteCartillaHabilitadoEditar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteCartillaHabilitadoEditarResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteFormularioA2_InputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteFormularioA2" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paFianzaReporteFormularioA2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paFianzaReporteFormularioA2Response" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paContador_Impresion_InputMessage">
+    <wsdl:part name="parameters" element="tns:paContador_Impresion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paContador_Impresion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paContador_ImpresionResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasEconomicasReporteGlobalUnidadEjecutora_InputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasEconomicasReporteGlobalUnidadEjecutora" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_paListarFianzasEconomicasReporteGlobalUnidadEjecutora_OutputMessage">
+    <wsdl:part name="parameters" element="tns:paListarFianzasEconomicasReporteGlobalUnidadEjecutoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasParaResolucion_InputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasParaResolucion" />
+  </wsdl:message>
+  <wsdl:message name="MidasDService_contarFianzasParaResolucion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:contarFianzasParaResolucionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MidasDService">
+    <wsdl:operation name="transferenciaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/transferenciaInsertar" message="tns:MidasDService_transferenciaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/transferenciaInsertarResponse" message="tns:MidasDService_transferenciaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/transferenciaEditar" message="tns:MidasDService_transferenciaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/transferenciaEditarResponse" message="tns:MidasDService_transferenciaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/transferenciaEliminar" message="tns:MidasDService_transferenciaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/transferenciaEliminarResponse" message="tns:MidasDService_transferenciaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/transferenciaListar" message="tns:MidasDService_transferenciaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/transferenciaListarResponse" message="tns:MidasDService_transferenciaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/transferenciaGet" message="tns:MidasDService_transferenciaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/transferenciaGetResponse" message="tns:MidasDService_transferenciaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaTranferencias">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaTranferencias" message="tns:MidasDService_paListarFuncionariosFianzaTranferencias_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaTranferenciasResponse" message="tns:MidasDService_paListarFuncionariosFianzaTranferencias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaTranferenciasReporte">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaTranferenciasReporte" message="tns:MidasDService_paListarFuncionariosFianzaTranferenciasReporte_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaTranferenciasReporteResponse" message="tns:MidasDService_paListarFuncionariosFianzaTranferenciasReporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuInsertar" message="tns:MidasDService_rolMenuInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuInsertarResponse" message="tns:MidasDService_rolMenuInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuEditar" message="tns:MidasDService_rolMenuEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuEditarResponse" message="tns:MidasDService_rolMenuEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuEliminar" message="tns:MidasDService_rolMenuEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuEliminarResponse" message="tns:MidasDService_rolMenuEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuListar" message="tns:MidasDService_rolMenuListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuListarResponse" message="tns:MidasDService_rolMenuListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuGet" message="tns:MidasDService_rolMenuGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuGetResponse" message="tns:MidasDService_rolMenuGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuListarPorRol">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuListarPorRol" message="tns:MidasDService_rolMenuListarPorRol_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuListarPorRolResponse" message="tns:MidasDService_rolMenuListarPorRol_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuEliminarMenu">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolMenuEliminarMenu" message="tns:MidasDService_rolMenuEliminarMenu_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolMenuEliminarMenuResponse" message="tns:MidasDService_rolMenuEliminarMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioInsertar" message="tns:MidasDService_rolUsuarioInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioInsertarResponse" message="tns:MidasDService_rolUsuarioInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioEditar" message="tns:MidasDService_rolUsuarioEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioEditarResponse" message="tns:MidasDService_rolUsuarioEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioEliminar" message="tns:MidasDService_rolUsuarioEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioEliminarResponse" message="tns:MidasDService_rolUsuarioEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioListar" message="tns:MidasDService_rolUsuarioListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioListarResponse" message="tns:MidasDService_rolUsuarioListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioGet" message="tns:MidasDService_rolUsuarioGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioGetResponse" message="tns:MidasDService_rolUsuarioGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioGetIdUsuario">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioGetIdUsuario" message="tns:MidasDService_rolUsuarioGetIdUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioGetIdUsuarioResponse" message="tns:MidasDService_rolUsuarioGetIdUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioListarRoles">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolUsuarioListarRoles" message="tns:MidasDService_rolUsuarioListarRoles_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolUsuarioListarRolesResponse" message="tns:MidasDService_rolUsuarioListarRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualInsertar" message="tns:MidasDService_sueldoMensualInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualInsertarResponse" message="tns:MidasDService_sueldoMensualInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualEditar" message="tns:MidasDService_sueldoMensualEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualEditarResponse" message="tns:MidasDService_sueldoMensualEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualEliminar" message="tns:MidasDService_sueldoMensualEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualEliminarResponse" message="tns:MidasDService_sueldoMensualEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualListar" message="tns:MidasDService_sueldoMensualListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualListarResponse" message="tns:MidasDService_sueldoMensualListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualGet" message="tns:MidasDService_sueldoMensualGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualGetResponse" message="tns:MidasDService_sueldoMensualGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paSueldosMensuales">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paSueldosMensuales" message="tns:MidasDService_paSueldosMensuales_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paSueldosMensualesResponse" message="tns:MidasDService_paSueldosMensuales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualActivar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualActivar" message="tns:MidasDService_sueldoMensualActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualActivarResponse" message="tns:MidasDService_sueldoMensualActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualValidarNuevo">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/sueldoMensualValidarNuevo" message="tns:MidasDService_sueldoMensualValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/sueldoMensualValidarNuevoResponse" message="tns:MidasDService_sueldoMensualValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoInsertar" message="tns:MidasDService_tipoDocumentoInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoInsertarResponse" message="tns:MidasDService_tipoDocumentoInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoEditar" message="tns:MidasDService_tipoDocumentoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoEditarResponse" message="tns:MidasDService_tipoDocumentoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoEliminar" message="tns:MidasDService_tipoDocumentoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoEliminarResponse" message="tns:MidasDService_tipoDocumentoEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoListar" message="tns:MidasDService_tipoDocumentoListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoListarResponse" message="tns:MidasDService_tipoDocumentoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoGet" message="tns:MidasDService_tipoDocumentoGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoDocumentoGetResponse" message="tns:MidasDService_tipoDocumentoGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoFianzaInsertar" message="tns:MidasDService_tipoFianzaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoFianzaInsertarResponse" message="tns:MidasDService_tipoFianzaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoFianzaEditar" message="tns:MidasDService_tipoFianzaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoFianzaEditarResponse" message="tns:MidasDService_tipoFianzaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoFianzaEliminar" message="tns:MidasDService_tipoFianzaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoFianzaEliminarResponse" message="tns:MidasDService_tipoFianzaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoFianzaListar" message="tns:MidasDService_tipoFianzaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoFianzaListarResponse" message="tns:MidasDService_tipoFianzaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/tipoFianzaGet" message="tns:MidasDService_tipoFianzaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/tipoFianzaGetResponse" message="tns:MidasDService_tipoFianzaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraInsertar" message="tns:MidasDService_unidadEjecutoraInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraInsertarResponse" message="tns:MidasDService_unidadEjecutoraInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraEditar" message="tns:MidasDService_unidadEjecutoraEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraEditarResponse" message="tns:MidasDService_unidadEjecutoraEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraEliminar" message="tns:MidasDService_unidadEjecutoraEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraEliminarResponse" message="tns:MidasDService_unidadEjecutoraEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraListar" message="tns:MidasDService_unidadEjecutoraListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraListarResponse" message="tns:MidasDService_unidadEjecutoraListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraGet" message="tns:MidasDService_unidadEjecutoraGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/unidadEjecutoraGetResponse" message="tns:MidasDService_unidadEjecutoraGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioInsertar" message="tns:MidasDService_usuarioInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioInsertarResponse" message="tns:MidasDService_usuarioInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioEditar" message="tns:MidasDService_usuarioEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioEditarResponse" message="tns:MidasDService_usuarioEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioEliminar" message="tns:MidasDService_usuarioEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioEliminarResponse" message="tns:MidasDService_usuarioEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioListar" message="tns:MidasDService_usuarioListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioListarResponse" message="tns:MidasDService_usuarioListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioGet" message="tns:MidasDService_usuarioGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioGetResponse" message="tns:MidasDService_usuarioGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioPersonaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioPersonaGet" message="tns:MidasDService_usuarioPersonaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioPersonaGetResponse" message="tns:MidasDService_usuarioPersonaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGetId">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioGetId" message="tns:MidasDService_usuarioGetId_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioGetIdResponse" message="tns:MidasDService_usuarioGetId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioCambiarClave">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioCambiarClave" message="tns:MidasDService_usuarioCambiarClave_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioCambiarClaveResponse" message="tns:MidasDService_usuarioCambiarClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListarMenu">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioListarMenu" message="tns:MidasDService_usuarioListarMenu_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioListarMenuResponse" message="tns:MidasDService_usuarioListarMenu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListarDatosUsuario">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioListarDatosUsuario" message="tns:MidasDService_usuarioListarDatosUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioListarDatosUsuarioResponse" message="tns:MidasDService_usuarioListarDatosUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioValidarNuevo">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioValidarNuevo" message="tns:MidasDService_usuarioValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioValidarNuevoResponse" message="tns:MidasDService_usuarioValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioValidarUsuario">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioValidarUsuario" message="tns:MidasDService_usuarioValidarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioValidarUsuarioResponse" message="tns:MidasDService_usuarioValidarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioActivar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioActivar" message="tns:MidasDService_usuarioActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioActivarResponse" message="tns:MidasDService_usuarioActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="usuarioBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/usuarioBuscar" message="tns:MidasDService_usuarioBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/usuarioBuscarResponse" message="tns:MidasDService_usuarioBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="idUsuarioClave">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/idUsuarioClave" message="tns:MidasDService_idUsuarioClave_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/idUsuarioClaveResponse" message="tns:MidasDService_idUsuarioClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fechaServidor">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fechaServidor" message="tns:MidasDService_fechaServidor_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fechaServidorResponse" message="tns:MidasDService_fechaServidor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasSinResolucion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarFianzasSinResolucion" message="tns:MidasDService_contarFianzasSinResolucion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarFianzasSinResolucionResponse" message="tns:MidasDService_contarFianzasSinResolucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contardevolucionesPendientesContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contardevolucionesPendientesContabilidad" message="tns:MidasDService_contardevolucionesPendientesContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contardevolucionesPendientesContabilidadResponse" message="tns:MidasDService_contardevolucionesPendientesContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasCompletasValidacionCertificacionHabilitado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarFianzasCompletasValidacionCertificacionHabilitado" message="tns:MidasDService_contarFianzasCompletasValidacionCertificacionHabilitado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarFianzasCompletasValidacionCertificacionHabilitadoResponse" message="tns:MidasDService_contarFianzasCompletasValidacionCertificacionHabilitado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasCompletasValidacionCertificacionContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarFianzasCompletasValidacionCertificacionContabilidad" message="tns:MidasDService_contarFianzasCompletasValidacionCertificacionContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarFianzasCompletasValidacionCertificacionContabilidadResponse" message="tns:MidasDService_contarFianzasCompletasValidacionCertificacionContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarMesDescuentoHabilitado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarMesDescuentoHabilitado" message="tns:MidasDService_contarMesDescuentoHabilitado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarMesDescuentoHabilitadoResponse" message="tns:MidasDService_contarMesDescuentoHabilitado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarTransferenciasContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarTransferenciasContabilidad" message="tns:MidasDService_contarTransferenciasContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarTransferenciasContabilidadResponse" message="tns:MidasDService_contarTransferenciasContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarValidarMesDescuentoContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarValidarMesDescuentoContabilidad" message="tns:MidasDService_contarValidarMesDescuentoContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarValidarMesDescuentoContabilidadResponse" message="tns:MidasDService_contarValidarMesDescuentoContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasValidacionBienesGravadosContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarFianzasValidacionBienesGravadosContabilidad" message="tns:MidasDService_contarFianzasValidacionBienesGravadosContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarFianzasValidacionBienesGravadosContabilidadResponse" message="tns:MidasDService_contarFianzasValidacionBienesGravadosContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasTotalesValidacionContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarFianzasTotalesValidacionContabilidad" message="tns:MidasDService_contarFianzasTotalesValidacionContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarFianzasTotalesValidacionContabilidadResponse" message="tns:MidasDService_contarFianzasTotalesValidacionContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/funcionarioInsertar" message="tns:MidasDService_funcionarioInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/funcionarioInsertarResponse" message="tns:MidasDService_funcionarioInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/funcionarioEditar" message="tns:MidasDService_funcionarioEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/funcionarioEditarResponse" message="tns:MidasDService_funcionarioEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/funcionarioEliminar" message="tns:MidasDService_funcionarioEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/funcionarioEliminarResponse" message="tns:MidasDService_funcionarioEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/funcionarioListar" message="tns:MidasDService_funcionarioListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/funcionarioListarResponse" message="tns:MidasDService_funcionarioListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/funcionarioGet" message="tns:MidasDService_funcionarioGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/funcionarioGetResponse" message="tns:MidasDService_funcionarioGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioValidarNuevo">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/funcionarioValidarNuevo" message="tns:MidasDService_funcionarioValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/funcionarioValidarNuevoResponse" message="tns:MidasDService_funcionarioValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscar" message="tns:MidasDService_pafuncionarioFianzaActualBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarGeneral">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarGeneral" message="tns:MidasDService_pafuncionarioFianzaActualBuscarGeneral_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarGeneralResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscarGeneral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarGeneralAdministrador">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarGeneralAdministrador" message="tns:MidasDService_pafuncionarioFianzaActualBuscarGeneralAdministrador_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarGeneralAdministradorResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscarGeneralAdministrador_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarBaja">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarBaja" message="tns:MidasDService_pafuncionarioFianzaActualBuscarBaja_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarBajaResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscarBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarCartilla">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarCartilla" message="tns:MidasDService_pafuncionarioFianzaActualBuscarCartilla_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarCartillaResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscarCartilla_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarContaVali">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarContaVali" message="tns:MidasDService_pafuncionarioFianzaActualBuscarContaVali_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarContaValiResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscarContaVali_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscaridFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscaridFianza" message="tns:MidasDService_pafuncionarioFianzaActualBuscaridFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscaridFianzaResponse" message="tns:MidasDService_pafuncionarioFianzaActualBuscaridFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioVerificaridFianzaCompleta">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFuncionarioVerificaridFianzaCompleta" message="tns:MidasDService_paFuncionarioVerificaridFianzaCompleta_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFuncionarioVerificaridFianzaCompletaResponse" message="tns:MidasDService_paFuncionarioVerificaridFianzaCompleta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paReporteCertificadoidFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paReporteCertificadoidFianza" message="tns:MidasDService_paReporteCertificadoidFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paReporteCertificadoidFianzaResponse" message="tns:MidasDService_paReporteCertificadoidFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imagenInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/imagenInsertar" message="tns:MidasDService_imagenInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/imagenInsertarResponse" message="tns:MidasDService_imagenInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imagenEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/imagenEditar" message="tns:MidasDService_imagenEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/imagenEditarResponse" message="tns:MidasDService_imagenEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imagenEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/imagenEliminar" message="tns:MidasDService_imagenEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/imagenEliminarResponse" message="tns:MidasDService_imagenEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imagenListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/imagenListar" message="tns:MidasDService_imagenListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/imagenListarResponse" message="tns:MidasDService_imagenListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imagenGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/imagenGet" message="tns:MidasDService_imagenGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/imagenGetResponse" message="tns:MidasDService_imagenGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="imagenGetidPersona">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/imagenGetidPersona" message="tns:MidasDService_imagenGetidPersona_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/imagenGetidPersonaResponse" message="tns:MidasDService_imagenGetidPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuInsertar" message="tns:MidasDService_menuInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuInsertarResponse" message="tns:MidasDService_menuInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuEditar" message="tns:MidasDService_menuEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuEditarResponse" message="tns:MidasDService_menuEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuEliminar" message="tns:MidasDService_menuEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuEliminarResponse" message="tns:MidasDService_menuEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuListar" message="tns:MidasDService_menuListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuListarResponse" message="tns:MidasDService_menuListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuGet" message="tns:MidasDService_menuGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuGetResponse" message="tns:MidasDService_menuGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuValidarNuevo">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuValidarNuevo" message="tns:MidasDService_menuValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuValidarNuevoResponse" message="tns:MidasDService_menuValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="menuActivar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/menuActivar" message="tns:MidasDService_menuActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/menuActivarResponse" message="tns:MidasDService_menuActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="oficinaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/oficinaInsertar" message="tns:MidasDService_oficinaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/oficinaInsertarResponse" message="tns:MidasDService_oficinaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="oficinaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/oficinaEditar" message="tns:MidasDService_oficinaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/oficinaEditarResponse" message="tns:MidasDService_oficinaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="oficinaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/oficinaEliminar" message="tns:MidasDService_oficinaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/oficinaEliminarResponse" message="tns:MidasDService_oficinaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="oficinaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/oficinaListar" message="tns:MidasDService_oficinaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/oficinaListarResponse" message="tns:MidasDService_oficinaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="oficinaListarUnidadEjecutora">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/oficinaListarUnidadEjecutora" message="tns:MidasDService_oficinaListarUnidadEjecutora_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/oficinaListarUnidadEjecutoraResponse" message="tns:MidasDService_oficinaListarUnidadEjecutora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OficinasListarBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/OficinasListarBuscar" message="tns:MidasDService_OficinasListarBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/OficinasListarBuscarResponse" message="tns:MidasDService_OficinasListarBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="oficinaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/oficinaGet" message="tns:MidasDService_oficinaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/oficinaGetResponse" message="tns:MidasDService_oficinaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paoficinaBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paoficinaBuscar" message="tns:MidasDService_paoficinaBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paoficinaBuscarResponse" message="tns:MidasDService_paoficinaBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaInsertar" message="tns:MidasDService_personaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaInsertarResponse" message="tns:MidasDService_personaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaEditar" message="tns:MidasDService_personaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaEditarResponse" message="tns:MidasDService_personaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaEliminar" message="tns:MidasDService_personaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaEliminarResponse" message="tns:MidasDService_personaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaListar" message="tns:MidasDService_personaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaListarResponse" message="tns:MidasDService_personaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaGet" message="tns:MidasDService_personaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaGetResponse" message="tns:MidasDService_personaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaListarVista">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaListarVista" message="tns:MidasDService_personaListarVista_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaListarVistaResponse" message="tns:MidasDService_personaListarVista_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaValidarNuevo">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaValidarNuevo" message="tns:MidasDService_personaValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaValidarNuevoResponse" message="tns:MidasDService_personaValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaActivar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaActivar" message="tns:MidasDService_personaActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaActivarResponse" message="tns:MidasDService_personaActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaGetPorNumeroDocumento">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaGetPorNumeroDocumento" message="tns:MidasDService_personaGetPorNumeroDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaGetPorNumeroDocumentoResponse" message="tns:MidasDService_personaGetPorNumeroDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="personaBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/personaBuscar" message="tns:MidasDService_personaBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/personaBuscarResponse" message="tns:MidasDService_personaBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/reclasificacionInsertar" message="tns:MidasDService_reclasificacionInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/reclasificacionInsertarResponse" message="tns:MidasDService_reclasificacionInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/reclasificacionEditar" message="tns:MidasDService_reclasificacionEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/reclasificacionEditarResponse" message="tns:MidasDService_reclasificacionEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/reclasificacionEliminar" message="tns:MidasDService_reclasificacionEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/reclasificacionEliminarResponse" message="tns:MidasDService_reclasificacionEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/reclasificacionListar" message="tns:MidasDService_reclasificacionListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/reclasificacionListarResponse" message="tns:MidasDService_reclasificacionListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/reclasificacionGet" message="tns:MidasDService_reclasificacionGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/reclasificacionGetResponse" message="tns:MidasDService_reclasificacionGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionGetidFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/reclasificacionGetidFianza" message="tns:MidasDService_reclasificacionGetidFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/reclasificacionGetidFianzaResponse" message="tns:MidasDService_reclasificacionGetidFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasReclasificacion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasReclasificacion" message="tns:MidasDService_paListarFianzasReclasificacion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasReclasificacionResponse" message="tns:MidasDService_paListarFianzasReclasificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasReclasificacionPendientes">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasReclasificacionPendientes" message="tns:MidasDService_paListarFianzasReclasificacionPendientes_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasReclasificacionPendientesResponse" message="tns:MidasDService_paListarFianzasReclasificacionPendientes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasReclasificacionReporte">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasReclasificacionReporte" message="tns:MidasDService_paListarFianzasReclasificacionReporte_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasReclasificacionReporteResponse" message="tns:MidasDService_paListarFianzasReclasificacionReporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolInsertar" message="tns:MidasDService_rolInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolInsertarResponse" message="tns:MidasDService_rolInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolEditar" message="tns:MidasDService_rolEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolEditarResponse" message="tns:MidasDService_rolEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolEliminar" message="tns:MidasDService_rolEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolEliminarResponse" message="tns:MidasDService_rolEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolListar" message="tns:MidasDService_rolListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolListarResponse" message="tns:MidasDService_rolListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolGet" message="tns:MidasDService_rolGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolGetResponse" message="tns:MidasDService_rolGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolValidarNuevo">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolValidarNuevo" message="tns:MidasDService_rolValidarNuevo_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolValidarNuevoResponse" message="tns:MidasDService_rolValidarNuevo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="rolActivar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/rolActivar" message="tns:MidasDService_rolActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/rolActivarResponse" message="tns:MidasDService_rolActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/solicitudesInsertar" message="tns:MidasDService_solicitudesInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/solicitudesInsertarResponse" message="tns:MidasDService_solicitudesInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/solicitudesEditar" message="tns:MidasDService_solicitudesEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/solicitudesEditarResponse" message="tns:MidasDService_solicitudesEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/solicitudesEliminar" message="tns:MidasDService_solicitudesEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/solicitudesEliminarResponse" message="tns:MidasDService_solicitudesEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/solicitudesListar" message="tns:MidasDService_solicitudesListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/solicitudesListarResponse" message="tns:MidasDService_solicitudesListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/solicitudesGet" message="tns:MidasDService_solicitudesGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/solicitudesGetResponse" message="tns:MidasDService_solicitudesGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="palistarSolicitudesFianzaBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/palistarSolicitudesFianzaBuscar" message="tns:MidasDService_palistarSolicitudesFianzaBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/palistarSolicitudesFianzaBuscarResponse" message="tns:MidasDService_palistarSolicitudesFianzaBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ultimoNumeroSolicitud">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/ultimoNumeroSolicitud" message="tns:MidasDService_ultimoNumeroSolicitud_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/ultimoNumeroSolicitudResponse" message="tns:MidasDService_ultimoNumeroSolicitud_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarSolicitudesFianzaDiasRestantes">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarSolicitudesFianzaDiasRestantes" message="tns:MidasDService_paListarSolicitudesFianzaDiasRestantes_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarSolicitudesFianzaDiasRestantesResponse" message="tns:MidasDService_paListarSolicitudesFianzaDiasRestantes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarSolicitudesFianzaDiasRestantesReporte">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarSolicitudesFianzaDiasRestantesReporte" message="tns:MidasDService_paListarSolicitudesFianzaDiasRestantesReporte_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarSolicitudesFianzaDiasRestantesReporteResponse" message="tns:MidasDService_paListarSolicitudesFianzaDiasRestantesReporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paReporteSolDevolucion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paReporteSolDevolucion" message="tns:MidasDService_paReporteSolDevolucion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paReporteSolDevolucionResponse" message="tns:MidasDService_paReporteSolDevolucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioFianzaActpaReporteSolFianEconomica">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolFianEconomica" message="tns:MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomica_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolFianEconomicaResponse" message="tns:MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioFianzaActpaReporteSolFianEconomicaTotal">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolFianEconomicaTotal" message="tns:MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomicaTotal_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolFianEconomicaTotalResponse" message="tns:MidasDService_paFuncionarioFianzaActpaReporteSolFianEconomicaTotal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioFianzaActpaReporteSolNoRequiereFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolNoRequiereFianza" message="tns:MidasDService_paFuncionarioFianzaActpaReporteSolNoRequiereFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolNoRequiereFianzaResponse" message="tns:MidasDService_paFuncionarioFianzaActpaReporteSolNoRequiereFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionRegistroSolicitudes">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionRegistroSolicitudes" message="tns:MidasDService_paValidacionRegistroSolicitudes_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionRegistroSolicitudesResponse" message="tns:MidasDService_paValidacionRegistroSolicitudes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoInsertar" message="tns:MidasDService_cargoInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoInsertarResponse" message="tns:MidasDService_cargoInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoEditar" message="tns:MidasDService_cargoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoEditarResponse" message="tns:MidasDService_cargoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoEliminar" message="tns:MidasDService_cargoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoEliminarResponse" message="tns:MidasDService_cargoEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoListar" message="tns:MidasDService_cargoListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoListarResponse" message="tns:MidasDService_cargoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoListarOficina">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoListarOficina" message="tns:MidasDService_cargoListarOficina_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoListarOficinaResponse" message="tns:MidasDService_cargoListarOficina_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoListarOficinaAdmin">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoListarOficinaAdmin" message="tns:MidasDService_cargoListarOficinaAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoListarOficinaAdminResponse" message="tns:MidasDService_cargoListarOficinaAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoGet" message="tns:MidasDService_cargoGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoGetResponse" message="tns:MidasDService_cargoGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoOficinaInsertar" message="tns:MidasDService_cargoOficinaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoOficinaInsertarResponse" message="tns:MidasDService_cargoOficinaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoOficinaEditar" message="tns:MidasDService_cargoOficinaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoOficinaEditarResponse" message="tns:MidasDService_cargoOficinaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoOficinaEliminar" message="tns:MidasDService_cargoOficinaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoOficinaEliminarResponse" message="tns:MidasDService_cargoOficinaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoOficinaListar" message="tns:MidasDService_cargoOficinaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoOficinaListarResponse" message="tns:MidasDService_cargoOficinaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/cargoOficinaGet" message="tns:MidasDService_cargoOficinaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/cargoOficinaGetResponse" message="tns:MidasDService_cargoOficinaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoInsertar" message="tns:MidasDService_descuentoInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoInsertarResponse" message="tns:MidasDService_descuentoInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoEditar" message="tns:MidasDService_descuentoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoEditarResponse" message="tns:MidasDService_descuentoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoEliminar" message="tns:MidasDService_descuentoEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoEliminarResponse" message="tns:MidasDService_descuentoEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoListar" message="tns:MidasDService_descuentoListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoListarResponse" message="tns:MidasDService_descuentoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoGet" message="tns:MidasDService_descuentoGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoGetResponse" message="tns:MidasDService_descuentoGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoGetIdFianzaReclasificacion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoGetIdFianzaReclasificacion" message="tns:MidasDService_descuentoGetIdFianzaReclasificacion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoGetIdFianzaReclasificacionResponse" message="tns:MidasDService_descuentoGetIdFianzaReclasificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEliminarfisico">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoEliminarfisico" message="tns:MidasDService_descuentoEliminarfisico_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoEliminarfisicoResponse" message="tns:MidasDService_descuentoEliminarfisico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEliminarfisicoEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoEliminarfisicoEditar" message="tns:MidasDService_descuentoEliminarfisicoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoEliminarfisicoEditarResponse" message="tns:MidasDService_descuentoEliminarfisicoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="descuentoVerificarMesRegistrado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/descuentoVerificarMesRegistrado" message="tns:MidasDService_descuentoVerificarMesRegistrado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/descuentoVerificarMesRegistradoResponse" message="tns:MidasDService_descuentoVerificarMesRegistrado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="devolucionInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/devolucionInsertar" message="tns:MidasDService_devolucionInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/devolucionInsertarResponse" message="tns:MidasDService_devolucionInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="devolucionEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/devolucionEditar" message="tns:MidasDService_devolucionEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/devolucionEditarResponse" message="tns:MidasDService_devolucionEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="devolucionEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/devolucionEliminar" message="tns:MidasDService_devolucionEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/devolucionEliminarResponse" message="tns:MidasDService_devolucionEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="devolucionListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/devolucionListar" message="tns:MidasDService_devolucionListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/devolucionListarResponse" message="tns:MidasDService_devolucionListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="devolucionGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/devolucionGet" message="tns:MidasDService_devolucionGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/devolucionGetResponse" message="tns:MidasDService_devolucionGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="devolucionGetidFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/devolucionGetidFianza" message="tns:MidasDService_devolucionGetidFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/devolucionGetidFianzaResponse" message="tns:MidasDService_devolucionGetidFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaDevolucionContabilidadReporte">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaDevolucionContabilidadReporte" message="tns:MidasDService_paListarFuncionariosFianzaDevolucionContabilidadReporte_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaDevolucionContabilidadReporteResponse" message="tns:MidasDService_paListarFuncionariosFianzaDevolucionContabilidadReporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaInsertar" message="tns:MidasDService_direccionAdministrativaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaInsertarResponse" message="tns:MidasDService_direccionAdministrativaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaEditar" message="tns:MidasDService_direccionAdministrativaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaEditarResponse" message="tns:MidasDService_direccionAdministrativaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaEliminar" message="tns:MidasDService_direccionAdministrativaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaEliminarResponse" message="tns:MidasDService_direccionAdministrativaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaListar" message="tns:MidasDService_direccionAdministrativaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaListarResponse" message="tns:MidasDService_direccionAdministrativaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaGet" message="tns:MidasDService_direccionAdministrativaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/direccionAdministrativaGetResponse" message="tns:MidasDService_direccionAdministrativaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="encargadosInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/encargadosInsertar" message="tns:MidasDService_encargadosInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/encargadosInsertarResponse" message="tns:MidasDService_encargadosInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="encargadosEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/encargadosEditar" message="tns:MidasDService_encargadosEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/encargadosEditarResponse" message="tns:MidasDService_encargadosEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="encargadosEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/encargadosEliminar" message="tns:MidasDService_encargadosEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/encargadosEliminarResponse" message="tns:MidasDService_encargadosEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="encargadosListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/encargadosListar" message="tns:MidasDService_encargadosListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/encargadosListarResponse" message="tns:MidasDService_encargadosListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="encargadosGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/encargadosGet" message="tns:MidasDService_encargadosGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/encargadosGetResponse" message="tns:MidasDService_encargadosGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="encargadosGetIdEncargado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/encargadosGetIdEncargado" message="tns:MidasDService_encargadosGetIdEncargado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/encargadosGetIdEncargadoResponse" message="tns:MidasDService_encargadosGetIdEncargado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalarialInsertar" message="tns:MidasDService_escalaSalarialInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalarialInsertarResponse" message="tns:MidasDService_escalaSalarialInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalarialEditar" message="tns:MidasDService_escalaSalarialEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalarialEditarResponse" message="tns:MidasDService_escalaSalarialEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalarialEliminar" message="tns:MidasDService_escalaSalarialEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalarialEliminarResponse" message="tns:MidasDService_escalaSalarialEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalarialListar" message="tns:MidasDService_escalaSalarialListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalarialListarResponse" message="tns:MidasDService_escalaSalarialListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalarialGet" message="tns:MidasDService_escalaSalarialGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalarialGetResponse" message="tns:MidasDService_escalaSalarialGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialId">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalarialId" message="tns:MidasDService_escalaSalarialId_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalarialIdResponse" message="tns:MidasDService_escalaSalarialId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paEscalaSalarialGestion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paEscalaSalarialGestion" message="tns:MidasDService_paEscalaSalarialGestion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paEscalaSalarialGestionResponse" message="tns:MidasDService_paEscalaSalarialGestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalariallActivar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/escalaSalariallActivar" message="tns:MidasDService_escalaSalariallActivar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/escalaSalariallActivarResponse" message="tns:MidasDService_escalaSalariallActivar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaInsertar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaInsertar" message="tns:MidasDService_fianzaInsertar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaInsertarResponse" message="tns:MidasDService_fianzaInsertar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaEditar" message="tns:MidasDService_fianzaEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaEditarResponse" message="tns:MidasDService_fianzaEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ultimoNumeroFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/ultimoNumeroFianza" message="tns:MidasDService_ultimoNumeroFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/ultimoNumeroFianzaResponse" message="tns:MidasDService_ultimoNumeroFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ultimoNumeroFianzaBienesGravados">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/ultimoNumeroFianzaBienesGravados" message="tns:MidasDService_ultimoNumeroFianzaBienesGravados_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/ultimoNumeroFianzaBienesGravadosResponse" message="tns:MidasDService_ultimoNumeroFianzaBienesGravados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaEliminar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaEliminar" message="tns:MidasDService_fianzaEliminar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaEliminarResponse" message="tns:MidasDService_fianzaEliminar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaListar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaListar" message="tns:MidasDService_fianzaListar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaListarResponse" message="tns:MidasDService_fianzaListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarRRHH">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarRRHH" message="tns:MidasDService_pafianzaListarFuncionariosBuscarRRHH_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarRRHHResponse" message="tns:MidasDService_pafianzaListarFuncionariosBuscarRRHH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaConResolucion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaConResolucion" message="tns:MidasDService_paListarFuncionariosFianzaConResolucion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaConResolucionResponse" message="tns:MidasDService_paListarFuncionariosFianzaConResolucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaConResolucionBienesGravados">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaConResolucionBienesGravados" message="tns:MidasDService_paListarFuncionariosFianzaConResolucionBienesGravados_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFuncionariosFianzaConResolucionBienesGravadosResponse" message="tns:MidasDService_paListarFuncionariosFianzaConResolucionBienesGravados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarDevolucion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarDevolucion" message="tns:MidasDService_pafianzaListarFuncionariosBuscarDevolucion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarDevolucionResponse" message="tns:MidasDService_pafianzaListarFuncionariosBuscarDevolucion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarDevolucionContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarDevolucionContabilidad" message="tns:MidasDService_pafianzaListarFuncionariosBuscarDevolucionContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarDevolucionContabilidadResponse" message="tns:MidasDService_pafianzaListarFuncionariosBuscarDevolucionContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarTipoFianza">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarTipoFianza" message="tns:MidasDService_pafianzaListarFuncionariosBuscarTipoFianza_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarTipoFianzaResponse" message="tns:MidasDService_pafianzaListarFuncionariosBuscarTipoFianza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado" message="tns:MidasDService_pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidadoResponse" message="tns:MidasDService_pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFianzasMesAnioDescuentos">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFianzasMesAnioDescuentos" message="tns:MidasDService_pafianzaListarFianzasMesAnioDescuentos_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFianzasMesAnioDescuentosResponse" message="tns:MidasDService_pafianzaListarFianzasMesAnioDescuentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFianzasMesAnioContaVali">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFianzasMesAnioContaVali" message="tns:MidasDService_pafianzaListarFianzasMesAnioContaVali_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/pafianzaListarFianzasMesAnioContaValiResponse" message="tns:MidasDService_pafianzaListarFianzasMesAnioContaVali_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado" message="tns:MidasDService_paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitadoResponse" message="tns:MidasDService_paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="palistarFianzasMesAnioEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/palistarFianzasMesAnioEditar" message="tns:MidasDService_palistarFianzasMesAnioEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/palistarFianzasMesAnioEditarResponse" message="tns:MidasDService_palistarFianzasMesAnioEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaGet">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaGet" message="tns:MidasDService_fianzaGet_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaGetResponse" message="tns:MidasDService_fianzaGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaIdFuncionario">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaIdFuncionario" message="tns:MidasDService_fianzaIdFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaIdFuncionarioResponse" message="tns:MidasDService_fianzaIdFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaVerificarEnCurso">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaVerificarEnCurso" message="tns:MidasDService_fianzaVerificarEnCurso_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaVerificarEnCursoResponse" message="tns:MidasDService_fianzaVerificarEnCurso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fianzaVerificarDevueltaContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/fianzaVerificarDevueltaContabilidad" message="tns:MidasDService_fianzaVerificarDevueltaContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/fianzaVerificarDevueltaContabilidadResponse" message="tns:MidasDService_fianzaVerificarDevueltaContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionEstadoFianzaHabilitado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionEstadoFianzaHabilitado" message="tns:MidasDService_paValidacionEstadoFianzaHabilitado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionEstadoFianzaHabilitadoResponse" message="tns:MidasDService_paValidacionEstadoFianzaHabilitado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionEstadoFianzaContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionEstadoFianzaContabilidad" message="tns:MidasDService_paValidacionEstadoFianzaContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionEstadoFianzaContabilidadResponse" message="tns:MidasDService_paValidacionEstadoFianzaContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionEstadoFianzaRRHH">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionEstadoFianzaRRHH" message="tns:MidasDService_paValidacionEstadoFianzaRRHH_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionEstadoFianzaRRHHResponse" message="tns:MidasDService_paValidacionEstadoFianzaRRHH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionParaCertificadosRRHH">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionParaCertificadosRRHH" message="tns:MidasDService_paValidacionParaCertificadosRRHH_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionParaCertificadosRRHHResponse" message="tns:MidasDService_paValidacionParaCertificadosRRHH_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionParaCertificadosHabilitado">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionParaCertificadosHabilitado" message="tns:MidasDService_paValidacionParaCertificadosHabilitado_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionParaCertificadosHabilitadoResponse" message="tns:MidasDService_paValidacionParaCertificadosHabilitado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionParaCertificadosContabilidad">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paValidacionParaCertificadosContabilidad" message="tns:MidasDService_paValidacionParaCertificadosContabilidad_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paValidacionParaCertificadosContabilidadResponse" message="tns:MidasDService_paValidacionParaCertificadosContabilidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasEconomicasReporteGlobal">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteGlobal" message="tns:MidasDService_paListarFianzasEconomicasReporteGlobal_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteGlobalResponse" message="tns:MidasDService_paListarFianzasEconomicasReporteGlobal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasRealesReporteGlobal">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasRealesReporteGlobal" message="tns:MidasDService_paListarFianzasRealesReporteGlobal_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasRealesReporteGlobalResponse" message="tns:MidasDService_paListarFianzasRealesReporteGlobal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasEconomicasReporteT727">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteT727" message="tns:MidasDService_paListarFianzasEconomicasReporteT727_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteT727Response" message="tns:MidasDService_paListarFianzasEconomicasReporteT727_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteCartilla">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteCartilla" message="tns:MidasDService_paFianzaReporteCartilla_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteCartillaResponse" message="tns:MidasDService_paFianzaReporteCartilla_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteCartillaT727">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteCartillaT727" message="tns:MidasDService_paFianzaReporteCartillaT727_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteCartillaT727Response" message="tns:MidasDService_paFianzaReporteCartillaT727_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFianzasPorFuncionarioBuscar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFianzasPorFuncionarioBuscar" message="tns:MidasDService_paFianzasPorFuncionarioBuscar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFianzasPorFuncionarioBuscarResponse" message="tns:MidasDService_paFianzasPorFuncionarioBuscar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteCartillaHabilitadoEditar">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteCartillaHabilitadoEditar" message="tns:MidasDService_paFianzaReporteCartillaHabilitadoEditar_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteCartillaHabilitadoEditarResponse" message="tns:MidasDService_paFianzaReporteCartillaHabilitadoEditar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteFormularioA2">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteFormularioA2" message="tns:MidasDService_paFianzaReporteFormularioA2_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paFianzaReporteFormularioA2Response" message="tns:MidasDService_paFianzaReporteFormularioA2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paContador_Impresion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paContador_Impresion" message="tns:MidasDService_paContador_Impresion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paContador_ImpresionResponse" message="tns:MidasDService_paContador_Impresion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteGlobalUnidadEjecutora" message="tns:MidasDService_paListarFianzasEconomicasReporteGlobalUnidadEjecutora_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteGlobalUnidadEjecutoraResponse" message="tns:MidasDService_paListarFianzasEconomicasReporteGlobalUnidadEjecutora_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasParaResolucion">
+      <wsdl:input wsaw:Action="WcfMidasD/MidasDService/contarFianzasParaResolucion" message="tns:MidasDService_contarFianzasParaResolucion_InputMessage" />
+      <wsdl:output wsaw:Action="WcfMidasD/MidasDService/contarFianzasParaResolucionResponse" message="tns:MidasDService_contarFianzasParaResolucion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

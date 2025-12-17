@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+  </startup>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_ArgosService" maxReceivedMessageSize="2147483647" />
+        <binding name="BasicHttpBinding_MidasDService" maxReceivedMessageSize="2147483647" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://192.168.2.25/wcfArgos/Service.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ArgosService" contract="SrArgos.ArgosService" name="BasicHttpBinding_ArgosService" />
+      <endpoint address="http://192.168.42.47/WcfMidasD/Service.svc" binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_MidasDService" contract="SrMidasD.MidasDService" name="BasicHttpBinding_MidasDService" />
+    </client>
+  </system.serviceModel>
+  <!--<appSettings>
+    <add key="DefaultCulture" value="es-Bo" />
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>-->
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+  <appSettings>
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+</configuration>
+<!--<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  -->
+<!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+<!--
+  </configSections>
+  -->
+<!--<connectionStrings>
+    <add name="MidasD.Properties.Settings.MidasDConnectionString"
+      connectionString="Data Source=RIUKASAN\MSSQLSERVER2016;Initial Catalog=MidasD;User ID=sa;Password=dexter"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>-->
+<!--
+ 
+  <entityFramework>
+    -->
+<!--<defaultConnectionFactory type="System.Data.Entity.Infrastructure.LocalDbConnectionFactory, EntityFramework">
+      <parameters>
+        <parameter value="mssqllocaldb" />
+      </parameters>
+    </defaultConnectionFactory>-->
+<!--
+    -->
+<!--<providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>-->
+<!--
+  </entityFramework>
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="BasicHttpBinding_ArgosService" closeTimeout="00:10:00"
+          openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00"
+          allowCookies="false" bypassProxyOnLocal="false" maxBufferPoolSize="2147483647"
+          maxReceivedMessageSize="2147483647" useDefaultWebProxy="true" />
+        <binding name="BasicHttpBinding_MidasDService" closeTimeout="00:10:00"
+          openTimeout="00:10:00" receiveTimeout="00:10:00" sendTimeout="00:10:00"
+          allowCookies="false" bypassProxyOnLocal="false" maxBufferPoolSize="2147483647"
+          maxReceivedMessageSize="2147483647" useDefaultWebProxy="true" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="http://192.168.2.25/wcfArgos/Service.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ArgosService"
+        contract="SrArgos.ArgosService" name="BasicHttpBinding_ArgosService" />
+      <endpoint address="http://192.168.43.89/wcfMidasD/Service.svc"
+        binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_MidasDService"
+        contract="SrMidasD.MidasDService" name="BasicHttpBinding_MidasDService" />
+    </client>
+  </system.serviceModel>
+  <startup useLegacyV2RuntimeActivationPolicy="true">
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
+  </startup>
+</configuration>-->

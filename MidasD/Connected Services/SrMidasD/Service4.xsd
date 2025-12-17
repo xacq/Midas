@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CadMidasD" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CadMidasD" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaTranferencias_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaTranferencias_Result" nillable="true" type="tns:paListarFuncionariosFianzaTranferencias_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaTranferencias_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaTranferencias_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaTranferencias_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fianza_Actual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fianza_Anterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="anio_Tranferencia" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha_Contabilidad_Transferencia" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idTransferencia" type="xs:int" />
+      <xs:element minOccurs="0" name="mes_Transferencia" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion_Transferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa_Transferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_Contabilidad_Transferencia" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaTranferencias_Result" nillable="true" type="tns:paListarFuncionariosFianzaTranferencias_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaTranferenciasReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaTranferenciasReporte_Result" nillable="true" type="tns:paListarFuncionariosFianzaTranferenciasReporte_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaTranferenciasReporte_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaTranferenciasReporte_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaTranferenciasReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fianza_Actual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fianza_Anterior" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="anio_Tranferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Contabilidad_Transferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idTransferencia" type="xs:int" />
+      <xs:element minOccurs="0" name="mes_Transferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion_Transferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa_Transferencia" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_Contabilidad_Transferencia" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaTranferenciasReporte_Result" nillable="true" type="tns:paListarFuncionariosFianzaTranferenciasReporte_Result" />
+  <xs:complexType name="ArrayOfviRolUsuarioListar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="viRolUsuarioListar" nillable="true" type="tns:viRolUsuarioListar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfviRolUsuarioListar" nillable="true" type="tns:ArrayOfviRolUsuarioListar" />
+  <xs:complexType name="viRolUsuarioListar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idRol" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idRolUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="idUsuario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="rol" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="viRolUsuarioListar" nillable="true" type="tns:viRolUsuarioListar" />
+  <xs:complexType name="ArrayOfpaSueldosMensuales_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paSueldosMensuales_Result" nillable="true" type="tns:paSueldosMensuales_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaSueldosMensuales_Result" nillable="true" type="tns:ArrayOfpaSueldosMensuales_Result" />
+  <xs:complexType name="paSueldosMensuales_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idSueldoMensual" type="xs:int" />
+      <xs:element minOccurs="0" name="incremento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paSueldosMensuales_Result" nillable="true" type="tns:paSueldosMensuales_Result" />
+  <xs:complexType name="ArrayOfviUsuarioMenu">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="viUsuarioMenu" nillable="true" type="tns:viUsuarioMenu" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfviUsuarioMenu" nillable="true" type="tns:ArrayOfviUsuarioMenu" />
+  <xs:complexType name="viUsuarioMenu">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idMenu" type="xs:int" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="menu" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Elemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="viUsuarioMenu" nillable="true" type="tns:viUsuarioMenu" />
+  <xs:complexType name="ArrayOfviUsuarioListarDatos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="viUsuarioListarDatos" nillable="true" type="tns:viUsuarioListarDatos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfviUsuarioListarDatos" nillable="true" type="tns:ArrayOfviUsuarioListarDatos" />
+  <xs:complexType name="viUsuarioListarDatos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="clave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="domicilio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Civil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Nacimiento" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="idTipoDocumento" type="xs:int" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="viUsuarioListarDatos" nillable="true" type="tns:viUsuarioListarDatos" />
+  <xs:complexType name="ArrayOfpaUsuarioBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paUsuarioBuscar_Result" nillable="true" type="tns:paUsuarioBuscar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaUsuarioBuscar_Result" nillable="true" type="tns:ArrayOfpaUsuarioBuscar_Result" />
+  <xs:complexType name="paUsuarioBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="domicilio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paUsuarioBuscar_Result" nillable="true" type="tns:paUsuarioBuscar_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscar_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscar_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscar_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscar_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscar_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarGeneral_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarGeneral_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarGeneral_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarGeneral_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarGeneral_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarGeneral_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarGeneral_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarGeneral_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarGeneralAdministrador_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarGeneralAdministrador_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarGeneralAdministrador_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarGeneralAdministrador_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarGeneralAdministrador_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarGeneralAdministrador_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarGeneralAdministrador_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarGeneralAdministrador_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarBaja_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarBaja_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarBaja_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarBaja_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarBaja_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarBaja_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarBaja_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarBaja_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarCartilla_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarCartilla_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarCartilla_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarCartilla_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarCartilla_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarCartilla_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarCartilla_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarCartilla_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarContaVali_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarContaVali_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarContaVali_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarContaVali_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarContaVali_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarContaVali_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Validar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_Descontar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="haber_Mensual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idDescuento" type="xs:int" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarContaVali_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarContaVali_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscaridFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscaridFianza_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscaridFianza_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscaridFianza_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscaridFianza_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscaridFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscaridFianza_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscaridFianza_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioVerificaridFianzaCompleta_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioVerificaridFianzaCompleta_Result" nillable="true" type="tns:paFuncionarioVerificaridFianzaCompleta_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioVerificaridFianzaCompleta_Result" nillable="true" type="tns:ArrayOfpaFuncionarioVerificaridFianzaCompleta_Result" />
+  <xs:complexType name="paFuncionarioVerificaridFianzaCompleta_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioVerificaridFianzaCompleta_Result" nillable="true" type="tns:paFuncionarioVerificaridFianzaCompleta_Result" />
+  <xs:complexType name="ArrayOfpaReporteFuncionarioCertificadoidFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteFuncionarioCertificadoidFianza_Result" nillable="true" type="tns:paReporteFuncionarioCertificadoidFianza_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteFuncionarioCertificadoidFianza_Result" nillable="true" type="tns:ArrayOfpaReporteFuncionarioCertificadoidFianza_Result" />
+  <xs:complexType name="paReporteFuncionarioCertificadoidFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="departamento_Nacimiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_DescuentoLetra" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteFuncionarioCertificadoidFianza_Result" nillable="true" type="tns:paReporteFuncionarioCertificadoidFianza_Result" />
+  <xs:complexType name="ArrayOfpaListaOficinaUnidadEjecutora_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListaOficinaUnidadEjecutora_Result" nillable="true" type="tns:paListaOficinaUnidadEjecutora_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListaOficinaUnidadEjecutora_Result" nillable="true" type="tns:ArrayOfpaListaOficinaUnidadEjecutora_Result" />
+  <xs:complexType name="paListaOficinaUnidadEjecutora_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idOficina" type="xs:int" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListaOficinaUnidadEjecutora_Result" nillable="true" type="tns:paListaOficinaUnidadEjecutora_Result" />
+  <xs:complexType name="ArrayOfpaOficinasListar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paOficinasListar_Result" nillable="true" type="tns:paOficinasListar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaOficinasListar_Result" nillable="true" type="tns:ArrayOfpaOficinasListar_Result" />
+  <xs:complexType name="paOficinasListar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo_Distrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigo_Zeus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cuantia" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idOficina" type="xs:int" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="porcentaje_Descuento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="unidad_Ejecutora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paOficinasListar_Result" nillable="true" type="tns:paOficinasListar_Result" />
+  <xs:complexType name="ArrayOfpaOficinaBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paOficinaBuscar_Result" nillable="true" type="tns:paOficinaBuscar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaOficinaBuscar_Result" nillable="true" type="tns:ArrayOfpaOficinaBuscar_Result" />
+  <xs:complexType name="paOficinaBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idOficina" type="xs:int" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paOficinaBuscar_Result" nillable="true" type="tns:paOficinaBuscar_Result" />
+  <xs:complexType name="ArrayOfviPersonaListar">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="viPersonaListar" nillable="true" type="tns:viPersonaListar" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfviPersonaListar" nillable="true" type="tns:ArrayOfviPersonaListar" />
+  <xs:complexType name="viPersonaListar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="domicilio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Civil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Nacimiento" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="idTipoDocumento" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_documento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="viPersonaListar" nillable="true" type="tns:viPersonaListar" />
+  <xs:complexType name="ArrayOfpaPersonaBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paPersonaBuscar_Result" nillable="true" type="tns:paPersonaBuscar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaPersonaBuscar_Result" nillable="true" type="tns:ArrayOfpaPersonaBuscar_Result" />
+  <xs:complexType name="paPersonaBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado_Civil" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sexo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Nacimiento" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_documento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paPersonaBuscar_Result" nillable="true" type="tns:paPersonaBuscar_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasReclasificacion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasReclasificacion_Result" nillable="true" type="tns:paListarFianzasReclasificacion_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasReclasificacion_Result" nillable="true" type="tns:ArrayOfpaListarFianzasReclasificacion_Result" />
+  <xs:complexType name="paListarFianzasReclasificacion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idReclasificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_727" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sigma" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasReclasificacion_Result" nillable="true" type="tns:paListarFianzasReclasificacion_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasReclasificacionPendientes_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasReclasificacionPendientes_Result" nillable="true" type="tns:paListarFianzasReclasificacionPendientes_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasReclasificacionPendientes_Result" nillable="true" type="tns:ArrayOfpaListarFianzasReclasificacionPendientes_Result" />
+  <xs:complexType name="paListarFianzasReclasificacionPendientes_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sigma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasReclasificacionPendientes_Result" nillable="true" type="tns:paListarFianzasReclasificacionPendientes_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasReclasificacionReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasReclasificacionReporte_Result" nillable="true" type="tns:paListarFianzasReclasificacionReporte_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasReclasificacionReporte_Result" nillable="true" type="tns:ArrayOfpaListarFianzasReclasificacionReporte_Result" />
+  <xs:complexType name="paListarFianzasReclasificacionReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idReclasificacion" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monto_727" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sigma" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasReclasificacionReporte_Result" nillable="true" type="tns:paListarFianzasReclasificacionReporte_Result" />
+  <xs:complexType name="ArrayOfpaListarSolicitudesFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarSolicitudesFianza_Result" nillable="true" type="tns:paListarSolicitudesFianza_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarSolicitudesFianza_Result" nillable="true" type="tns:ArrayOfpaListarSolicitudesFianza_Result" />
+  <xs:complexType name="paListarSolicitudesFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Aceptacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Registro_RRHH" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_limite_Presentacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="haber_basico" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idSolicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="solicitud_Aceptada" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tipo_Solicitud_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_Asesor_Acepta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarSolicitudesFianza_Result" nillable="true" type="tns:paListarSolicitudesFianza_Result" />
+  <xs:complexType name="ArrayOfpaListarSolicitudesFianzaDiasRestantes_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarSolicitudesFianzaDiasRestantes_Result" nillable="true" type="tns:paListarSolicitudesFianzaDiasRestantes_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarSolicitudesFianzaDiasRestantes_Result" nillable="true" type="tns:ArrayOfpaListarSolicitudesFianzaDiasRestantes_Result" />
+  <xs:complexType name="paListarSolicitudesFianzaDiasRestantes_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Aceptacion" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Registro_RRHH" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_limite_Presentacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="haber_basico" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idSolicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="solicitud_Aceptada" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="tipo_Solicitud_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_Asesor_Acepta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarSolicitudesFianzaDiasRestantes_Result" nillable="true" type="tns:paListarSolicitudesFianzaDiasRestantes_Result" />
+  <xs:complexType name="ArrayOfpaListarSolicitudesFianzaDiasRestantesReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarSolicitudesFianzaDiasRestantesReporte_Result" nillable="true" type="tns:paListarSolicitudesFianzaDiasRestantesReporte_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarSolicitudesFianzaDiasRestantesReporte_Result" nillable="true" type="tns:ArrayOfpaListarSolicitudesFianzaDiasRestantesReporte_Result" />
+  <xs:complexType name="paListarSolicitudesFianzaDiasRestantesReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Aceptacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Registro_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_limite_Presentacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="haber_basico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idSolicitud" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="solicitud_Aceptada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Solicitud_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_Asesor_Acepta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarSolicitudesFianzaDiasRestantesReporte_Result" nillable="true" type="tns:paListarSolicitudesFianzaDiasRestantesReporte_Result" />
+  <xs:complexType name="ArrayOfpaReporteSolDevolucion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteSolDevolucion_Result" nillable="true" type="tns:paReporteSolDevolucion_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteSolDevolucion_Result" nillable="true" type="tns:ArrayOfpaReporteSolDevolucion_Result" />
+  <xs:complexType name="paReporteSolDevolucion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="año_Impresa_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idSolicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lugar_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro_FianzaDevolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_descontado_en_planilla" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_descontado_en_planilla_literal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteSolDevolucion_Result" nillable="true" type="tns:paReporteSolDevolucion_Result" />
+  <xs:complexType name="ArrayOfpaReporteSolFianEconomica_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteSolFianEconomica_Result" nillable="true" type="tns:paReporteSolFianEconomica_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteSolFianEconomica_Result" nillable="true" type="tns:ArrayOfpaReporteSolFianEconomica_Result" />
+  <xs:complexType name="paReporteSolFianEconomica_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idSolicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lugar_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="porcentaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sueldo_Mensual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="totalidad_Salario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteSolFianEconomica_Result" nillable="true" type="tns:paReporteSolFianEconomica_Result" />
+  <xs:complexType name="ArrayOfpaReporteSolFianEconomicaTotal_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteSolFianEconomicaTotal_Result" nillable="true" type="tns:paReporteSolFianEconomicaTotal_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteSolFianEconomicaTotal_Result" nillable="true" type="tns:ArrayOfpaReporteSolFianEconomicaTotal_Result" />
+  <xs:complexType name="paReporteSolFianEconomicaTotal_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idSolicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lugar_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="porcentaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sueldo_Mensual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="totalidad_Salario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteSolFianEconomicaTotal_Result" nillable="true" type="tns:paReporteSolFianEconomicaTotal_Result" />
+  <xs:complexType name="ArrayOfpaReporteSolFianEconomicaNoRequiereFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteSolFianEconomicaNoRequiereFianza_Result" nillable="true" type="tns:paReporteSolFianEconomicaNoRequiereFianza_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteSolFianEconomicaNoRequiereFianza_Result" nillable="true" type="tns:ArrayOfpaReporteSolFianEconomicaNoRequiereFianza_Result" />
+  <xs:complexType name="paReporteSolFianEconomicaNoRequiereFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idSolicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="lugar_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="porcentaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sueldo_Mensual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="totalidad_Salario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteSolFianEconomicaNoRequiereFianza_Result" nillable="true" type="tns:paReporteSolFianEconomicaNoRequiereFianza_Result" />
+  <xs:complexType name="ArrayOfpaValidacionRegistroSolicitudes_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionRegistroSolicitudes_Result" nillable="true" type="tns:paValidacionRegistroSolicitudes_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionRegistroSolicitudes_Result" nillable="true" type="tns:ArrayOfpaValidacionRegistroSolicitudes_Result" />
+  <xs:complexType name="paValidacionRegistroSolicitudes_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dias" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idSolicitud" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionRegistroSolicitudes_Result" nillable="true" type="tns:paValidacionRegistroSolicitudes_Result" />
+  <xs:complexType name="ArrayOfpaListaCargoOficina_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListaCargoOficina_Result" nillable="true" type="tns:paListaCargoOficina_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListaCargoOficina_Result" nillable="true" type="tns:ArrayOfpaListaCargoOficina_Result" />
+  <xs:complexType name="paListaCargoOficina_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idCargo" type="xs:int" />
+      <xs:element minOccurs="0" name="idCargoOficina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListaCargoOficina_Result" nillable="true" type="tns:paListaCargoOficina_Result" />
+  <xs:complexType name="ArrayOfpaListaCargoOficinaAdmin_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListaCargoOficinaAdmin_Result" nillable="true" type="tns:paListaCargoOficinaAdmin_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListaCargoOficinaAdmin_Result" nillable="true" type="tns:ArrayOfpaListaCargoOficinaAdmin_Result" />
+  <xs:complexType name="paListaCargoOficinaAdmin_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idCargo" type="xs:int" />
+      <xs:element minOccurs="0" name="idCargoOficina" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListaCargoOficinaAdmin_Result" nillable="true" type="tns:paListaCargoOficinaAdmin_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaDevolucionContabilidadReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaDevolucionContabilidadReporte_Result" nillable="true" type="tns:paListarFuncionariosFianzaDevolucionContabilidadReporte_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaDevolucionContabilidadReporte_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaDevolucionContabilidadReporte_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaDevolucionContabilidadReporte_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c31" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="haber_Mensual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="monto_beneficiario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro_Cheque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaDevolucionContabilidadReporte_Result" nillable="true" type="tns:paListarFuncionariosFianzaDevolucionContabilidadReporte_Result" />
+  <xs:complexType name="ArrayOfpaEscalaSalarialGestion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paEscalaSalarialGestion_Result" nillable="true" type="tns:paEscalaSalarialGestion_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaEscalaSalarialGestion_Result" nillable="true" type="tns:ArrayOfpaEscalaSalarialGestion_Result" />
+  <xs:complexType name="paEscalaSalarialGestion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="categoria" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clase" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="denominacion_Puesto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idEscalaSalarial" type="xs:int" />
+      <xs:element minOccurs="0" name="idSueldoMensual" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="incremento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="nivel_Salarial" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Items" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="sueldo_mensual" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paEscalaSalarialGestion_Result" nillable="true" type="tns:paEscalaSalarialGestion_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaRRHH_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaRRHH_Result" nillable="true" type="tns:paListarFuncionariosFianzaRRHH_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaRRHH_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaRRHH_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaRRHH_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Resolucion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_limite_Fianza" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="haber_Mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="usuario_Asesor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaRRHH_Result" nillable="true" type="tns:paListarFuncionariosFianzaRRHH_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaConResolucion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaConResolucion_Result" nillable="true" type="tns:paListarFuncionariosFianzaConResolucion_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaConResolucion_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaConResolucion_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaConResolucion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Resolucion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_limite_Fianza" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="haber_Mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="usuario_Asesor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario_RRHH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaConResolucion_Result" nillable="true" type="tns:paListarFuncionariosFianzaConResolucion_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaConResolucionBienesGravados_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaConResolucionBienesGravados_Result" nillable="true" type="tns:paListarFuncionariosFianzaConResolucionBienesGravados_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaConResolucionBienesGravados_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaConResolucionBienesGravados_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaConResolucionBienesGravados_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cpbte" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_favor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="a_favor_a" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="concepto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Actual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Bien_Inmueble" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Resolucion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fianza_Validada_Contabilidad" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="tipo_t" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ultimo_registro" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="usuario_Asesor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaConResolucionBienesGravados_Result" nillable="true" type="tns:paListarFuncionariosFianzaConResolucionBienesGravados_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaDevolucion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaDevolucion_Result" nillable="true" type="tns:paListarFuncionariosFianzaDevolucion_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaDevolucion_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaDevolucion_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaDevolucion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Fianza" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="haber_Mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_beneficiario" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaDevolucion_Result" nillable="true" type="tns:paListarFuncionariosFianzaDevolucion_Result" />
+  <xs:complexType name="ArrayOfpaListarFuncionariosFianzaDevolucionContabilidad_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFuncionariosFianzaDevolucionContabilidad_Result" nillable="true" type="tns:paListarFuncionariosFianzaDevolucionContabilidad_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFuncionariosFianzaDevolucionContabilidad_Result" nillable="true" type="tns:ArrayOfpaListarFuncionariosFianzaDevolucionContabilidad_Result" />
+  <xs:complexType name="paListarFuncionariosFianzaDevolucionContabilidad_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="c31" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Fianza" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="gestion" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="haber_Mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_beneficiario" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro_Cheque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Documento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numero_Fianza_Solicitud" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="numero_Memorando" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_contrato_item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFuncionariosFianzaDevolucionContabilidad_Result" nillable="true" type="tns:paListarFuncionariosFianzaDevolucionContabilidad_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarTipoFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarTipoFianza_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarTipoFianza_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarTipoFianza_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarTipoFianza_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarTipoFianza_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Favor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="concepto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cpbte" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_Sigma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Bien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarTipoFianza_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarTipoFianza_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Favor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="c21" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="concepto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cpbte" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_Sigma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tipo_Bien" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ubicacion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado_Result" />
+  <xs:complexType name="ArrayOfpaFianzasListarMesAnioDescuentos_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFianzasListarMesAnioDescuentos_Result" nillable="true" type="tns:paFianzasListarMesAnioDescuentos_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFianzasListarMesAnioDescuentos_Result" nillable="true" type="tns:ArrayOfpaFianzasListarMesAnioDescuentos_Result" />
+  <xs:complexType name="paFianzasListarMesAnioDescuentos_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Funcionarios" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unidad_Ejecutora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idUnidadEjecutora" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFianzasListarMesAnioDescuentos_Result" nillable="true" type="tns:paFianzasListarMesAnioDescuentos_Result" />
+  <xs:complexType name="ArrayOfpaFianzasListarMesAnioContaVali_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFianzasListarMesAnioContaVali_Result" nillable="true" type="tns:paFianzasListarMesAnioContaVali_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFianzasListarMesAnioContaVali_Result" nillable="true" type="tns:ArrayOfpaFianzasListarMesAnioContaVali_Result" />
+  <xs:complexType name="paFianzasListarMesAnioContaVali_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Funcionarios" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Registrado_Por" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unidad_Ejecutora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idUnidadEjecutora" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="todos_Validados" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFianzasListarMesAnioContaVali_Result" nillable="true" type="tns:paFianzasListarMesAnioContaVali_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result" nillable="true" type="tns:paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result" nillable="true" type="tns:ArrayOfpaListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result" />
+  <xs:complexType name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result" nillable="true" type="tns:paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado_Result" />
+  <xs:complexType name="ArrayOfpaFuncionarioFianzaActualBuscarMesAnioEditar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFuncionarioFianzaActualBuscarMesAnioEditar_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarMesAnioEditar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFuncionarioFianzaActualBuscarMesAnioEditar_Result" nillable="true" type="tns:ArrayOfpaFuncionarioFianzaActualBuscarMesAnioEditar_Result" />
+  <xs:complexType name="paFuncionarioFianzaActualBuscarMesAnioEditar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="a_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="falta_descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFuncionarioFianzaActualBuscarMesAnioEditar_Result" nillable="true" type="tns:paFuncionarioFianzaActualBuscarMesAnioEditar_Result" />
+  <xs:complexType name="ArrayOfpaValidacionEstadoFianzaHabilitado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionEstadoFianzaHabilitado_Result" nillable="true" type="tns:paValidacionEstadoFianzaHabilitado_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionEstadoFianzaHabilitado_Result" nillable="true" type="tns:ArrayOfpaValidacionEstadoFianzaHabilitado_Result" />
+  <xs:complexType name="paValidacionEstadoFianzaHabilitado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Usuario_Contabilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario_Habilitacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por_Contabilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por_Habilitacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_Contabilidad" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Habilitacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="totalDescontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="totalDescuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionEstadoFianzaHabilitado_Result" nillable="true" type="tns:paValidacionEstadoFianzaHabilitado_Result" />
+  <xs:complexType name="ArrayOfpaValidacionEstadoFianzaContabilidad_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionEstadoFianzaContabilidad_Result" nillable="true" type="tns:paValidacionEstadoFianzaContabilidad_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionEstadoFianzaContabilidad_Result" nillable="true" type="tns:ArrayOfpaValidacionEstadoFianzaContabilidad_Result" />
+  <xs:complexType name="paValidacionEstadoFianzaContabilidad_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Usuario_Contabilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario_Habilitacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por_Contabilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por_Habilitacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fecha_Contabilidad" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Habilitacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="totalDescontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="totalDescuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionEstadoFianzaContabilidad_Result" nillable="true" type="tns:paValidacionEstadoFianzaContabilidad_Result" />
+  <xs:complexType name="ArrayOfpaValidacionEstadoFianzaRRHH_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionEstadoFianzaRRHH_Result" nillable="true" type="tns:paValidacionEstadoFianzaRRHH_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionEstadoFianzaRRHH_Result" nillable="true" type="tns:ArrayOfpaValidacionEstadoFianzaRRHH_Result" />
+  <xs:complexType name="paValidacionEstadoFianzaRRHH_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Usuario_Contabilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario_Habilitacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por_Contabilidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Validado_Por_Habilitacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Contabilidad" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fecha_Habilitacion" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="totalDescontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="totalDescuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionEstadoFianzaRRHH_Result" nillable="true" type="tns:paValidacionEstadoFianzaRRHH_Result" />
+  <xs:complexType name="ArrayOfpaValidacionParaCertificadosRRHH_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionParaCertificadosRRHH_Result" nillable="true" type="tns:paValidacionParaCertificadosRRHH_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionParaCertificadosRRHH_Result" nillable="true" type="tns:ArrayOfpaValidacionParaCertificadosRRHH_Result" />
+  <xs:complexType name="paValidacionParaCertificadosRRHH_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="fianza_impresa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionParaCertificadosRRHH_Result" nillable="true" type="tns:paValidacionParaCertificadosRRHH_Result" />
+  <xs:complexType name="ArrayOfpaValidacionParaCertificadosHabilitado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionParaCertificadosHabilitado_Result" nillable="true" type="tns:paValidacionParaCertificadosHabilitado_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionParaCertificadosHabilitado_Result" nillable="true" type="tns:ArrayOfpaValidacionParaCertificadosHabilitado_Result" />
+  <xs:complexType name="paValidacionParaCertificadosHabilitado_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionParaCertificadosHabilitado_Result" nillable="true" type="tns:paValidacionParaCertificadosHabilitado_Result" />
+  <xs:complexType name="ArrayOfpaValidacionParaCertificadosContabilidad_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paValidacionParaCertificadosContabilidad_Result" nillable="true" type="tns:paValidacionParaCertificadosContabilidad_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaValidacionParaCertificadosContabilidad_Result" nillable="true" type="tns:ArrayOfpaValidacionParaCertificadosContabilidad_Result" />
+  <xs:complexType name="paValidacionParaCertificadosContabilidad_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paValidacionParaCertificadosContabilidad_Result" nillable="true" type="tns:paValidacionParaCertificadosContabilidad_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasEconomicasReporteGlobal_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasEconomicasReporteGlobal_Result" nillable="true" type="tns:paListarFianzasEconomicasReporteGlobal_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasEconomicasReporteGlobal_Result" nillable="true" type="tns:ArrayOfpaListarFianzasEconomicasReporteGlobal_Result" />
+  <xs:complexType name="paListarFianzasEconomicasReporteGlobal_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="beneficiarioD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21A" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21AG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21DP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21E" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21F" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21J" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21JU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21M" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21MA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21N" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21O" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_31" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembreP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mes_Actual_Descuentos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro_cheque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sigma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727_Gestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t_727" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t_727D" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasEconomicasReporteGlobal_Result" nillable="true" type="tns:paListarFianzasEconomicasReporteGlobal_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasRealesReporteGlobal_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasRealesReporteGlobal_Result" nillable="true" type="tns:paListarFianzasRealesReporteGlobal_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasRealesReporteGlobal_Result" nillable="true" type="tns:ArrayOfpaListarFianzasRealesReporteGlobal_Result" />
+  <xs:complexType name="paListarFianzasRealesReporteGlobal_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CPBTE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ubicacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="a_favor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="a_favor_" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="beneficiarioD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_31" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="concepto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Actual" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Bien_Inmueble" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="folio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="inf_Resol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mes_Actual_Descuentos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_abril" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_agosto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_diciembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_enero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_febrero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_julio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_junio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_marzo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_mayo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_noviembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_octubre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registro_mes_septiembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t_727" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t_727D" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ultimo_Registro" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasRealesReporteGlobal_Result" nillable="true" type="tns:paListarFianzasRealesReporteGlobal_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasEconomicasReporteT727_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasEconomicasReporteT727_Result" nillable="true" type="tns:paListarFianzasEconomicasReporteT727_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasEconomicasReporteT727_Result" nillable="true" type="tns:ArrayOfpaListarFianzasEconomicasReporteT727_Result" />
+  <xs:complexType name="paListarFianzasEconomicasReporteT727_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="beneficiarioD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21A" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21AG" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21DP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21E" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21F" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21J" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21JU" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21M" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21MA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21N" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21O" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_21S" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="c_31" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembreP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mes_Actual_Descuentos" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nro_cheque" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sigma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727_Gestion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t_727" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t_727D" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasEconomicasReporteT727_Result" nillable="true" type="tns:paListarFianzasEconomicasReporteT727_Result" />
+  <xs:complexType name="ArrayOfpaReporteCartilla_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteCartilla_Result" nillable="true" type="tns:paReporteCartilla_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteCartilla_Result" nillable="true" type="tns:ArrayOfpaReporteCartilla_Result" />
+  <xs:complexType name="paReporteCartilla_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="importe_descontado_s_g_ofrecimiento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mes_anio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="saldo_a_Descontar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_descontado_en_planilla" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteCartilla_Result" nillable="true" type="tns:paReporteCartilla_Result" />
+  <xs:complexType name="ArrayOfpaReporteCartillaT727_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteCartillaT727_Result" nillable="true" type="tns:paReporteCartillaT727_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteCartillaT727_Result" nillable="true" type="tns:ArrayOfpaReporteCartillaT727_Result" />
+  <xs:complexType name="paReporteCartillaT727_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="mes_anio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteCartillaT727_Result" nillable="true" type="tns:paReporteCartillaT727_Result" />
+  <xs:complexType name="ArrayOfpaFianzasPorFuncionarioBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paFianzasPorFuncionarioBuscar_Result" nillable="true" type="tns:paFianzasPorFuncionarioBuscar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaFianzasPorFuncionarioBuscar_Result" nillable="true" type="tns:ArrayOfpaFianzasPorFuncionarioBuscar_Result" />
+  <xs:complexType name="paFianzasPorFuncionarioBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Estado_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha_Memorando" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="haber_mensual" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="idFuncionario" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="nombre_Completo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="resolucion_Administrativa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="vigencia_Contrato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paFianzasPorFuncionarioBuscar_Result" nillable="true" type="tns:paFianzasPorFuncionarioBuscar_Result" />
+  <xs:complexType name="ArrayOfpaReporteCartillaHabilitadoEditar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteCartillaHabilitadoEditar_Result" nillable="true" type="tns:paReporteCartillaHabilitadoEditar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteCartillaHabilitadoEditar_Result" nillable="true" type="tns:ArrayOfpaReporteCartillaHabilitadoEditar_Result" />
+  <xs:complexType name="paReporteCartillaHabilitadoEditar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="anio" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="c21" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="mes" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="monto_Beneficiario" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="observacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="saldo_a_Descontar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="t727" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="total_descontado_en_planilla" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="validado" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="validado_Por" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteCartillaHabilitadoEditar_Result" nillable="true" type="tns:paReporteCartillaHabilitadoEditar_Result" />
+  <xs:complexType name="ArrayOfpaReporteFormularioA2_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paReporteFormularioA2_Result" nillable="true" type="tns:paReporteFormularioA2_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaReporteFormularioA2_Result" nillable="true" type="tns:ArrayOfpaReporteFormularioA2_Result" />
+  <xs:complexType name="paReporteFormularioA2_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="abril" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="agosto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="diciembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="enero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="estado_Cuenta_Gestion_Pasada" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="febrero" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="h_b" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" type="xs:int" />
+      <xs:element minOccurs="0" name="item" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="julio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="junio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="marzo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="mayo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="noviembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="octubre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="septiembre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descontar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paReporteFormularioA2_Result" nillable="true" type="tns:paReporteFormularioA2_Result" />
+  <xs:complexType name="ArrayOfContador_Impresion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Contador_Impresion_Result" nillable="true" type="tns:Contador_Impresion_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContador_Impresion_Result" nillable="true" type="tns:ArrayOfContador_Impresion_Result" />
+  <xs:complexType name="Contador_Impresion_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cantidad" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="idUnidadEjecutora" type="xs:int" />
+      <xs:element minOccurs="0" name="unidad_Ejecutora" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Contador_Impresion_Result" nillable="true" type="tns:Contador_Impresion_Result" />
+  <xs:complexType name="ArrayOfpaListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result" nillable="true" type="tns:paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result" nillable="true" type="tns:ArrayOfpaListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result" />
+  <xs:complexType name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Nro_Fianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos_Y_Nombres" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idFianza" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sigma" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="total_Descuento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result" nillable="true" type="tns:paListarFianzasEconomicasReporteGlobalUnidadEjecutora_Result" />
+</xs:schema>

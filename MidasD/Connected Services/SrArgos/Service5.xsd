@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WcfArgos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfArgos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.2.25/wcfArgos/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Consulta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idConsulta" type="xs:int" />
+      <xs:element minOccurs="0" name="nroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="pdf" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Consulta" nillable="true" type="tns:Consulta" />
+  <xs:complexType name="ArrayOfConsulta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Consulta" nillable="true" type="tns:Consulta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConsulta" nillable="true" type="tns:ArrayOfConsulta" />
+  <xs:complexType name="Distrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Distrito" nillable="true" type="tns:Distrito" />
+  <xs:complexType name="ArrayOfDistrito">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Distrito" nillable="true" type="tns:Distrito" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDistrito" nillable="true" type="tns:ArrayOfDistrito" />
+  <xs:complexType name="Persona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="numeroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nacionalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="validado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="fotografia" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Persona" nillable="true" type="tns:Persona" />
+  <xs:complexType name="ArrayOfPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Persona" nillable="true" type="tns:Persona" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPersona" nillable="true" type="tns:ArrayOfPersona" />
+  <xs:complexType name="Tarjeta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idTarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoZeus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Tarjeta" nillable="true" type="tns:Tarjeta" />
+  <xs:complexType name="ArrayOfTarjeta">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tarjeta" nillable="true" type="tns:Tarjeta" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTarjeta" nillable="true" type="tns:ArrayOfTarjeta" />
+  <xs:complexType name="Usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clave" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
+  <xs:complexType name="ArrayOfUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Usuario" nillable="true" type="tns:Usuario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUsuario" nillable="true" type="tns:ArrayOfUsuario" />
+  <xs:complexType name="Visita">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idVisita" type="xs:int" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="idTarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="horaIngreso" type="ser:duration" />
+      <xs:element minOccurs="0" name="horaSalida" nillable="true" type="ser:duration" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Visita" nillable="true" type="tns:Visita" />
+  <xs:complexType name="ArrayOfVisita">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Visita" nillable="true" type="tns:Visita" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVisita" nillable="true" type="tns:ArrayOfVisita" />
+  <xs:complexType name="BitacoraVehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idBitacoraVehiculo" type="xs:int" />
+      <xs:element minOccurs="0" name="idVehiculo" type="xs:int" />
+      <xs:element minOccurs="0" name="fechaHora" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="esIngreso" type="xs:boolean" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BitacoraVehiculo" nillable="true" type="tns:BitacoraVehiculo" />
+  <xs:complexType name="ArrayOfBitacoraVehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BitacoraVehiculo" nillable="true" type="tns:BitacoraVehiculo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBitacoraVehiculo" nillable="true" type="tns:ArrayOfBitacoraVehiculo" />
+  <xs:complexType name="Vehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idVehiculo" type="xs:int" />
+      <xs:element minOccurs="0" name="placa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="clase" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="marca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="color" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vehiculo" nillable="true" type="tns:Vehiculo" />
+  <xs:complexType name="ArrayOfVehiculo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vehiculo" nillable="true" type="tns:Vehiculo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehiculo" nillable="true" type="tns:ArrayOfVehiculo" />
+  <xs:complexType name="CargoPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="idCargoPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="unidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="usuarioRegistro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fechaRegistro" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="registroActivo" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CargoPersona" nillable="true" type="tns:CargoPersona" />
+  <xs:complexType name="ArrayOfCargoPersona">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CargoPersona" nillable="true" type="tns:CargoPersona" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCargoPersona" nillable="true" type="tns:ArrayOfCargoPersona" />
+</xs:schema>

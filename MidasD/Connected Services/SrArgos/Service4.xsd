@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CadArgos" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CadArgos" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfpaPersonaListarPorDistrito_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paPersonaListarPorDistrito_Result" nillable="true" type="tns:paPersonaListarPorDistrito_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaPersonaListarPorDistrito_Result" nillable="true" type="tns:ArrayOfpaPersonaListarPorDistrito_Result" />
+  <xs:complexType name="paPersonaListarPorDistrito_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="distrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fotografia" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nacionalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paPersonaListarPorDistrito_Result" nillable="true" type="tns:paPersonaListarPorDistrito_Result" />
+  <xs:complexType name="ArrayOfpaTarjetaListar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paTarjetaListar_Result" nillable="true" type="tns:paTarjetaListar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaTarjetaListar_Result" nillable="true" type="tns:ArrayOfpaTarjetaListar_Result" />
+  <xs:complexType name="paTarjetaListar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoZeus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="distrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idTarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paTarjetaListar_Result" nillable="true" type="tns:paTarjetaListar_Result" />
+  <xs:complexType name="ArrayOfpaUsuarioBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paUsuarioBuscar_Result" nillable="true" type="tns:paUsuarioBuscar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaUsuarioBuscar_Result" nillable="true" type="tns:ArrayOfpaUsuarioBuscar_Result" />
+  <xs:complexType name="paUsuarioBuscar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cedulaIdentidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="distrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="rol" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paUsuarioBuscar_Result" nillable="true" type="tns:paUsuarioBuscar_Result" />
+  <xs:complexType name="paVisitaSalida_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoZeus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fotografia" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="idTarjeta" type="xs:int" />
+      <xs:element minOccurs="0" name="idVisita" type="xs:int" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paVisitaSalida_Result" nillable="true" type="tns:paVisitaSalida_Result" />
+  <xs:complexType name="ArrayOfpaVisitaSalida_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paVisitaSalida_Result" nillable="true" type="tns:paVisitaSalida_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaVisitaSalida_Result" nillable="true" type="tns:ArrayOfpaVisitaSalida_Result" />
+  <xs:complexType name="ArrayOfpaVisitaPorOficina_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paVisitaPorOficina_Result" nillable="true" type="tns:paVisitaPorOficina_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaVisitaPorOficina_Result" nillable="true" type="tns:ArrayOfpaVisitaPorOficina_Result" />
+  <xs:complexType name="paVisitaPorOficina_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="distrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="duracion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fecha" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="fotografia" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="horaIngreso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="horaSalida" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nacionalidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oficina" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="persona" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paVisitaPorOficina_Result" nillable="true" type="tns:paVisitaPorOficina_Result" />
+  <xs:complexType name="ArrayOfpaPersonaCargoListar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="paPersonaCargoListar_Result" nillable="true" type="tns:paPersonaCargoListar_Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfpaPersonaCargoListar_Result" nillable="true" type="tns:ArrayOfpaPersonaCargoListar_Result" />
+  <xs:complexType name="paPersonaCargoListar_Result">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cargo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoDistrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="distrito" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fotografia" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="idCargoPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="idPersona" type="xs:int" />
+      <xs:element minOccurs="0" name="materno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="numeroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="paterno" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="unidad" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="paPersonaCargoListar_Result" nillable="true" type="tns:paPersonaCargoListar_Result" />
+</xs:schema>

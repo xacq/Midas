@@ -1,0 +1,1367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MidasDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AltasBajas">
+    <Key>
+      <PropertyRef Name="idAltasBajas" />
+    </Key>
+    <Property Name="idAltasBajas" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+    <Property Name="fecha" Type="date" />
+    <Property Name="estado" Type="bit" />
+    <Property Name="idFuncionario" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Cargo">
+    <Key>
+      <PropertyRef Name="idCargo" />
+    </Key>
+    <Property Name="idCargo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="denominacion_Puesto" Type="varchar" MaxLength="150" />
+    <Property Name="descripcion_Puesto" Type="varchar" MaxLength="150" />
+    <Property Name="tipo_Personal" Type="varchar" MaxLength="150" />
+    <Property Name="idEscalaSalarial" Type="int" />
+    <Property Name="sigla" Type="varchar" MaxLength="50" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="CargoOficina">
+    <Key>
+      <PropertyRef Name="idCargoOficina" />
+    </Key>
+    <Property Name="idCargoOficina" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idCargo" Type="int" />
+    <Property Name="idOficina" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Descuento">
+    <Key>
+      <PropertyRef Name="idDescuento" />
+    </Key>
+    <Property Name="idDescuento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFianza" Type="int" />
+    <Property Name="monto_Beneficiario" Type="float" />
+    <Property Name="t727" Type="float" />
+    <Property Name="t727_Fianza_Real" Type="float" />
+    <Property Name="c21" Type="int" />
+    <Property Name="mes" Type="int" />
+    <Property Name="anio" Type="int" />
+    <Property Name="validado" Type="bit" />
+    <Property Name="validado_Por" Type="varchar" MaxLength="100" />
+    <Property Name="observacion" Type="varchar(max)" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Devolucion">
+    <Key>
+      <PropertyRef Name="idDevolucion" />
+    </Key>
+    <Property Name="idDevolucion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFianza" Type="int" />
+    <Property Name="idFuncionario" Type="int" />
+    <Property Name="resolucion_Administrativa" Type="varchar" MaxLength="50" />
+    <Property Name="c31" Type="varchar" MaxLength="50" />
+    <Property Name="nro_Cheque" Type="varchar" MaxLength="50" />
+    <Property Name="t727" Type="float" />
+    <Property Name="monto_Devolucion" Type="float" />
+    <Property Name="mes" Type="int" />
+    <Property Name="anio" Type="int" />
+    <Property Name="observacion" Type="varchar(max)" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="DireccionAdministrativa">
+    <Key>
+      <PropertyRef Name="idDireccionAdministrativa" />
+    </Key>
+    <Property Name="idDireccionAdministrativa" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Encargados">
+    <Key>
+      <PropertyRef Name="idEncargado" />
+    </Key>
+    <Property Name="idEncargado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idPersona" Type="int" />
+    <Property Name="idCargo" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="EscalaSalarial">
+    <Key>
+      <PropertyRef Name="idEscalaSalarial" />
+    </Key>
+    <Property Name="idEscalaSalarial" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="categoria" Type="varchar" MaxLength="100" />
+    <Property Name="clase" Type="int" />
+    <Property Name="nivel_Salarial" Type="int" />
+    <Property Name="denominacion_Puesto" Type="varchar(max)" />
+    <Property Name="numero_Items" Type="int" />
+    <Property Name="idSueldoMensual" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Fianza">
+    <Key>
+      <PropertyRef Name="idFianza" />
+    </Key>
+    <Property Name="idFianza" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nro_Fianza" Type="float" />
+    <Property Name="Nro_Fianza_Fianza_Real" Type="float" />
+    <Property Name="idTipoFianza" Type="int" />
+    <Property Name="idFuncionario" Type="int" />
+    <Property Name="registro_Sigma" Type="varchar" MaxLength="300" />
+    <Property Name="fecha_Limite_Fianza" Type="date" />
+    <Property Name="resolucion_Administrativa" Type="varchar" MaxLength="100" />
+    <Property Name="comprobante_CPBTE" Type="varchar" MaxLength="50" />
+    <Property Name="descripcion_Tipo_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="ubicacion_Fianza_Real" Type="varchar(max)" />
+    <Property Name="folio_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="concepto_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="a_Favor_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="ultimo_Registro_Fianza_Real" Type="float" />
+    <Property Name="tipo_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="a_Favor_2_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="estado_Bien_Inmueble_Fianza_Real" Type="varchar" MaxLength="300" />
+    <Property Name="fianza_Completa_Habilitado" Type="bit" />
+    <Property Name="usuario_Completa_Habilitado" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Completa_Habilitado" Type="datetime" />
+    <Property Name="fianza_Validada_Contabilidad" Type="bit" />
+    <Property Name="usuario_Validada_Contabilidad" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Validada_Contabilidad" Type="datetime" />
+    <Property Name="fianza_Devuelta_Contabilidad" Type="bit" />
+    <Property Name="usuario_Devuelta_Contabilidad" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Devuelta_Contabilidad" Type="datetime" />
+    <Property Name="fianza_Impresa_RRHH" Type="bit" />
+    <Property Name="usuario_Impresa_RRHH" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Impresa_RRHH" Type="datetime" />
+    <Property Name="observacion" Type="varchar(max)" />
+    <Property Name="usuario_RRHH" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_RRHH" Type="datetime" />
+    <Property Name="usuario_Resolucion" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Resolucion" Type="datetime" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Funcionario">
+    <Key>
+      <PropertyRef Name="idFuncionario" />
+    </Key>
+    <Property Name="idFuncionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idPersona" Type="int" />
+    <Property Name="numero_Memorando" Type="varchar" MaxLength="100" />
+    <Property Name="tipo_Contrato_Item" Type="int" />
+    <Property Name="vigencia_Contrato" Type="varchar(max)" />
+    <Property Name="idCargo" Type="int" />
+    <Property Name="idOficina" Type="int" />
+    <Property Name="codigo_Distrito" Type="varchar" MaxLength="15" />
+    <Property Name="fecha_Memorando" Type="date" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Imagen">
+    <Key>
+      <PropertyRef Name="idImagen" />
+    </Key>
+    <Property Name="idImagen" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idPersona" Type="int" />
+    <Property Name="imagen" Type="image" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="idMenu" />
+    </Key>
+    <Property Name="idMenu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="menu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Oficina">
+    <Key>
+      <PropertyRef Name="idOficina" />
+    </Key>
+    <Property Name="idOficina" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="oficina" Type="varchar" MaxLength="500" />
+    <Property Name="codigo_Distrito" Type="varchar" MaxLength="50" />
+    <Property Name="codigo_Zeus" Type="varchar" MaxLength="50" />
+    <Property Name="idZeus" Type="int" />
+    <Property Name="idUnidadEjecutora" Type="int" />
+    <Property Name="cuantia" Type="int" />
+    <Property Name="porcentaje_Descuento" Type="float" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="int" />
+    <Property Name="numero_Documento" Type="varchar" MaxLength="50" />
+    <Property Name="pais_Nacimiento" Type="varchar" MaxLength="150" />
+    <Property Name="departamento_Nacimiento" Type="varchar" MaxLength="150" />
+    <Property Name="localidad_Nacimiento" Type="varchar" MaxLength="150" />
+    <Property Name="provincia_Nacimiento" Type="varchar" MaxLength="150" />
+    <Property Name="paterno" Type="varchar" MaxLength="150" />
+    <Property Name="materno" Type="varchar" MaxLength="150" />
+    <Property Name="nombres" Type="varchar" MaxLength="150" />
+    <Property Name="domicilio" Type="varchar" MaxLength="150" />
+    <Property Name="profesion" Type="varchar" MaxLength="150" />
+    <Property Name="sexo" Type="varchar" MaxLength="50" />
+    <Property Name="estado_Civil" Type="varchar" MaxLength="50" />
+    <Property Name="fecha_Nacimiento" Type="date" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Reclasificacion">
+    <Key>
+      <PropertyRef Name="idReclasificacion" />
+    </Key>
+    <Property Name="idReclasificacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFianza" Type="int" />
+    <Property Name="monto_727" Type="float" />
+    <Property Name="mes" Type="int" />
+    <Property Name="anio" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rol" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="RolMenu">
+    <Key>
+      <PropertyRef Name="idRolMenu" />
+    </Key>
+    <Property Name="idRolMenu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="int" />
+    <Property Name="idMenu" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="RolUsuario">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+    </Key>
+    <Property Name="idRolUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="int" />
+    <Property Name="idUsuario" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Solicitudes">
+    <Key>
+      <PropertyRef Name="idSolicitud" />
+    </Key>
+    <Property Name="idSolicitud" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tipo_Solicitud_Fianza" Type="varchar" MaxLength="200" />
+    <Property Name="numero_memorando" Type="varchar" MaxLength="200" />
+    <Property Name="fecha_Memorando" Type="date" />
+    <Property Name="numero_Fianza_Solicitud" Type="int" />
+    <Property Name="gestion" Type="int" />
+    <Property Name="fecha_limite_presentacion" Type="date" />
+    <Property Name="usuario_RRHH" Type="varchar" MaxLength="50" />
+    <Property Name="fecha_Registro_RRHH" Type="datetime" />
+    <Property Name="usuario_Asesor_Acepta" Type="varchar" MaxLength="50" />
+    <Property Name="solicitud_Aceptada" Type="bit" />
+    <Property Name="fecha_Aceptacion" Type="datetime" Nullable="false" />
+    <Property Name="idPersona" Type="int" />
+    <Property Name="idCargo" Type="int" />
+    <Property Name="idOficina" Type="int" />
+    <Property Name="idEscalaSalarial" Type="int" />
+    <Property Name="idSueldoMensual" Type="int" />
+    <Property Name="tipo_Contrato_Item" Type="varchar" MaxLength="50" />
+    <Property Name="vigencia_Contrato" Type="varchar" MaxLength="50" />
+    <Property Name="idFianza_Transferir" Type="int" />
+    <Property Name="monto_Fianza_Transferir" Type="float" />
+    <Property Name="idFianza_Nueva" Type="int" />
+    <Property Name="idTipoFianza" Type="int" />
+    <Property Name="idDevolucion_Registro" Type="int" />
+    <Property Name="idTransferencia_Nueva" Type="int" />
+    <Property Name="observacion" Type="varchar(max)" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="SueldoMensual">
+    <Key>
+      <PropertyRef Name="idSueldoMensual" />
+    </Key>
+    <Property Name="idSueldoMensual" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="monto" Type="float" />
+    <Property Name="gestion" Type="int" />
+    <Property Name="incremento" Type="float" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6013: La tabla o vista 'MidasD.dbo.temporal' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
+        <EntityType Name="temporal">
+          <Property Name="idPersona" Type="int" />
+          <Property Name="c_21E" Type="int" />
+          <Property Name="enero" Type="float" />
+          <Property Name="c_21F" Type="int" />
+          <Property Name="febrero" Type="float" />
+          <Property Name="c_21M" Type="int" />
+          <Property Name="marzo" Type="nchar" MaxLength="10" />
+        </EntityType>-->
+  <EntityType Name="TipoDocumento">
+    <Key>
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idTipoDocumento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="TipoFianza">
+    <Key>
+      <PropertyRef Name="idTipoFianza" />
+    </Key>
+    <Property Name="idTipoFianza" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descripcion_Fianza" Type="varchar" MaxLength="100" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Transferencia">
+    <Key>
+      <PropertyRef Name="idTransferencia" />
+    </Key>
+    <Property Name="idTransferencia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idFianza" Type="int" />
+    <Property Name="idFuncionario" Type="int" />
+    <Property Name="idCargoAnterior" Type="int" />
+    <Property Name="numero_Memorando_Anterior" Type="varchar" MaxLength="200" />
+    <Property Name="fecha_Memorando_Anterior" Type="date" />
+    <Property Name="tipo_Contrato_item_Anterior" Type="varchar" MaxLength="200" />
+    <Property Name="vigencia_Contrato_Anterior" Type="varchar" MaxLength="200" />
+    <Property Name="idTipoFianzaAnterior" Type="int" />
+    <Property Name="idOficinaAnterior" Type="int" />
+    <Property Name="idSueldoSueldoMensual" Type="int" />
+    <Property Name="fecha_LimiteFianza_Anterior" Type="varchar" MaxLength="100" />
+    <Property Name="resolucion_Administrativa_Anterior" Type="varchar" MaxLength="100" />
+    <Property Name="usuario_RRHH_Anterior" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_RRHH_Anterior" Type="varchar" MaxLength="100" />
+    <Property Name="usuario_Resolucion_Anterior" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Resolucion_Anterior" Type="date" />
+    <Property Name="usuario_Impresa_Anterior" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Impresa_Anterior" Type="date" />
+    <Property Name="observacion_Anterior" Type="varchar(max)" />
+    <Property Name="monto_Fianza_Transferir" Type="float" />
+    <Property Name="resolucion_Administrativa_Transferencia" Type="varchar" MaxLength="150" />
+    <Property Name="usuario_Contabilidad_Transferencia" Type="varchar" MaxLength="100" />
+    <Property Name="fecha_Contabilidad_Transferencia" Type="datetime" />
+    <Property Name="mes_Transferencia" Type="int" />
+    <Property Name="anio_Tranferencia" Type="int" />
+    <Property Name="observacion_Transferencia" Type="varchar(max)" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="UnidadEjecutora">
+    <Key>
+      <PropertyRef Name="idUnidadEjecutora" />
+    </Key>
+    <Property Name="idUnidadEjecutora" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="idDireccionAdministrativa" Type="int" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_Usuario" Type="varchar" MaxLength="100" />
+    <Property Name="clave" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idPersona" Type="int" Nullable="false" />
+    <Property Name="rol" Type="varchar" MaxLength="50" />
+    <Property Name="idCodigoZeus" Type="int" />
+    <Property Name="usuarioRegistro" Type="varchar" MaxLength="100" />
+    <Property Name="fechaRegistro" Type="datetime" />
+    <Property Name="registroActivo" Type="bit" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viMenu' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viMenu">
+    <Key>
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="menu" />
+      <PropertyRef Name="nombre_Elemento" />
+    </Key>
+    <Property Name="idMenu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="menu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viPersonaListar' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viPersonaListar">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="int" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="int" />
+    <Property Name="paterno" Type="varchar" MaxLength="150" />
+    <Property Name="materno" Type="varchar" MaxLength="150" />
+    <Property Name="nombres" Type="varchar" MaxLength="150" />
+    <Property Name="nombre_Completo" Type="varchar" MaxLength="452" />
+    <Property Name="domicilio" Type="varchar" MaxLength="150" />
+    <Property Name="sexo" Type="varchar" MaxLength="50" />
+    <Property Name="estado_Civil" Type="varchar" MaxLength="50" />
+    <Property Name="tipo_documento" Type="varchar" MaxLength="50" />
+    <Property Name="numero_documento" Type="varchar" MaxLength="50" />
+    <Property Name="fecha_Nacimiento" Type="date" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viRol' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viRol">
+    <Key>
+      <PropertyRef Name="idRol" />
+      <PropertyRef Name="rol" />
+    </Key>
+    <Property Name="idRol" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="rol" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viRolMenu' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viRolMenu">
+    <Key>
+      <PropertyRef Name="idRolMenu" />
+    </Key>
+    <Property Name="idRolMenu" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="int" />
+    <Property Name="idMenu" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viRolUsuario' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viRolUsuario">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+    </Key>
+    <Property Name="idRolUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idRol" Type="int" />
+    <Property Name="idUsuario" Type="int" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viRolUsuarioListar' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viRolUsuarioListar">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+      <PropertyRef Name="rol" />
+    </Key>
+    <Property Name="idRolUsuario" Type="int" Nullable="false" />
+    <Property Name="idUsuario" Type="int" />
+    <Property Name="idRol" Type="int" />
+    <Property Name="rol" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viUsuario' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viUsuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="clave" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre_Usuario" Type="varchar" MaxLength="100" />
+    <Property Name="clave" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idPersona" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viUsuarioListarDatos' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viUsuarioListarDatos">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="clave" />
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="nombre_Usuario" Type="varchar" MaxLength="100" />
+    <Property Name="clave" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idPersona" Type="int" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="int" Nullable="false" />
+    <Property Name="paterno" Type="varchar" MaxLength="150" />
+    <Property Name="materno" Type="varchar" MaxLength="150" />
+    <Property Name="nombres" Type="varchar" MaxLength="150" />
+    <Property Name="nombre_Completo" Type="varchar" MaxLength="452" />
+    <Property Name="domicilio" Type="varchar" MaxLength="150" />
+    <Property Name="sexo" Type="varchar" MaxLength="50" />
+    <Property Name="estado_Civil" Type="varchar" MaxLength="50" />
+    <Property Name="fecha_Nacimiento" Type="date" />
+    <Property Name="numero_Documento" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'MidasD.dbo.viUsuarioMenu' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+  <EntityType Name="viUsuarioMenu">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="menu" />
+      <PropertyRef Name="nombre_Elemento" />
+    </Key>
+    <Property Name="idUsuario" Type="int" Nullable="false" />
+    <Property Name="nombre_Usuario" Type="varchar" MaxLength="100" />
+    <Property Name="idMenu" Type="int" Nullable="false" />
+    <Property Name="menu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Cargo_EscalaSalarial">
+    <End Role="EscalaSalarial" Type="Self.EscalaSalarial" Multiplicity="0..1" />
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EscalaSalarial">
+        <PropertyRef Name="idEscalaSalarial" />
+      </Principal>
+      <Dependent Role="Cargo">
+        <PropertyRef Name="idEscalaSalarial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CargoOficina_Cargo">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="0..1" />
+    <End Role="CargoOficina" Type="Self.CargoOficina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="CargoOficina">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CargoOficina_Oficina">
+    <End Role="Oficina" Type="Self.Oficina" Multiplicity="0..1" />
+    <End Role="CargoOficina" Type="Self.CargoOficina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oficina">
+        <PropertyRef Name="idOficina" />
+      </Principal>
+      <Dependent Role="CargoOficina">
+        <PropertyRef Name="idOficina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Descuento_Fianza1">
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="0..1" />
+    <End Role="Descuento" Type="Self.Descuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fianza">
+        <PropertyRef Name="idFianza" />
+      </Principal>
+      <Dependent Role="Descuento">
+        <PropertyRef Name="idFianza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DireccionAdministrativa_UnidadEjecutora">
+    <End Role="DireccionAdministrativa" Type="Self.DireccionAdministrativa" Multiplicity="1" />
+    <End Role="UnidadEjecutora" Type="Self.UnidadEjecutora" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DireccionAdministrativa">
+        <PropertyRef Name="idDireccionAdministrativa" />
+      </Principal>
+      <Dependent Role="UnidadEjecutora">
+        <PropertyRef Name="idDireccionAdministrativa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Encargados_Cargo">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="0..1" />
+    <End Role="Encargados" Type="Self.Encargados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="Encargados">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Encargados_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Encargados" Type="Self.Encargados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Encargados">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EscalaSalarial_HaberMensual">
+    <End Role="SueldoMensual" Type="Self.SueldoMensual" Multiplicity="0..1" />
+    <End Role="EscalaSalarial" Type="Self.EscalaSalarial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SueldoMensual">
+        <PropertyRef Name="idSueldoMensual" />
+      </Principal>
+      <Dependent Role="EscalaSalarial">
+        <PropertyRef Name="idSueldoMensual" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fianza_Funcionario">
+    <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="0..1" />
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Funcionario">
+        <PropertyRef Name="idFuncionario" />
+      </Principal>
+      <Dependent Role="Fianza">
+        <PropertyRef Name="idFuncionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fianza_TipoFianza">
+    <End Role="TipoFianza" Type="Self.TipoFianza" Multiplicity="0..1" />
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoFianza">
+        <PropertyRef Name="idTipoFianza" />
+      </Principal>
+      <Dependent Role="Fianza">
+        <PropertyRef Name="idTipoFianza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Funcionario_Cargo">
+    <End Role="Cargo" Type="Self.Cargo" Multiplicity="0..1" />
+    <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cargo">
+        <PropertyRef Name="idCargo" />
+      </Principal>
+      <Dependent Role="Funcionario">
+        <PropertyRef Name="idCargo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Funcionario_Oficina">
+    <End Role="Oficina" Type="Self.Oficina" Multiplicity="0..1" />
+    <End Role="Funcionario" Type="Self.Funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oficina">
+        <PropertyRef Name="idOficina" />
+      </Principal>
+      <Dependent Role="Funcionario">
+        <PropertyRef Name="idOficina" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Imagen_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Imagen" Type="Self.Imagen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Imagen">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Oficina_UnidadEjecutora">
+    <End Role="UnidadEjecutora" Type="Self.UnidadEjecutora" Multiplicity="0..1" />
+    <End Role="Oficina" Type="Self.Oficina" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UnidadEjecutora">
+        <PropertyRef Name="idUnidadEjecutora" />
+      </Principal>
+      <Dependent Role="Oficina">
+        <PropertyRef Name="idUnidadEjecutora" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_TipoDocumento">
+    <End Role="TipoDocumento" Type="Self.TipoDocumento" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDocumento">
+        <PropertyRef Name="idTipoDocumento" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolMenu_Menu">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="RolMenu" Type="Self.RolMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="idMenu" />
+      </Principal>
+      <Dependent Role="RolMenu">
+        <PropertyRef Name="idMenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolMenu_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="RolMenu" Type="Self.RolMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="RolMenu">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolUsuario_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="RolUsuario" Type="Self.RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="RolUsuario">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolUsuario_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="RolUsuario" Type="Self.RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="RolUsuario">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitudes_Devolucion">
+    <End Role="Devolucion" Type="Self.Devolucion" Multiplicity="0..1" />
+    <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Devolucion">
+        <PropertyRef Name="idDevolucion" />
+      </Principal>
+      <Dependent Role="Solicitudes">
+        <PropertyRef Name="idDevolucion_Registro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Solicitudes_Transferencia">
+    <End Role="Transferencia" Type="Self.Transferencia" Multiplicity="0..1" />
+    <End Role="Solicitudes" Type="Self.Solicitudes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Transferencia">
+        <PropertyRef Name="idTransferencia" />
+      </Principal>
+      <Dependent Role="Solicitudes">
+        <PropertyRef Name="idTransferencia_Nueva" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="Contador_Impresion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="fnGetIdTabla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar(max)">
+    <Parameter Name="tabla" Type="varchar" Mode="In" />
+    <Parameter Name="opcion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fnOpcionCampo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar(max)">
+    <Parameter Name="opcion" Type="int" Mode="In" />
+    <Parameter Name="Nombre" Type="varchar" Mode="In" />
+    <Parameter Name="tipo" Type="varchar" Mode="In" />
+    <Parameter Name="longitud" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="fnPrimerMayuscula" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar(max)">
+    <Parameter Name="input" Type="varchar(max)" Mode="In" />
+  </Function>
+  <Function Name="fnRemoverTildes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="varchar">
+    <Parameter Name="Cadena" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="fnSplitString" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="string" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="delimiter" Type="char" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="splitdata" Type="nvarchar(max)" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="paAuditoriaRUD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tabla" Type="varchar" Mode="In" />
+    <Parameter Name="idTabla" Type="varchar" Mode="In" />
+    <Parameter Name="host" Type="varchar" Mode="In" />
+    <Parameter Name="mac" Type="varchar" Mode="In" />
+    <Parameter Name="aplicacion" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paContarDevolucionesPendientes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="paDescuentoEditarEliminarFisico" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="anio" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paDescuentoEditarEliminarFisicoEditar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paEscalaSalarialGestion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFechaActual" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="paFianzasListarMesAnioContaVali" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+    <Parameter Name="anio" Type="int" Mode="In" />
+    <Parameter Name="tipoFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFianzasListarMesAnioDescuentos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+    <Parameter Name="anio" Type="int" Mode="In" />
+    <Parameter Name="tipoFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFianzasPorFuncionarioBuscar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paFianzaVerificarEnCurso" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idFuncionario" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idUnidadEjecurota" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarBaja" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idUnidadEjecurota" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarCartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idUnidadEjecurota" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarContaVali" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idUnidadEjecurota" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="anio" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarGeneral" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarGeneralAdministrador" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscaridFianza" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarMesAnioEditar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idUnidadEjecurota" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="anio" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarTipoFianza" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioFianzaActualBuscarTipoFianzaTotalEstadoValidado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="estadoValidado" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paFuncionarioVerificaridFianzaCompleta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paGetFecha" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="paListaCargoOficina" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idOficina" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListaCargoOficinaAdmin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idOficina" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListaOficinaUnidadEjecutora" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasReporteGlobal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasReporteGlobalDevolver" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasReporteGlobalUnidadEjecutoraDevolver" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasReporteT727" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasReporteT727Devolver" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasEconomicasVisualizar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasPersona" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="numeroDocumento" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasRealesReporteGlobal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasRealesReporteGlobalDevolver" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza1" Type="int" Mode="In" />
+    <Parameter Name="idTipoFianza2" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasReclasificacion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasReclasificacionPendientes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasReclasificacionReporte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fecha1" Type="date" Mode="In" />
+    <Parameter Name="fecha2" Type="date" Mode="In" />
+  </Function>
+  <Function Name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaConResolucion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaConResolucionBienesGravados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaDevolucion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaDevolucionContabilidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaDevolucionContabilidadReporte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fecha1" Type="date" Mode="In" />
+    <Parameter Name="fecha2" Type="date" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaRRHH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaTranferencias" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarFuncionariosFianzaTranferenciasReporte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fecha1" Type="date" Mode="In" />
+    <Parameter Name="fecha2" Type="date" Mode="In" />
+  </Function>
+  <Function Name="paListarSolicitudesFianza" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarSolicitudesFianzaDiasRestantes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="dia1" Type="int" Mode="In" />
+    <Parameter Name="dia2" Type="int" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paListarSolicitudesFianzaDiasRestantesReporte" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="dia1" Type="int" Mode="In" />
+    <Parameter Name="dia2" Type="int" Mode="In" />
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paMenuCargar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="usuario" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paOficinaBuscar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paOficinasListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paPersonaBuscar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paReporteCartilla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteCartillaHabilitadoEditar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteCartillaT727" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteFormularioA2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteFormularioA2Reconsulta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="mes" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteFuncionarioCertificadoidFianza" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idUnidadEjecutora" Type="int" Mode="In" />
+    <Parameter Name="idFianza" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteSolDevolucion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSolicitud" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteSolDevolucionNoRequiere" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSolicitud" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteSolFianEconomica" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSolicitud" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteSolFianEconomicaNoRequiereFianza" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSolicitud" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paReporteSolFianEconomicaTotal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idSolicitud" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paSueldosMensuales" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="anio" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paUsuarioBuscar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="parametro" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="paValidacionEstadoFianzaContabilidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionEstadoFianzaHabilitado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionEstadoFianzaRRHH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionParaCertificados" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionParaCertificadosContabilidad" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionParaCertificadosHabilitado" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionParaCertificadosRRHH" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Letra" Type="varchar" Mode="In" />
+    <Parameter Name="idTipoFianza" Type="int" Mode="In" />
+    <Parameter Name="gestion" Type="int" Mode="In" />
+    <Parameter Name="unidadEjecutora" Type="int" Mode="In" />
+  </Function>
+  <Function Name="paValidacionRegistroSolicitudes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NRODOCUMENTO" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="MidasDModelStoreContainer">
+    <EntitySet Name="AltasBajas" EntityType="Self.AltasBajas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cargo" EntityType="Self.Cargo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CargoOficina" EntityType="Self.CargoOficina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Descuento" EntityType="Self.Descuento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Devolucion" EntityType="Self.Devolucion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DireccionAdministrativa" EntityType="Self.DireccionAdministrativa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Encargados" EntityType="Self.Encargados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EscalaSalarial" EntityType="Self.EscalaSalarial" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fianza" EntityType="Self.Fianza" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Funcionario" EntityType="Self.Funcionario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Imagen" EntityType="Self.Imagen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Oficina" EntityType="Self.Oficina" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reclasificacion" EntityType="Self.Reclasificacion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RolMenu" EntityType="Self.RolMenu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RolUsuario" EntityType="Self.RolUsuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Solicitudes" EntityType="Self.Solicitudes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SueldoMensual" EntityType="Self.SueldoMensual" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoFianza" EntityType="Self.TipoFianza" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Transferencia" EntityType="Self.Transferencia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnidadEjecutora" EntityType="Self.UnidadEjecutora" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="viMenu" EntityType="Self.viMenu" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viMenu].[idMenu] AS [idMenu], 
+    [viMenu].[menu] AS [menu], 
+    [viMenu].[nombre_Elemento] AS [nombre_Elemento]
+    FROM [dbo].[viMenu] AS [viMenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viPersonaListar" EntityType="Self.viPersonaListar" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viPersonaListar].[idPersona] AS [idPersona], 
+    [viPersonaListar].[idTipoDocumento] AS [idTipoDocumento], 
+    [viPersonaListar].[paterno] AS [paterno], 
+    [viPersonaListar].[materno] AS [materno], 
+    [viPersonaListar].[nombres] AS [nombres], 
+    [viPersonaListar].[nombre_Completo] AS [nombre_Completo], 
+    [viPersonaListar].[domicilio] AS [domicilio], 
+    [viPersonaListar].[sexo] AS [sexo], 
+    [viPersonaListar].[estado_Civil] AS [estado_Civil], 
+    [viPersonaListar].[tipo_documento] AS [tipo_documento], 
+    [viPersonaListar].[numero_documento] AS [numero_documento], 
+    [viPersonaListar].[fecha_Nacimiento] AS [fecha_Nacimiento]
+    FROM [dbo].[viPersonaListar] AS [viPersonaListar]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viRol" EntityType="Self.viRol" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viRol].[idRol] AS [idRol], 
+    [viRol].[rol] AS [rol]
+    FROM [dbo].[viRol] AS [viRol]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viRolMenu" EntityType="Self.viRolMenu" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viRolMenu].[idRolMenu] AS [idRolMenu], 
+    [viRolMenu].[idRol] AS [idRol], 
+    [viRolMenu].[idMenu] AS [idMenu]
+    FROM [dbo].[viRolMenu] AS [viRolMenu]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viRolUsuario" EntityType="Self.viRolUsuario" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viRolUsuario].[idRolUsuario] AS [idRolUsuario], 
+    [viRolUsuario].[idRol] AS [idRol], 
+    [viRolUsuario].[idUsuario] AS [idUsuario]
+    FROM [dbo].[viRolUsuario] AS [viRolUsuario]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viRolUsuarioListar" EntityType="Self.viRolUsuarioListar" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viRolUsuarioListar].[idRolUsuario] AS [idRolUsuario], 
+    [viRolUsuarioListar].[idUsuario] AS [idUsuario], 
+    [viRolUsuarioListar].[idRol] AS [idRol], 
+    [viRolUsuarioListar].[rol] AS [rol]
+    FROM [dbo].[viRolUsuarioListar] AS [viRolUsuarioListar]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viUsuario" EntityType="Self.viUsuario" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viUsuario].[idUsuario] AS [idUsuario], 
+    [viUsuario].[nombre_Usuario] AS [nombre_Usuario], 
+    [viUsuario].[clave] AS [clave], 
+    [viUsuario].[idPersona] AS [idPersona]
+    FROM [dbo].[viUsuario] AS [viUsuario]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viUsuarioListarDatos" EntityType="Self.viUsuarioListarDatos" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viUsuarioListarDatos].[idUsuario] AS [idUsuario], 
+    [viUsuarioListarDatos].[nombre_Usuario] AS [nombre_Usuario], 
+    [viUsuarioListarDatos].[clave] AS [clave], 
+    [viUsuarioListarDatos].[idPersona] AS [idPersona], 
+    [viUsuarioListarDatos].[idTipoDocumento] AS [idTipoDocumento], 
+    [viUsuarioListarDatos].[paterno] AS [paterno], 
+    [viUsuarioListarDatos].[materno] AS [materno], 
+    [viUsuarioListarDatos].[nombres] AS [nombres], 
+    [viUsuarioListarDatos].[nombre_Completo] AS [nombre_Completo], 
+    [viUsuarioListarDatos].[domicilio] AS [domicilio], 
+    [viUsuarioListarDatos].[sexo] AS [sexo], 
+    [viUsuarioListarDatos].[estado_Civil] AS [estado_Civil], 
+    [viUsuarioListarDatos].[fecha_Nacimiento] AS [fecha_Nacimiento], 
+    [viUsuarioListarDatos].[numero_Documento] AS [numero_Documento]
+    FROM [dbo].[viUsuarioListarDatos] AS [viUsuarioListarDatos]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="viUsuarioMenu" EntityType="Self.viUsuarioMenu" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [viUsuarioMenu].[idUsuario] AS [idUsuario], 
+    [viUsuarioMenu].[nombre_Usuario] AS [nombre_Usuario], 
+    [viUsuarioMenu].[idMenu] AS [idMenu], 
+    [viUsuarioMenu].[menu] AS [menu], 
+    [viUsuarioMenu].[nombre_Elemento] AS [nombre_Elemento]
+    FROM [dbo].[viUsuarioMenu] AS [viUsuarioMenu]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_Cargo_EscalaSalarial" Association="Self.FK_Cargo_EscalaSalarial">
+      <End Role="EscalaSalarial" EntitySet="EscalaSalarial" />
+      <End Role="Cargo" EntitySet="Cargo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CargoOficina_Cargo" Association="Self.FK_CargoOficina_Cargo">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="CargoOficina" EntitySet="CargoOficina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CargoOficina_Oficina" Association="Self.FK_CargoOficina_Oficina">
+      <End Role="Oficina" EntitySet="Oficina" />
+      <End Role="CargoOficina" EntitySet="CargoOficina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Descuento_Fianza1" Association="Self.FK_Descuento_Fianza1">
+      <End Role="Fianza" EntitySet="Fianza" />
+      <End Role="Descuento" EntitySet="Descuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DireccionAdministrativa_UnidadEjecutora" Association="Self.FK_DireccionAdministrativa_UnidadEjecutora">
+      <End Role="DireccionAdministrativa" EntitySet="DireccionAdministrativa" />
+      <End Role="UnidadEjecutora" EntitySet="UnidadEjecutora" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Encargados_Cargo" Association="Self.FK_Encargados_Cargo">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Encargados" EntitySet="Encargados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Encargados_Persona" Association="Self.FK_Encargados_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Encargados" EntitySet="Encargados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EscalaSalarial_HaberMensual" Association="Self.FK_EscalaSalarial_HaberMensual">
+      <End Role="SueldoMensual" EntitySet="SueldoMensual" />
+      <End Role="EscalaSalarial" EntitySet="EscalaSalarial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fianza_Funcionario" Association="Self.FK_Fianza_Funcionario">
+      <End Role="Funcionario" EntitySet="Funcionario" />
+      <End Role="Fianza" EntitySet="Fianza" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fianza_TipoFianza" Association="Self.FK_Fianza_TipoFianza">
+      <End Role="TipoFianza" EntitySet="TipoFianza" />
+      <End Role="Fianza" EntitySet="Fianza" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Funcionario_Cargo" Association="Self.FK_Funcionario_Cargo">
+      <End Role="Cargo" EntitySet="Cargo" />
+      <End Role="Funcionario" EntitySet="Funcionario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Funcionario_Oficina" Association="Self.FK_Funcionario_Oficina">
+      <End Role="Oficina" EntitySet="Oficina" />
+      <End Role="Funcionario" EntitySet="Funcionario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Imagen_Persona" Association="Self.FK_Imagen_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Imagen" EntitySet="Imagen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Oficina_UnidadEjecutora" Association="Self.FK_Oficina_UnidadEjecutora">
+      <End Role="UnidadEjecutora" EntitySet="UnidadEjecutora" />
+      <End Role="Oficina" EntitySet="Oficina" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_TipoDocumento" Association="Self.FK_Persona_TipoDocumento">
+      <End Role="TipoDocumento" EntitySet="TipoDocumento" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolMenu_Menu" Association="Self.FK_RolMenu_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="RolMenu" EntitySet="RolMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolMenu_Rol" Association="Self.FK_RolMenu_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolMenu" EntitySet="RolMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolUsuario_Rol" Association="Self.FK_RolUsuario_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolUsuario" EntitySet="RolUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolUsuario_Usuario" Association="Self.FK_RolUsuario_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="RolUsuario" EntitySet="RolUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitudes_Devolucion" Association="Self.FK_Solicitudes_Devolucion">
+      <End Role="Devolucion" EntitySet="Devolucion" />
+      <End Role="Solicitudes" EntitySet="Solicitudes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Solicitudes_Transferencia" Association="Self.FK_Solicitudes_Transferencia">
+      <End Role="Transferencia" EntitySet="Transferencia" />
+      <End Role="Solicitudes" EntitySet="Solicitudes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

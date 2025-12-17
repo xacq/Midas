@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MidasDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <ComplexType Name="fnSplitString_Result">
+    <Property Name="splitdata" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </ComplexType>
+  <EntityType Name="Descuento">
+    <Key>
+      <PropertyRef Name="idDescuento" />
+    </Key>
+    <Property Name="idDescuento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idMes" Type="Int32" />
+    <Property Name="descuento1" Type="Double" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="FianzaDescuento" Relationship="Self.FK_FianzaDescuento_Descuento" FromRole="Descuento" ToRole="FianzaDescuento" />
+  </EntityType>
+  <EntityType Name="EscalaSalarial">
+    <Key>
+      <PropertyRef Name="idEscalaSalarial" />
+    </Key>
+    <Property Name="idEscalaSalarial" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="categoria" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clase" Type="Int32" />
+    <Property Name="nivelSalarial" Type="Int32" />
+    <Property Name="denominacionPuesto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="numeroItems" Type="Int32" />
+    <Property Name="idHaberBasico" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="HaberMensual" Relationship="Self.FK_EscalaSalarial_HaberMensual" FromRole="EscalaSalarial" ToRole="HaberMensual" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK_Personal_EscalaSalarial" FromRole="EscalaSalarial" ToRole="Personal" />
+  </EntityType>
+  <EntityType Name="Fianza">
+    <Key>
+      <PropertyRef Name="idFianza" />
+    </Key>
+    <Property Name="idFianza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoFianza" Type="Int32" />
+    <Property Name="idPersonal" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK_Fianza_Personal" FromRole="Fianza" ToRole="Personal" />
+    <NavigationProperty Name="TipoFianza" Relationship="Self.FK_Fianza_TipoFianza" FromRole="Fianza" ToRole="TipoFianza" />
+    <NavigationProperty Name="FianzaDescuento" Relationship="Self.FK_FianzaDescuento_Fianza" FromRole="Fianza" ToRole="FianzaDescuento" />
+  </EntityType>
+  <EntityType Name="FianzaDescuento">
+    <Key>
+      <PropertyRef Name="idFianzaDescuento" />
+    </Key>
+    <Property Name="idFianzaDescuento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFianza" Type="Int32" />
+    <Property Name="idDescuento" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Descuento" Relationship="Self.FK_FianzaDescuento_Descuento" FromRole="FianzaDescuento" ToRole="Descuento" />
+    <NavigationProperty Name="Fianza" Relationship="Self.FK_FianzaDescuento_Fianza" FromRole="FianzaDescuento" ToRole="Fianza" />
+  </EntityType>
+  <EntityType Name="HaberMensual">
+    <Key>
+      <PropertyRef Name="idHaberBasico" />
+    </Key>
+    <Property Name="idHaberBasico" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="haberBasico" Type="Int32" />
+    <Property Name="gestion" Type="Int32" />
+    <Property Name="incremento" Type="Double" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="EscalaSalarial" Relationship="Self.FK_EscalaSalarial_HaberMensual" FromRole="HaberMensual" ToRole="EscalaSalarial" />
+  </EntityType>
+  <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="idMenu" />
+    </Key>
+    <Property Name="idMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menu1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="RolMenu" Relationship="Self.FK_RolMenu_Menu" FromRole="Menu" ToRole="RolMenu" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="numeroDocumento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="paisNacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="departamentoNacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="localidadNacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="provinciaNacimiento" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="paterno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="materno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="profesion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estadoCivil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="pathImagen" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="TipoDocumento" Relationship="Self.FK_Persona_TipoDocumento" FromRole="Persona" ToRole="TipoDocumento" />
+    <NavigationProperty Name="Personal" Relationship="Self.FK_Personal_Persona" FromRole="Persona" ToRole="Personal" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_Usuario_Persona" FromRole="Persona" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Personal">
+    <Key>
+      <PropertyRef Name="idPersonal" />
+    </Key>
+    <Property Name="idPersonal" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idPersona" Type="Int32" />
+    <Property Name="numeroMemorando" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="tipoContratoItem" Type="Int32" />
+    <Property Name="vigenciaContrato" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="idCargo" Type="Int32" />
+    <Property Name="idOficina" Type="Int32" />
+    <Property Name="idEscalaSalarial" Type="Int32" />
+    <Property Name="idSueldosCalculoFianza" Type="Int32" />
+    <Property Name="idPorcentajeDescuento" Type="Int32" />
+    <Property Name="totalDescuentoMes" Type="Int32" />
+    <Property Name="cantidadMeses" Type="Int32" />
+    <Property Name="codigoDistrito" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="EscalaSalarial" Relationship="Self.FK_Personal_EscalaSalarial" FromRole="Personal" ToRole="EscalaSalarial" />
+    <NavigationProperty Name="Fianza" Relationship="Self.FK_Fianza_Personal" FromRole="Personal" ToRole="Fianza" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Personal_Persona" FromRole="Personal" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="idRol" />
+    </Key>
+    <Property Name="idRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rol1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="RolMenu" Relationship="Self.FK_RolMenu_Rol" FromRole="Rol" ToRole="RolMenu" />
+    <NavigationProperty Name="RolUsuario" Relationship="Self.FK_RolUsuario_Rol" FromRole="Rol" ToRole="RolUsuario" />
+  </EntityType>
+  <EntityType Name="RolMenu">
+    <Key>
+      <PropertyRef Name="idRolMenu" />
+    </Key>
+    <Property Name="idRolMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idMenu" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Menu" Relationship="Self.FK_RolMenu_Menu" FromRole="RolMenu" ToRole="Menu" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_RolMenu_Rol" FromRole="RolMenu" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="RolUsuario">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+    </Key>
+    <Property Name="idRolUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idUsuario" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK_RolUsuario_Rol" FromRole="RolUsuario" ToRole="Rol" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK_RolUsuario_Usuario" FromRole="RolUsuario" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TipoDocumento">
+    <Key>
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idTipoDocumento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Persona_TipoDocumento" FromRole="TipoDocumento" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoFianza">
+    <Key>
+      <PropertyRef Name="idTipoFianza" />
+    </Key>
+    <Property Name="idTipoFianza" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="descripcionFianza" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Fianza" Relationship="Self.FK_Fianza_TipoFianza" FromRole="TipoFianza" ToRole="Fianza" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idCodigoZeus" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK_Usuario_Persona" FromRole="Usuario" ToRole="Persona" />
+    <NavigationProperty Name="RolUsuario" Relationship="Self.FK_RolUsuario_Usuario" FromRole="Usuario" ToRole="RolUsuario" />
+  </EntityType>
+  <EntityType Name="Zeus">
+    <Key>
+      <PropertyRef Name="codigoZeus" />
+    </Key>
+    <Property Name="codigoZeus" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="esNacional" Type="Boolean" Nullable="false" />
+    <Property Name="orden" Type="Int32" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="viMenu">
+    <Key>
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="menu" />
+      <PropertyRef Name="nombre_Elemento" />
+    </Key>
+    <Property Name="idMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="menu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viPersonaListar">
+    <Key>
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="Int32" />
+    <Property Name="paterno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="materno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_Completo" Type="String" MaxLength="452" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estadoCivil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="numero_documento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="viRol">
+    <Key>
+      <PropertyRef Name="idRol" />
+      <PropertyRef Name="rol" />
+    </Key>
+    <Property Name="idRol" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viRolMenu">
+    <Key>
+      <PropertyRef Name="idRolMenu" />
+    </Key>
+    <Property Name="idRolMenu" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idMenu" Type="Int32" />
+  </EntityType>
+  <EntityType Name="viRolUsuario">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+    </Key>
+    <Property Name="idRolUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="idUsuario" Type="Int32" />
+  </EntityType>
+  <EntityType Name="viRolUsuarioListar">
+    <Key>
+      <PropertyRef Name="idRolUsuario" />
+      <PropertyRef Name="rol" />
+    </Key>
+    <Property Name="idRolUsuario" Type="Int32" Nullable="false" />
+    <Property Name="idUsuario" Type="Int32" />
+    <Property Name="idRol" Type="Int32" />
+    <Property Name="rol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viUsuario">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="clave" />
+      <PropertyRef Name="idPersona" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="viUsuarioListarDatos">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="clave" />
+      <PropertyRef Name="idPersona" />
+      <PropertyRef Name="idTipoDocumento" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="clave" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idPersona" Type="Int32" Nullable="false" />
+    <Property Name="idTipoDocumento" Type="Int32" Nullable="false" />
+    <Property Name="paterno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="materno" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombres" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="nombre_Completo" Type="String" MaxLength="452" FixedLength="false" Unicode="false" />
+    <Property Name="domicilio" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="sexo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estadoCivil" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="numeroDocumento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="viUsuarioMenu">
+    <Key>
+      <PropertyRef Name="idUsuario" />
+      <PropertyRef Name="idMenu" />
+      <PropertyRef Name="menu" />
+      <PropertyRef Name="nombre_Elemento" />
+    </Key>
+    <Property Name="idUsuario" Type="Int32" Nullable="false" />
+    <Property Name="nombreUsuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="idMenu" Type="Int32" Nullable="false" />
+    <Property Name="menu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="nombre_Elemento" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_FianzaDescuento_Descuento">
+    <End Role="Descuento" Type="Self.Descuento" Multiplicity="0..1" />
+    <End Role="FianzaDescuento" Type="Self.FianzaDescuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Descuento">
+        <PropertyRef Name="idDescuento" />
+      </Principal>
+      <Dependent Role="FianzaDescuento">
+        <PropertyRef Name="idDescuento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EscalaSalarial_HaberMensual">
+    <End Role="HaberMensual" Type="Self.HaberMensual" Multiplicity="0..1" />
+    <End Role="EscalaSalarial" Type="Self.EscalaSalarial" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HaberMensual">
+        <PropertyRef Name="idHaberBasico" />
+      </Principal>
+      <Dependent Role="EscalaSalarial">
+        <PropertyRef Name="idHaberBasico" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personal_EscalaSalarial">
+    <End Role="EscalaSalarial" Type="Self.EscalaSalarial" Multiplicity="0..1" />
+    <End Role="Personal" Type="Self.Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EscalaSalarial">
+        <PropertyRef Name="idEscalaSalarial" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="idEscalaSalarial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fianza_Personal">
+    <End Role="Personal" Type="Self.Personal" Multiplicity="0..1" />
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personal">
+        <PropertyRef Name="idPersonal" />
+      </Principal>
+      <Dependent Role="Fianza">
+        <PropertyRef Name="idPersonal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Fianza_TipoFianza">
+    <End Role="TipoFianza" Type="Self.TipoFianza" Multiplicity="0..1" />
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoFianza">
+        <PropertyRef Name="idTipoFianza" />
+      </Principal>
+      <Dependent Role="Fianza">
+        <PropertyRef Name="idTipoFianza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FianzaDescuento_Fianza">
+    <End Role="Fianza" Type="Self.Fianza" Multiplicity="0..1" />
+    <End Role="FianzaDescuento" Type="Self.FianzaDescuento" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Fianza">
+        <PropertyRef Name="idFianza" />
+      </Principal>
+      <Dependent Role="FianzaDescuento">
+        <PropertyRef Name="idFianza" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolMenu_Menu">
+    <End Role="Menu" Type="Self.Menu" Multiplicity="0..1" />
+    <End Role="RolMenu" Type="Self.RolMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Menu">
+        <PropertyRef Name="idMenu" />
+      </Principal>
+      <Dependent Role="RolMenu">
+        <PropertyRef Name="idMenu" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Persona_TipoDocumento">
+    <End Role="TipoDocumento" Type="Self.TipoDocumento" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoDocumento">
+        <PropertyRef Name="idTipoDocumento" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="idTipoDocumento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Personal_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Personal" Type="Self.Personal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Personal">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Usuario_Persona">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="idPersona" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolMenu_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="RolMenu" Type="Self.RolMenu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="RolMenu">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolUsuario_Rol">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="RolUsuario" Type="Self.RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="idRol" />
+      </Principal>
+      <Dependent Role="RolUsuario">
+        <PropertyRef Name="idRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RolUsuario_Usuario">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="RolUsuario" Type="Self.RolUsuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="idUsuario" />
+      </Principal>
+      <Dependent Role="RolUsuario">
+        <PropertyRef Name="idUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MidasDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Descuento" EntityType="Self.Descuento" />
+    <EntitySet Name="EscalaSalarial" EntityType="Self.EscalaSalarial" />
+    <EntitySet Name="Fianza" EntityType="Self.Fianza" />
+    <EntitySet Name="FianzaDescuento" EntityType="Self.FianzaDescuento" />
+    <EntitySet Name="HaberMensual" EntityType="Self.HaberMensual" />
+    <EntitySet Name="Menu" EntityType="Self.Menu" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Personal" EntityType="Self.Personal" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <EntitySet Name="RolMenu" EntityType="Self.RolMenu" />
+    <EntitySet Name="RolUsuario" EntityType="Self.RolUsuario" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TipoDocumento" EntityType="Self.TipoDocumento" />
+    <EntitySet Name="TipoFianza" EntityType="Self.TipoFianza" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Zeus" EntityType="Self.Zeus" />
+    <EntitySet Name="viMenu" EntityType="Self.viMenu" />
+    <EntitySet Name="viPersonaListar" EntityType="Self.viPersonaListar" />
+    <EntitySet Name="viRol" EntityType="Self.viRol" />
+    <EntitySet Name="viRolMenu" EntityType="Self.viRolMenu" />
+    <EntitySet Name="viRolUsuario" EntityType="Self.viRolUsuario" />
+    <EntitySet Name="viRolUsuarioListar" EntityType="Self.viRolUsuarioListar" />
+    <EntitySet Name="viUsuario" EntityType="Self.viUsuario" />
+    <EntitySet Name="viUsuarioListarDatos" EntityType="Self.viUsuarioListarDatos" />
+    <EntitySet Name="viUsuarioMenu" EntityType="Self.viUsuarioMenu" />
+    <AssociationSet Name="FK_FianzaDescuento_Descuento" Association="Self.FK_FianzaDescuento_Descuento">
+      <End Role="Descuento" EntitySet="Descuento" />
+      <End Role="FianzaDescuento" EntitySet="FianzaDescuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EscalaSalarial_HaberMensual" Association="Self.FK_EscalaSalarial_HaberMensual">
+      <End Role="HaberMensual" EntitySet="HaberMensual" />
+      <End Role="EscalaSalarial" EntitySet="EscalaSalarial" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personal_EscalaSalarial" Association="Self.FK_Personal_EscalaSalarial">
+      <End Role="EscalaSalarial" EntitySet="EscalaSalarial" />
+      <End Role="Personal" EntitySet="Personal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fianza_Personal" Association="Self.FK_Fianza_Personal">
+      <End Role="Personal" EntitySet="Personal" />
+      <End Role="Fianza" EntitySet="Fianza" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Fianza_TipoFianza" Association="Self.FK_Fianza_TipoFianza">
+      <End Role="TipoFianza" EntitySet="TipoFianza" />
+      <End Role="Fianza" EntitySet="Fianza" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FianzaDescuento_Fianza" Association="Self.FK_FianzaDescuento_Fianza">
+      <End Role="Fianza" EntitySet="Fianza" />
+      <End Role="FianzaDescuento" EntitySet="FianzaDescuento" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolMenu_Menu" Association="Self.FK_RolMenu_Menu">
+      <End Role="Menu" EntitySet="Menu" />
+      <End Role="RolMenu" EntitySet="RolMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Persona_TipoDocumento" Association="Self.FK_Persona_TipoDocumento">
+      <End Role="TipoDocumento" EntitySet="TipoDocumento" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Personal_Persona" Association="Self.FK_Personal_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Personal" EntitySet="Personal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Usuario_Persona" Association="Self.FK_Usuario_Persona">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolMenu_Rol" Association="Self.FK_RolMenu_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolMenu" EntitySet="RolMenu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolUsuario_Rol" Association="Self.FK_RolUsuario_Rol">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolUsuario" EntitySet="RolUsuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RolUsuario_Usuario" Association="Self.FK_RolUsuario_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="RolUsuario" EntitySet="RolUsuario" />
+    </AssociationSet>
+    <FunctionImport Name="fnSplitString" IsComposable="true" ReturnType="Collection(MidasDModel.fnSplitString_Result)">
+      <Parameter Name="string" Mode="In" Type="String" />
+      <Parameter Name="delimiter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paFechaActual" ReturnType="Collection(DateTime)" />
+    <FunctionImport Name="paGetFecha" ReturnType="Collection(DateTime)" />
+    <FunctionImport Name="paMenuCargar">
+      <Parameter Name="usuario" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paPersonaBuscar" ReturnType="Collection(MidasDModel.paPersonaBuscar_Result)">
+      <Parameter Name="Letra" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="paUsuarioBuscar" ReturnType="Collection(MidasDModel.paUsuarioBuscar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(MidasDModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(MidasDModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="paPersonaBuscar_Result">
+    <Property Type="Int32" Name="idPersona" Nullable="false" />
+    <Property Type="String" Name="Nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="Direccion" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="Sexo" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Estado_Civil" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="tipo_documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="numero_documento" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="fecha_Nacimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="paUsuarioBuscar_Result">
+    <Property Type="Int32" Name="idUsuario" Nullable="false" />
+    <Property Type="String" Name="nombre_Completo" Nullable="true" MaxLength="452" />
+    <Property Type="String" Name="numero_Documento" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="domicilio" Nullable="true" MaxLength="150" />
+    <Property Type="String" Name="nombreUsuario" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="sexo" Nullable="true" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

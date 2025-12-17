@@ -1,0 +1,100 @@
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\AutoMapper.Net4.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\WcfMidasD.dll.config
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\WcfMidasD.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\WcfMidasD.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\AutoMapper.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\CadMidasD.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\ClnMidasD.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\EntityFramework.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\Utils.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\CadMidasD.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\CadMidasD.dll.config
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\ClnMidasD.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\ClnMidasD.dll.config
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\AutoMapper.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\AutoMapper.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\AutoMapper.Net4.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\EntityFramework.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\obj\Release\WcfMidasD.csprojAssemblyReference.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CoreCompileInputs.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CopyComplete
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\obj\Release\WcfMidasD.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\obj\Release\WcfMidasD.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\WcfMidasD\bin\itextsharp.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.Net4.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\WcfMidasD.dll.config
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\WcfMidasD.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\WcfMidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\CadMidasD.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\ClnMidasD.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\Utils.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\itextsharp.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\CadMidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\CadMidasD.dll.config
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\ClnMidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\ClnMidasD.dll.config
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.Net4.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.csprojAssemblyReference.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CoreCompileInputs.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CopyComplete
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\AutoMapper.Net4.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\WcfMidasD.dll.config
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\WcfMidasD.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\WcfMidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\AutoMapper.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\CadMidasD.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\ClnMidasD.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\EntityFramework.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\Utils.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\itextsharp.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\CadMidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\CadMidasD.dll.config
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\ClnMidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\ClnMidasD.dll.config
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\AutoMapper.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\AutoMapper.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\AutoMapper.Net4.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\EntityFramework.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\obj\Release\WcfMidasD.csprojAssemblyReference.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CoreCompileInputs.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CopyComplete
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\obj\Release\WcfMidasD.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\WcfMidasD\obj\Release\WcfMidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.Net4.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\WcfMidasD.dll.config
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\WcfMidasD.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\WcfMidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\CadMidasD.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\ClnMidasD.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\Utils.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\itextsharp.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\CadMidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\CadMidasD.dll.config
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\ClnMidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\ClnMidasD.dll.config
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\AutoMapper.Net4.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\bin\EntityFramework.SqlServer.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.csprojAssemblyReference.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CoreCompileInputs.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.csproj.CopyComplete
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\WcfMidasD\obj\Release\WcfMidasD.pdb

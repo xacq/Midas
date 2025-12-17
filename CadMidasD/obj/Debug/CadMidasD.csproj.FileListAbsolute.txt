@@ -1,0 +1,83 @@
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\CadMidasD.dll.config
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\CadMidasD.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\CadMidasD.pdb
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\EntityFramework.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\EntityFramework.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.csprojAssemblyReference.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.Properties.Resources.resources
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.GenerateResource.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CoreCompileInputs.cache
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CopyComplete
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.dll
+C:\Users\Sasic-Riukasan\Source\Repos\MidasD\CadMidasD\obj\Debug\CadMidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.dll.config
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.pdb
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csprojAssemblyReference.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.Properties.Resources.resources
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.GenerateResource.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CoreCompileInputs.cache
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CopyComplete
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.dll
+F:\Proyectos DAF-LPZ\MIDAS\WindForms\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.pdb
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\CadMidasD.dll.config
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\CadMidasD.dll
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\CadMidasD.pdb
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\EntityFramework.dll
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.dll
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\EntityFramework.xml
+D:\MidasCuarentena\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.xml
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.csprojAssemblyReference.cache
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.Properties.Resources.resources
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.GenerateResource.cache
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CoreCompileInputs.cache
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CopyComplete
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.dll
+D:\MidasCuarentena\MidasD\CadMidasD\obj\Debug\CadMidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\CadMidasD.dll.config
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\CadMidasD.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\CadMidasD.pdb
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\EntityFramework.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\EntityFramework.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.xml
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.csprojAssemblyReference.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.Properties.Resources.resources
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.GenerateResource.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CoreCompileInputs.cache
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CopyComplete
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.dll
+D:\MidasCuarentena Subido 8 Mayo 2020 10-00\MidasD\CadMidasD\obj\Debug\CadMidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.dll.config
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.pdb
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.xml
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csprojAssemblyReference.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.Properties.Resources.resources
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.GenerateResource.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CoreCompileInputs.cache
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CopyComplete
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.dll
+F:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.pdb
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.dll.config
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\CadMidasD.pdb
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.xml
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\bin\Debug\EntityFramework.SqlServer.xml
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.Properties.Resources.resources
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.GenerateResource.cache
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CoreCompileInputs.cache
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.csproj.CopyComplete
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.dll
+E:\Proyectos DAF-LPZ\Proyecto  Midas\MidasD WINFORMS\Codigo Fuente\MidasD\CadMidasD\obj\Debug\CadMidasD.pdb

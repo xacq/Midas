@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="WcfMidasD" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="WcfMidasD" location="http://192.168.43.91/WcfMidasD/Service.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_MidasDService" type="i0:MidasDService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="transferenciaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/transferenciaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/transferenciaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/transferenciaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/transferenciaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transferenciaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/transferenciaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaTranferencias">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFuncionariosFianzaTranferencias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaTranferenciasReporte">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFuncionariosFianzaTranferenciasReporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuListarPorRol">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuListarPorRol" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolMenuEliminarMenu">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolMenuEliminarMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioGetIdUsuario">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioGetIdUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolUsuarioListarRoles">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolUsuarioListarRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paSueldosMensuales">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paSueldosMensuales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualActivar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sueldoMensualValidarNuevo">
+      <soap:operation soapAction="WcfMidasD/MidasDService/sueldoMensualValidarNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoDocumentoInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoDocumentoEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoDocumentoEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoDocumentoListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoDocumentoGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoDocumentoGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoFianzaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoFianzaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoFianzaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoFianzaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="tipoFianzaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/tipoFianzaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/unidadEjecutoraInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/unidadEjecutoraEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/unidadEjecutoraEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/unidadEjecutoraListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="unidadEjecutoraGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/unidadEjecutoraGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioPersonaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioPersonaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioGetId">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioGetId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioCambiarClave">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioCambiarClave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListarMenu">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioListarMenu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioListarDatosUsuario">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioListarDatosUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioValidarNuevo">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioValidarNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioValidarUsuario">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioValidarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioActivar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/usuarioBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="idUsuarioClave">
+      <soap:operation soapAction="WcfMidasD/MidasDService/idUsuarioClave" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fechaServidor">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fechaServidor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasSinResolucion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarFianzasSinResolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contardevolucionesPendientesContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contardevolucionesPendientesContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasCompletasValidacionCertificacionHabilitado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarFianzasCompletasValidacionCertificacionHabilitado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasCompletasValidacionCertificacionContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarFianzasCompletasValidacionCertificacionContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarMesDescuentoHabilitado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarMesDescuentoHabilitado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarTransferenciasContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarTransferenciasContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarValidarMesDescuentoContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarValidarMesDescuentoContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasValidacionBienesGravadosContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarFianzasValidacionBienesGravadosContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasTotalesValidacionContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarFianzasTotalesValidacionContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/funcionarioInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/funcionarioEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/funcionarioEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/funcionarioListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/funcionarioGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="funcionarioValidarNuevo">
+      <soap:operation soapAction="WcfMidasD/MidasDService/funcionarioValidarNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarGeneral">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarGeneral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarGeneralAdministrador">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarGeneralAdministrador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarBaja">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarBaja" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarCartilla">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarCartilla" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscarContaVali">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscarContaVali" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafuncionarioFianzaActualBuscaridFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafuncionarioFianzaActualBuscaridFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioVerificaridFianzaCompleta">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFuncionarioVerificaridFianzaCompleta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paReporteCertificadoidFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paReporteCertificadoidFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imagenInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/imagenInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imagenEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/imagenEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imagenEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/imagenEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imagenListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/imagenListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imagenGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/imagenGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="imagenGetidPersona">
+      <soap:operation soapAction="WcfMidasD/MidasDService/imagenGetidPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuValidarNuevo">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuValidarNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="menuActivar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/menuActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oficinaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/oficinaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oficinaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/oficinaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oficinaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/oficinaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oficinaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/oficinaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oficinaListarUnidadEjecutora">
+      <soap:operation soapAction="WcfMidasD/MidasDService/oficinaListarUnidadEjecutora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OficinasListarBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/OficinasListarBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="oficinaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/oficinaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paoficinaBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paoficinaBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaListarVista">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaListarVista" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaValidarNuevo">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaValidarNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaActivar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaGetPorNumeroDocumento">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaGetPorNumeroDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="personaBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/personaBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/reclasificacionInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/reclasificacionEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/reclasificacionEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/reclasificacionListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/reclasificacionGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reclasificacionGetidFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/reclasificacionGetidFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasReclasificacion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasReclasificacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasReclasificacionPendientes">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasReclasificacionPendientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasReclasificacionReporte">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasReclasificacionReporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolValidarNuevo">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolValidarNuevo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="rolActivar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/rolActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/solicitudesInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/solicitudesEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/solicitudesEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/solicitudesListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="solicitudesGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/solicitudesGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="palistarSolicitudesFianzaBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/palistarSolicitudesFianzaBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ultimoNumeroSolicitud">
+      <soap:operation soapAction="WcfMidasD/MidasDService/ultimoNumeroSolicitud" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarSolicitudesFianzaDiasRestantes">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarSolicitudesFianzaDiasRestantes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarSolicitudesFianzaDiasRestantesReporte">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarSolicitudesFianzaDiasRestantesReporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paReporteSolDevolucion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paReporteSolDevolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioFianzaActpaReporteSolFianEconomica">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolFianEconomica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioFianzaActpaReporteSolFianEconomicaTotal">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolFianEconomicaTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFuncionarioFianzaActpaReporteSolNoRequiereFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFuncionarioFianzaActpaReporteSolNoRequiereFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionRegistroSolicitudes">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionRegistroSolicitudes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoListarOficina">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoListarOficina" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoListarOficinaAdmin">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoListarOficinaAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoOficinaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoOficinaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoOficinaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoOficinaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cargoOficinaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/cargoOficinaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoGetIdFianzaReclasificacion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoGetIdFianzaReclasificacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEliminarfisico">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoEliminarfisico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoEliminarfisicoEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoEliminarfisicoEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="descuentoVerificarMesRegistrado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/descuentoVerificarMesRegistrado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolucionInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/devolucionInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolucionEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/devolucionEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolucionEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/devolucionEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolucionListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/devolucionListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolucionGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/devolucionGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="devolucionGetidFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/devolucionGetidFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaDevolucionContabilidadReporte">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFuncionariosFianzaDevolucionContabilidadReporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/direccionAdministrativaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/direccionAdministrativaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/direccionAdministrativaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/direccionAdministrativaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="direccionAdministrativaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/direccionAdministrativaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="encargadosInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/encargadosInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="encargadosEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/encargadosEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="encargadosEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/encargadosEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="encargadosListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/encargadosListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="encargadosGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/encargadosGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="encargadosGetIdEncargado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/encargadosGetIdEncargado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalarialInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalarialEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalarialEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalarialListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalarialGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalarialId">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalarialId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paEscalaSalarialGestion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paEscalaSalarialGestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="escalaSalariallActivar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/escalaSalariallActivar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaInsertar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaInsertar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ultimoNumeroFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/ultimoNumeroFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ultimoNumeroFianzaBienesGravados">
+      <soap:operation soapAction="WcfMidasD/MidasDService/ultimoNumeroFianzaBienesGravados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaEliminar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaEliminar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaListar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaListar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarRRHH">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarRRHH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaConResolucion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFuncionariosFianzaConResolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFuncionariosFianzaConResolucionBienesGravados">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFuncionariosFianzaConResolucionBienesGravados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarDevolucion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarDevolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarDevolucionContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarDevolucionContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarTipoFianza">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarTipoFianza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFuncionariosBuscarTipoFianzaTotalEstadoValidado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFianzasMesAnioDescuentos">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFianzasMesAnioDescuentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="pafianzaListarFianzasMesAnioContaVali">
+      <soap:operation soapAction="WcfMidasD/MidasDService/pafianzaListarFianzasMesAnioContaVali" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasTipoFianzaGestionUnidadEjecutoraHabilitado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="palistarFianzasMesAnioEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/palistarFianzasMesAnioEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaGet">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaIdFuncionario">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaIdFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaVerificarEnCurso">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaVerificarEnCurso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fianzaVerificarDevueltaContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/fianzaVerificarDevueltaContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionEstadoFianzaHabilitado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionEstadoFianzaHabilitado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionEstadoFianzaContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionEstadoFianzaContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionEstadoFianzaRRHH">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionEstadoFianzaRRHH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionParaCertificadosRRHH">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionParaCertificadosRRHH" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionParaCertificadosHabilitado">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionParaCertificadosHabilitado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paValidacionParaCertificadosContabilidad">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paValidacionParaCertificadosContabilidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasEconomicasReporteGlobal">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteGlobal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasRealesReporteGlobal">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasRealesReporteGlobal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasEconomicasReporteT727">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteT727" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteCartilla">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFianzaReporteCartilla" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteCartillaT727">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFianzaReporteCartillaT727" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFianzasPorFuncionarioBuscar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFianzasPorFuncionarioBuscar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteCartillaHabilitadoEditar">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFianzaReporteCartillaHabilitadoEditar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paFianzaReporteFormularioA2">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paFianzaReporteFormularioA2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paContador_Impresion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paContador_Impresion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="paListarFianzasEconomicasReporteGlobalUnidadEjecutora">
+      <soap:operation soapAction="WcfMidasD/MidasDService/paListarFianzasEconomicasReporteGlobalUnidadEjecutora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="contarFianzasParaResolucion">
+      <soap:operation soapAction="WcfMidasD/MidasDService/contarFianzasParaResolucion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_MidasDService" binding="tns:BasicHttpBinding_MidasDService">
+      <soap:address location="http://192.168.43.91/WcfMidasD/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

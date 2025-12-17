@@ -1,0 +1,1439 @@
+﻿namespace MidasD
+{
+    partial class FrmAsesoriaLegal
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.pnlLista = new System.Windows.Forms.Panel();
+            this.grbLista = new System.Windows.Forms.GroupBox();
+            this.dgvLista = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new System.Windows.Forms.PictureBox();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.btnEditar = new System.Windows.Forms.PictureBox();
+            this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.pnlDatos = new System.Windows.Forms.Panel();
+            this.txtUsuario = new System.Windows.Forms.GroupBox();
+            this.lblResoAnterior = new System.Windows.Forms.Label();
+            this.txtResoAnterior = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtObservacion = new System.Windows.Forms.TextBox();
+            this.pnlCargoActual = new System.Windows.Forms.Panel();
+            this.lblTituloCargoActual = new System.Windows.Forms.Label();
+            this.lblCargoList = new System.Windows.Forms.TextBox();
+            this.lblOficina = new System.Windows.Forms.Label();
+            this.lblOficinaList = new System.Windows.Forms.TextBox();
+            this.lblTipoFianza = new System.Windows.Forms.Label();
+            this.cbxTipoFianza = new System.Windows.Forms.ComboBox();
+            this.lblCargo = new System.Windows.Forms.Label();
+            this.lblNumeroMemorando = new System.Windows.Forms.Label();
+            this.lblNumeroMemorandoList = new System.Windows.Forms.Label();
+            this.pnlCargoAnterior = new System.Windows.Forms.Panel();
+            this.lblMontoFianzaList = new System.Windows.Forms.Label();
+            this.lblTituloCargoAnterior = new System.Windows.Forms.Label();
+            this.lblCertificadoFianzaList = new System.Windows.Forms.Label();
+            this.lblOficinaAnterior = new System.Windows.Forms.Label();
+            this.lblMontoFianza = new System.Windows.Forms.Label();
+            this.lblTipoFianzaAnterior = new System.Windows.Forms.Label();
+            this.lblCertificadoFianza = new System.Windows.Forms.Label();
+            this.lblCargoAnterior = new System.Windows.Forms.Label();
+            this.lblCargoListAnterior = new System.Windows.Forms.TextBox();
+            this.lblNumeroMemorandoAnterior = new System.Windows.Forms.Label();
+            this.lblOficinaListAnterior = new System.Windows.Forms.TextBox();
+            this.lblNumeroMemorandoListAnterior = new System.Windows.Forms.Label();
+            this.cbxTipoFianzaAnterior = new System.Windows.Forms.ComboBox();
+            this.lblNumeroDocumentoList = new System.Windows.Forms.Label();
+            this.lblTipoDocumentoList = new System.Windows.Forms.Label();
+            this.lblNombresList = new System.Windows.Forms.Label();
+            this.lblPaternoList = new System.Windows.Forms.Label();
+            this.lblMaternoList = new System.Windows.Forms.Label();
+            this.lblTipoDoc = new System.Windows.Forms.Label();
+            this.lblNumeroDocumento = new System.Windows.Forms.Label();
+            this.lblMaterno = new System.Windows.Forms.Label();
+            this.lblPaterno = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblTipoSolicitud = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtResolucionAdministrativa = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.PictureBox();
+            this.btnGuardar = new System.Windows.Forms.PictureBox();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.cbxCargo = new System.Windows.Forms.ComboBox();
+            this.cbxCargoAnterior = new System.Windows.Forms.ComboBox();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.erpFalloConectar = new System.Windows.Forms.ErrorProvider(this.components);
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.lblEstado = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblEstadoHuella = new System.Windows.Forms.ToolStripStatusLabel();
+            this.erpError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnLeyenda = new System.Windows.Forms.Button();
+            this.tbcFuncionarios = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBajaObservado = new System.Windows.Forms.TextBox();
+            this.btnBaja = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pbFlecha = new System.Windows.Forms.PictureBox();
+            this.btnQuitarSeleccion = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgvConResolucion = new System.Windows.Forms.DataGridView();
+            this.chkUsuarioRHASE = new System.Windows.Forms.CheckBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ch0Dias = new System.Windows.Forms.CheckBox();
+            this.ch15Dias = new System.Windows.Forms.CheckBox();
+            this.ch30Dias = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvDiasRestantes = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnImprimir3 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgvConRechazo = new System.Windows.Forms.DataGridView();
+            this.btnImprimir2 = new System.Windows.Forms.PictureBox();
+            this.btnImprimir1 = new System.Windows.Forms.PictureBox();
+            this.pnlLista.SuspendLayout();
+            this.grbLista.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            this.pnlDatos.SuspendLayout();
+            this.txtUsuario.SuspendLayout();
+            this.pnlCargoActual.SuspendLayout();
+            this.pnlCargoAnterior.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFalloConectar)).BeginInit();
+            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpError)).BeginInit();
+            this.tbcFuncionarios.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBaja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlecha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQuitarSeleccion)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConResolucion)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiasRestantes)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImprimir3)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConRechazo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImprimir2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImprimir1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pnlLista
+            // 
+            this.pnlLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlLista.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlLista.Controls.Add(this.grbLista);
+            this.pnlLista.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlLista.Location = new System.Drawing.Point(6, 5);
+            this.pnlLista.Name = "pnlLista";
+            this.pnlLista.Size = new System.Drawing.Size(1284, 269);
+            this.pnlLista.TabIndex = 0;
+            this.pnlLista.TabStop = true;
+            // 
+            // grbLista
+            // 
+            this.grbLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbLista.Controls.Add(this.dgvLista);
+            this.grbLista.Location = new System.Drawing.Point(8, 1);
+            this.grbLista.Name = "grbLista";
+            this.grbLista.Size = new System.Drawing.Size(1269, 261);
+            this.grbLista.TabIndex = 0;
+            this.grbLista.TabStop = false;
+            this.grbLista.Text = "Lista del Solicitudes";
+            // 
+            // dgvLista
+            // 
+            this.dgvLista.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Location = new System.Drawing.Point(6, 22);
+            this.dgvLista.MultiSelect = false;
+            this.dgvLista.Name = "dgvLista";
+            this.dgvLista.ReadOnly = true;
+            this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLista.Size = new System.Drawing.Size(1257, 233);
+            this.dgvLista.TabIndex = 0;
+            this.dgvLista.TabStop = false;
+            this.dgvLista.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellClick);
+            this.dgvLista.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvFuncionarios_DataBindingComplete);
+            this.dgvLista.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvGrilla_RowPostPaint);
+            this.dgvLista.DoubleClick += new System.EventHandler(this.dgvLista_DoubleClick);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.Image = global::MidasD.Properties.Resources.search;
+            this.btnBuscar.Location = new System.Drawing.Point(828, 27);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(81, 29);
+            this.btnBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBuscar.TabIndex = 50;
+            this.btnBuscar.TabStop = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // txtBuscar
+            // 
+            this.txtBuscar.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBuscar.Location = new System.Drawing.Point(542, 31);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(280, 22);
+            this.txtBuscar.TabIndex = 49;
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscar_KeyPress);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.Image = global::MidasD.Properties.Resources.edit_inactive;
+            this.btnEditar.Location = new System.Drawing.Point(473, 279);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(81, 29);
+            this.btnEditar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnEditar.TabIndex = 24;
+            this.btnEditar.TabStop = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSalir.Image = global::MidasD.Properties.Resources.exit_;
+            this.btnSalir.Location = new System.Drawing.Point(1220, 2);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(81, 29);
+            this.btnSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSalir.TabIndex = 19;
+            this.btnSalir.TabStop = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // pnlDatos
+            // 
+            this.pnlDatos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlDatos.Controls.Add(this.txtUsuario);
+            this.pnlDatos.Enabled = false;
+            this.pnlDatos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlDatos.Location = new System.Drawing.Point(6, 314);
+            this.pnlDatos.Name = "pnlDatos";
+            this.pnlDatos.Size = new System.Drawing.Size(1281, 254);
+            this.pnlDatos.TabIndex = 1;
+            this.pnlDatos.TabStop = true;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsuario.Controls.Add(this.lblResoAnterior);
+            this.txtUsuario.Controls.Add(this.txtResoAnterior);
+            this.txtUsuario.Controls.Add(this.label4);
+            this.txtUsuario.Controls.Add(this.txtObservacion);
+            this.txtUsuario.Controls.Add(this.pnlCargoActual);
+            this.txtUsuario.Controls.Add(this.pnlCargoAnterior);
+            this.txtUsuario.Controls.Add(this.lblNumeroDocumentoList);
+            this.txtUsuario.Controls.Add(this.lblTipoDocumentoList);
+            this.txtUsuario.Controls.Add(this.lblNombresList);
+            this.txtUsuario.Controls.Add(this.lblPaternoList);
+            this.txtUsuario.Controls.Add(this.lblMaternoList);
+            this.txtUsuario.Controls.Add(this.lblTipoDoc);
+            this.txtUsuario.Controls.Add(this.lblNumeroDocumento);
+            this.txtUsuario.Controls.Add(this.lblMaterno);
+            this.txtUsuario.Controls.Add(this.lblPaterno);
+            this.txtUsuario.Controls.Add(this.lblNombre);
+            this.txtUsuario.Controls.Add(this.lblTipoSolicitud);
+            this.txtUsuario.Controls.Add(this.label5);
+            this.txtUsuario.Controls.Add(this.txtResolucionAdministrativa);
+            this.txtUsuario.Controls.Add(this.btnCancelar);
+            this.txtUsuario.Controls.Add(this.btnGuardar);
+            this.txtUsuario.Controls.Add(this.pbImagen);
+            this.txtUsuario.Controls.Add(this.cbxCargo);
+            this.txtUsuario.Controls.Add(this.cbxCargoAnterior);
+            this.txtUsuario.Location = new System.Drawing.Point(-2, -2);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(1276, 257);
+            this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.TabStop = false;
+            this.txtUsuario.Text = "Datos";
+            // 
+            // lblResoAnterior
+            // 
+            this.lblResoAnterior.AutoSize = true;
+            this.lblResoAnterior.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResoAnterior.Location = new System.Drawing.Point(1063, 21);
+            this.lblResoAnterior.Name = "lblResoAnterior";
+            this.lblResoAnterior.Size = new System.Drawing.Size(201, 15);
+            this.lblResoAnterior.TabIndex = 129;
+            this.lblResoAnterior.Text = "Resolucion Administrativa Anterior";
+            // 
+            // txtResoAnterior
+            // 
+            this.txtResoAnterior.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.txtResoAnterior.Enabled = false;
+            this.txtResoAnterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResoAnterior.Location = new System.Drawing.Point(1062, 39);
+            this.txtResoAnterior.Name = "txtResoAnterior";
+            this.txtResoAnterior.Size = new System.Drawing.Size(202, 22);
+            this.txtResoAnterior.TabIndex = 128;
+            this.txtResoAnterior.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(1049, 115);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 15);
+            this.label4.TabIndex = 127;
+            this.label4.Text = "Observacion";
+            // 
+            // txtObservacion
+            // 
+            this.txtObservacion.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservacion.Location = new System.Drawing.Point(1057, 131);
+            this.txtObservacion.Multiline = true;
+            this.txtObservacion.Name = "txtObservacion";
+            this.txtObservacion.Size = new System.Drawing.Size(213, 64);
+            this.txtObservacion.TabIndex = 126;
+            // 
+            // pnlCargoActual
+            // 
+            this.pnlCargoActual.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCargoActual.Controls.Add(this.lblTituloCargoActual);
+            this.pnlCargoActual.Controls.Add(this.lblCargoList);
+            this.pnlCargoActual.Controls.Add(this.lblOficina);
+            this.pnlCargoActual.Controls.Add(this.lblOficinaList);
+            this.pnlCargoActual.Controls.Add(this.lblTipoFianza);
+            this.pnlCargoActual.Controls.Add(this.cbxTipoFianza);
+            this.pnlCargoActual.Controls.Add(this.lblCargo);
+            this.pnlCargoActual.Controls.Add(this.lblNumeroMemorando);
+            this.pnlCargoActual.Controls.Add(this.lblNumeroMemorandoList);
+            this.pnlCargoActual.Location = new System.Drawing.Point(468, 64);
+            this.pnlCargoActual.Name = "pnlCargoActual";
+            this.pnlCargoActual.Size = new System.Drawing.Size(461, 185);
+            this.pnlCargoActual.TabIndex = 1;
+            // 
+            // lblTituloCargoActual
+            // 
+            this.lblTituloCargoActual.AutoSize = true;
+            this.lblTituloCargoActual.BackColor = System.Drawing.Color.Transparent;
+            this.lblTituloCargoActual.Font = new System.Drawing.Font("Segoe UI Black", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloCargoActual.ForeColor = System.Drawing.Color.Green;
+            this.lblTituloCargoActual.Location = new System.Drawing.Point(191, 4);
+            this.lblTituloCargoActual.Name = "lblTituloCargoActual";
+            this.lblTituloCargoActual.Size = new System.Drawing.Size(102, 15);
+            this.lblTituloCargoActual.TabIndex = 96;
+            this.lblTituloCargoActual.Text = "CARGO ACTUAL";
+            // 
+            // lblCargoList
+            // 
+            this.lblCargoList.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblCargoList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargoList.Location = new System.Drawing.Point(58, 154);
+            this.lblCargoList.Multiline = true;
+            this.lblCargoList.Name = "lblCargoList";
+            this.lblCargoList.ReadOnly = true;
+            this.lblCargoList.Size = new System.Drawing.Size(395, 20);
+            this.lblCargoList.TabIndex = 116;
+            this.lblCargoList.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblOficina
+            // 
+            this.lblOficina.AutoSize = true;
+            this.lblOficina.BackColor = System.Drawing.Color.Transparent;
+            this.lblOficina.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOficina.Location = new System.Drawing.Point(9, 116);
+            this.lblOficina.Name = "lblOficina";
+            this.lblOficina.Size = new System.Drawing.Size(49, 15);
+            this.lblOficina.TabIndex = 102;
+            this.lblOficina.Text = "Oficina:";
+            // 
+            // lblOficinaList
+            // 
+            this.lblOficinaList.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblOficinaList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOficinaList.Location = new System.Drawing.Point(58, 96);
+            this.lblOficinaList.Multiline = true;
+            this.lblOficinaList.Name = "lblOficinaList";
+            this.lblOficinaList.ReadOnly = true;
+            this.lblOficinaList.Size = new System.Drawing.Size(395, 53);
+            this.lblOficinaList.TabIndex = 115;
+            this.lblOficinaList.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblTipoFianza
+            // 
+            this.lblTipoFianza.AutoSize = true;
+            this.lblTipoFianza.BackColor = System.Drawing.Color.Transparent;
+            this.lblTipoFianza.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoFianza.Location = new System.Drawing.Point(9, 69);
+            this.lblTipoFianza.Name = "lblTipoFianza";
+            this.lblTipoFianza.Size = new System.Drawing.Size(91, 15);
+            this.lblTipoFianza.TabIndex = 103;
+            this.lblTipoFianza.Text = "Tipo de Fianza :";
+            // 
+            // cbxTipoFianza
+            // 
+            this.cbxTipoFianza.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cbxTipoFianza.Enabled = false;
+            this.cbxTipoFianza.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxTipoFianza.FormattingEnabled = true;
+            this.cbxTipoFianza.Location = new System.Drawing.Point(146, 69);
+            this.cbxTipoFianza.Name = "cbxTipoFianza";
+            this.cbxTipoFianza.Size = new System.Drawing.Size(219, 21);
+            this.cbxTipoFianza.TabIndex = 114;
+            // 
+            // lblCargo
+            // 
+            this.lblCargo.AutoSize = true;
+            this.lblCargo.BackColor = System.Drawing.Color.Transparent;
+            this.lblCargo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.Location = new System.Drawing.Point(9, 157);
+            this.lblCargo.Name = "lblCargo";
+            this.lblCargo.Size = new System.Drawing.Size(42, 15);
+            this.lblCargo.TabIndex = 104;
+            this.lblCargo.Text = "Cargo:";
+            // 
+            // lblNumeroMemorando
+            // 
+            this.lblNumeroMemorando.AutoSize = true;
+            this.lblNumeroMemorando.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroMemorando.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroMemorando.Location = new System.Drawing.Point(9, 45);
+            this.lblNumeroMemorando.Name = "lblNumeroMemorando";
+            this.lblNumeroMemorando.Size = new System.Drawing.Size(144, 15);
+            this.lblNumeroMemorando.TabIndex = 105;
+            this.lblNumeroMemorando.Text = "Numero de Memorando:";
+            // 
+            // lblNumeroMemorandoList
+            // 
+            this.lblNumeroMemorandoList.AutoSize = true;
+            this.lblNumeroMemorandoList.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroMemorandoList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroMemorandoList.Location = new System.Drawing.Point(169, 45);
+            this.lblNumeroMemorandoList.Name = "lblNumeroMemorandoList";
+            this.lblNumeroMemorandoList.Size = new System.Drawing.Size(73, 13);
+            this.lblNumeroMemorandoList.TabIndex = 106;
+            this.lblNumeroMemorandoList.Text = "XXXXXXXXXXX";
+            // 
+            // pnlCargoAnterior
+            // 
+            this.pnlCargoAnterior.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlCargoAnterior.Controls.Add(this.lblMontoFianzaList);
+            this.pnlCargoAnterior.Controls.Add(this.lblTituloCargoAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblCertificadoFianzaList);
+            this.pnlCargoAnterior.Controls.Add(this.lblOficinaAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblMontoFianza);
+            this.pnlCargoAnterior.Controls.Add(this.lblTipoFianzaAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblCertificadoFianza);
+            this.pnlCargoAnterior.Controls.Add(this.lblCargoAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblCargoListAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblNumeroMemorandoAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblOficinaListAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.lblNumeroMemorandoListAnterior);
+            this.pnlCargoAnterior.Controls.Add(this.cbxTipoFianzaAnterior);
+            this.pnlCargoAnterior.Location = new System.Drawing.Point(5, 64);
+            this.pnlCargoAnterior.Name = "pnlCargoAnterior";
+            this.pnlCargoAnterior.Size = new System.Drawing.Size(461, 185);
+            this.pnlCargoAnterior.TabIndex = 125;
+            // 
+            // lblMontoFianzaList
+            // 
+            this.lblMontoFianzaList.AutoSize = true;
+            this.lblMontoFianzaList.BackColor = System.Drawing.Color.Transparent;
+            this.lblMontoFianzaList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMontoFianzaList.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblMontoFianzaList.Location = new System.Drawing.Point(342, 24);
+            this.lblMontoFianzaList.Name = "lblMontoFianzaList";
+            this.lblMontoFianzaList.Size = new System.Drawing.Size(73, 13);
+            this.lblMontoFianzaList.TabIndex = 123;
+            this.lblMontoFianzaList.Text = "XXXXXXXXXXX";
+            // 
+            // lblTituloCargoAnterior
+            // 
+            this.lblTituloCargoAnterior.AutoSize = true;
+            this.lblTituloCargoAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.lblTituloCargoAnterior.Font = new System.Drawing.Font("Segoe UI Black", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTituloCargoAnterior.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTituloCargoAnterior.Location = new System.Drawing.Point(177, 4);
+            this.lblTituloCargoAnterior.Name = "lblTituloCargoAnterior";
+            this.lblTituloCargoAnterior.Size = new System.Drawing.Size(116, 15);
+            this.lblTituloCargoAnterior.TabIndex = 77;
+            this.lblTituloCargoAnterior.Text = "CARGO ANTERIOR";
+            // 
+            // lblCertificadoFianzaList
+            // 
+            this.lblCertificadoFianzaList.AutoSize = true;
+            this.lblCertificadoFianzaList.BackColor = System.Drawing.Color.Transparent;
+            this.lblCertificadoFianzaList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCertificadoFianzaList.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblCertificadoFianzaList.Location = new System.Drawing.Point(142, 25);
+            this.lblCertificadoFianzaList.Name = "lblCertificadoFianzaList";
+            this.lblCertificadoFianzaList.Size = new System.Drawing.Size(73, 13);
+            this.lblCertificadoFianzaList.TabIndex = 122;
+            this.lblCertificadoFianzaList.Text = "XXXXXXXXXXX";
+            // 
+            // lblOficinaAnterior
+            // 
+            this.lblOficinaAnterior.AutoSize = true;
+            this.lblOficinaAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.lblOficinaAnterior.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOficinaAnterior.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblOficinaAnterior.Location = new System.Drawing.Point(5, 115);
+            this.lblOficinaAnterior.Name = "lblOficinaAnterior";
+            this.lblOficinaAnterior.Size = new System.Drawing.Size(49, 15);
+            this.lblOficinaAnterior.TabIndex = 83;
+            this.lblOficinaAnterior.Text = "Oficina:";
+            // 
+            // lblMontoFianza
+            // 
+            this.lblMontoFianza.AutoSize = true;
+            this.lblMontoFianza.BackColor = System.Drawing.Color.Transparent;
+            this.lblMontoFianza.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMontoFianza.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblMontoFianza.Location = new System.Drawing.Point(249, 24);
+            this.lblMontoFianza.Name = "lblMontoFianza";
+            this.lblMontoFianza.Size = new System.Drawing.Size(87, 15);
+            this.lblMontoFianza.TabIndex = 121;
+            this.lblMontoFianza.Text = "Monto Fianza :";
+            // 
+            // lblTipoFianzaAnterior
+            // 
+            this.lblTipoFianzaAnterior.AutoSize = true;
+            this.lblTipoFianzaAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.lblTipoFianzaAnterior.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoFianzaAnterior.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTipoFianzaAnterior.Location = new System.Drawing.Point(5, 68);
+            this.lblTipoFianzaAnterior.Name = "lblTipoFianzaAnterior";
+            this.lblTipoFianzaAnterior.Size = new System.Drawing.Size(91, 15);
+            this.lblTipoFianzaAnterior.TabIndex = 84;
+            this.lblTipoFianzaAnterior.Text = "Tipo de Fianza :";
+            // 
+            // lblCertificadoFianza
+            // 
+            this.lblCertificadoFianza.AutoSize = true;
+            this.lblCertificadoFianza.BackColor = System.Drawing.Color.Transparent;
+            this.lblCertificadoFianza.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCertificadoFianza.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblCertificadoFianza.Location = new System.Drawing.Point(5, 23);
+            this.lblCertificadoFianza.Name = "lblCertificadoFianza";
+            this.lblCertificadoFianza.Size = new System.Drawing.Size(128, 15);
+            this.lblCertificadoFianza.TabIndex = 120;
+            this.lblCertificadoFianza.Text = "Certificado de Fianza :";
+            // 
+            // lblCargoAnterior
+            // 
+            this.lblCargoAnterior.AutoSize = true;
+            this.lblCargoAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.lblCargoAnterior.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargoAnterior.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblCargoAnterior.Location = new System.Drawing.Point(5, 156);
+            this.lblCargoAnterior.Name = "lblCargoAnterior";
+            this.lblCargoAnterior.Size = new System.Drawing.Size(42, 15);
+            this.lblCargoAnterior.TabIndex = 85;
+            this.lblCargoAnterior.Text = "Cargo:";
+            // 
+            // lblCargoListAnterior
+            // 
+            this.lblCargoListAnterior.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblCargoListAnterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargoListAnterior.Location = new System.Drawing.Point(56, 153);
+            this.lblCargoListAnterior.Multiline = true;
+            this.lblCargoListAnterior.Name = "lblCargoListAnterior";
+            this.lblCargoListAnterior.ReadOnly = true;
+            this.lblCargoListAnterior.Size = new System.Drawing.Size(395, 20);
+            this.lblCargoListAnterior.TabIndex = 118;
+            this.lblCargoListAnterior.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblNumeroMemorandoAnterior
+            // 
+            this.lblNumeroMemorandoAnterior.AutoSize = true;
+            this.lblNumeroMemorandoAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroMemorandoAnterior.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroMemorandoAnterior.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblNumeroMemorandoAnterior.Location = new System.Drawing.Point(5, 44);
+            this.lblNumeroMemorandoAnterior.Name = "lblNumeroMemorandoAnterior";
+            this.lblNumeroMemorandoAnterior.Size = new System.Drawing.Size(144, 15);
+            this.lblNumeroMemorandoAnterior.TabIndex = 86;
+            this.lblNumeroMemorandoAnterior.Text = "Numero de Memorando:";
+            // 
+            // lblOficinaListAnterior
+            // 
+            this.lblOficinaListAnterior.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.lblOficinaListAnterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOficinaListAnterior.Location = new System.Drawing.Point(56, 95);
+            this.lblOficinaListAnterior.Multiline = true;
+            this.lblOficinaListAnterior.Name = "lblOficinaListAnterior";
+            this.lblOficinaListAnterior.ReadOnly = true;
+            this.lblOficinaListAnterior.Size = new System.Drawing.Size(395, 53);
+            this.lblOficinaListAnterior.TabIndex = 117;
+            this.lblOficinaListAnterior.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblNumeroMemorandoListAnterior
+            // 
+            this.lblNumeroMemorandoListAnterior.AutoSize = true;
+            this.lblNumeroMemorandoListAnterior.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumeroMemorandoListAnterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroMemorandoListAnterior.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblNumeroMemorandoListAnterior.Location = new System.Drawing.Point(177, 46);
+            this.lblNumeroMemorandoListAnterior.Name = "lblNumeroMemorandoListAnterior";
+            this.lblNumeroMemorandoListAnterior.Size = new System.Drawing.Size(73, 13);
+            this.lblNumeroMemorandoListAnterior.TabIndex = 87;
+            this.lblNumeroMemorandoListAnterior.Text = "XXXXXXXXXXX";
+            // 
+            // cbxTipoFianzaAnterior
+            // 
+            this.cbxTipoFianzaAnterior.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cbxTipoFianzaAnterior.Enabled = false;
+            this.cbxTipoFianzaAnterior.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxTipoFianzaAnterior.FormattingEnabled = true;
+            this.cbxTipoFianzaAnterior.Location = new System.Drawing.Point(156, 68);
+            this.cbxTipoFianzaAnterior.Name = "cbxTipoFianzaAnterior";
+            this.cbxTipoFianzaAnterior.Size = new System.Drawing.Size(219, 21);
+            this.cbxTipoFianzaAnterior.TabIndex = 95;
+            // 
+            // lblNumeroDocumentoList
+            // 
+            this.lblNumeroDocumentoList.AutoSize = true;
+            this.lblNumeroDocumentoList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroDocumentoList.Location = new System.Drawing.Point(311, 17);
+            this.lblNumeroDocumentoList.Name = "lblNumeroDocumentoList";
+            this.lblNumeroDocumentoList.Size = new System.Drawing.Size(73, 13);
+            this.lblNumeroDocumentoList.TabIndex = 113;
+            this.lblNumeroDocumentoList.Text = "XXXXXXXXXXX";
+            // 
+            // lblTipoDocumentoList
+            // 
+            this.lblTipoDocumentoList.AutoSize = true;
+            this.lblTipoDocumentoList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDocumentoList.Location = new System.Drawing.Point(311, 35);
+            this.lblTipoDocumentoList.Name = "lblTipoDocumentoList";
+            this.lblTipoDocumentoList.Size = new System.Drawing.Size(73, 13);
+            this.lblTipoDocumentoList.TabIndex = 112;
+            this.lblTipoDocumentoList.Text = "XXXXXXXXXXX";
+            // 
+            // lblNombresList
+            // 
+            this.lblNombresList.AutoSize = true;
+            this.lblNombresList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombresList.Location = new System.Drawing.Point(660, 48);
+            this.lblNombresList.Name = "lblNombresList";
+            this.lblNombresList.Size = new System.Drawing.Size(73, 13);
+            this.lblNombresList.TabIndex = 111;
+            this.lblNombresList.Text = "XXXXXXXXXXX";
+            // 
+            // lblPaternoList
+            // 
+            this.lblPaternoList.AutoSize = true;
+            this.lblPaternoList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaternoList.Location = new System.Drawing.Point(660, 14);
+            this.lblPaternoList.Name = "lblPaternoList";
+            this.lblPaternoList.Size = new System.Drawing.Size(73, 13);
+            this.lblPaternoList.TabIndex = 110;
+            this.lblPaternoList.Text = "XXXXXXXXXXX";
+            // 
+            // lblMaternoList
+            // 
+            this.lblMaternoList.AutoSize = true;
+            this.lblMaternoList.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaternoList.Location = new System.Drawing.Point(660, 31);
+            this.lblMaternoList.Name = "lblMaternoList";
+            this.lblMaternoList.Size = new System.Drawing.Size(73, 13);
+            this.lblMaternoList.TabIndex = 109;
+            this.lblMaternoList.Text = "XXXXXXXXXXX";
+            // 
+            // lblTipoDoc
+            // 
+            this.lblTipoDoc.AutoSize = true;
+            this.lblTipoDoc.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoDoc.Location = new System.Drawing.Point(174, 35);
+            this.lblTipoDoc.Name = "lblTipoDoc";
+            this.lblTipoDoc.Size = new System.Drawing.Size(111, 15);
+            this.lblTipoDoc.TabIndex = 101;
+            this.lblTipoDoc.Text = "* Tipo Documento:";
+            // 
+            // lblNumeroDocumento
+            // 
+            this.lblNumeroDocumento.AutoSize = true;
+            this.lblNumeroDocumento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumeroDocumento.Location = new System.Drawing.Point(174, 15);
+            this.lblNumeroDocumento.Name = "lblNumeroDocumento";
+            this.lblNumeroDocumento.Size = new System.Drawing.Size(133, 15);
+            this.lblNumeroDocumento.TabIndex = 99;
+            this.lblNumeroDocumento.Text = "* Número Documento:";
+            // 
+            // lblMaterno
+            // 
+            this.lblMaterno.AutoSize = true;
+            this.lblMaterno.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaterno.Location = new System.Drawing.Point(547, 29);
+            this.lblMaterno.Name = "lblMaterno";
+            this.lblMaterno.Size = new System.Drawing.Size(114, 15);
+            this.lblMaterno.TabIndex = 98;
+            this.lblMaterno.Text = "* Apellido Materno:";
+            // 
+            // lblPaterno
+            // 
+            this.lblPaterno.AutoSize = true;
+            this.lblPaterno.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaterno.Location = new System.Drawing.Point(547, 12);
+            this.lblPaterno.Name = "lblPaterno";
+            this.lblPaterno.Size = new System.Drawing.Size(110, 15);
+            this.lblPaterno.TabIndex = 100;
+            this.lblPaterno.Text = "* Apellido Paterno:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(547, 46);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(69, 15);
+            this.lblNombre.TabIndex = 97;
+            this.lblNombre.Text = "* Nombres:";
+            // 
+            // lblTipoSolicitud
+            // 
+            this.lblTipoSolicitud.AutoSize = true;
+            this.lblTipoSolicitud.Font = new System.Drawing.Font("Segoe UI", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoSolicitud.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblTipoSolicitud.Location = new System.Drawing.Point(24, 19);
+            this.lblTipoSolicitud.Name = "lblTipoSolicitud";
+            this.lblTipoSolicitud.Size = new System.Drawing.Size(109, 20);
+            this.lblTipoSolicitud.TabIndex = 76;
+            this.lblTipoSolicitud.Text = "XXXXXXXXXX";
+            this.lblTipoSolicitud.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1088, 64);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(151, 15);
+            this.label5.TabIndex = 63;
+            this.label5.Text = "Resolucion Administrativa";
+            // 
+            // txtResolucionAdministrativa
+            // 
+            this.txtResolucionAdministrativa.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtResolucionAdministrativa.Location = new System.Drawing.Point(1062, 84);
+            this.txtResolucionAdministrativa.Name = "txtResolucionAdministrativa";
+            this.txtResolucionAdministrativa.Size = new System.Drawing.Size(202, 22);
+            this.txtResolucionAdministrativa.TabIndex = 62;
+            this.txtResolucionAdministrativa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelar.Image = global::MidasD.Properties.Resources.cancel_inactive;
+            this.btnCancelar.Location = new System.Drawing.Point(1174, 216);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(97, 31);
+            this.btnCancelar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCancelar.TabIndex = 22;
+            this.btnCancelar.TabStop = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardar.Image = global::MidasD.Properties.Resources.save_inactive;
+            this.btnGuardar.Location = new System.Drawing.Point(1073, 216);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(97, 31);
+            this.btnGuardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnGuardar.TabIndex = 21;
+            this.btnGuardar.TabStop = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.pbImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbImagen.Image = global::MidasD.Properties.Resources.sin_foto1;
+            this.pbImagen.Location = new System.Drawing.Point(941, 88);
+            this.pbImagen.Margin = new System.Windows.Forms.Padding(2);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(106, 117);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 37;
+            this.pbImagen.TabStop = false;
+            // 
+            // cbxCargo
+            // 
+            this.cbxCargo.FormattingEnabled = true;
+            this.cbxCargo.Location = new System.Drawing.Point(957, 131);
+            this.cbxCargo.Name = "cbxCargo";
+            this.cbxCargo.Size = new System.Drawing.Size(69, 23);
+            this.cbxCargo.TabIndex = 74;
+            // 
+            // cbxCargoAnterior
+            // 
+            this.cbxCargoAnterior.FormattingEnabled = true;
+            this.cbxCargoAnterior.Location = new System.Drawing.Point(957, 102);
+            this.cbxCargoAnterior.Name = "cbxCargoAnterior";
+            this.cbxCargoAnterior.Size = new System.Drawing.Size(69, 23);
+            this.cbxCargoAnterior.TabIndex = 119;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(445, -1);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(417, 25);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Resolucion Administrativa para Fianza";
+            // 
+            // erpFalloConectar
+            // 
+            this.erpFalloConectar.ContainerControl = this;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblEstado,
+            this.lblEstadoHuella});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 658);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1305, 22);
+            this.statusStrip1.TabIndex = 50;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(85, 17);
+            this.lblEstado.Text = "Estado Actual: ";
+            // 
+            // lblEstadoHuella
+            // 
+            this.lblEstadoHuella.Name = "lblEstadoHuella";
+            this.lblEstadoHuella.Size = new System.Drawing.Size(48, 17);
+            this.lblEstadoHuella.Text = "Estado: ";
+            // 
+            // erpError
+            // 
+            this.erpError.ContainerControl = this;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(372, 28);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(164, 26);
+            this.label3.TabIndex = 51;
+            this.label3.Text = "Buscar por Apellidos, Nombres\r\no Cédula de Identidad";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // btnLeyenda
+            // 
+            this.btnLeyenda.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnLeyenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLeyenda.Image = global::MidasD.Properties.Resources.Imagen10;
+            this.btnLeyenda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLeyenda.Location = new System.Drawing.Point(12, 2);
+            this.btnLeyenda.Name = "btnLeyenda";
+            this.btnLeyenda.Size = new System.Drawing.Size(173, 44);
+            this.btnLeyenda.TabIndex = 87;
+            this.btnLeyenda.Text = "Información de los \r\nColores de Leyenda";
+            this.btnLeyenda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLeyenda.UseVisualStyleBackColor = false;
+            this.btnLeyenda.Click += new System.EventHandler(this.btnLeyenda_Click);
+            // 
+            // tbcFuncionarios
+            // 
+            this.tbcFuncionarios.Controls.Add(this.tabPage1);
+            this.tbcFuncionarios.Controls.Add(this.tabPage2);
+            this.tbcFuncionarios.Controls.Add(this.tabPage3);
+            this.tbcFuncionarios.Controls.Add(this.tabPage4);
+            this.tbcFuncionarios.Location = new System.Drawing.Point(7, 55);
+            this.tbcFuncionarios.Name = "tbcFuncionarios";
+            this.tbcFuncionarios.SelectedIndex = 0;
+            this.tbcFuncionarios.Size = new System.Drawing.Size(1298, 600);
+            this.tbcFuncionarios.TabIndex = 88;
+            this.tbcFuncionarios.SelectedIndexChanged += new System.EventHandler(this.tbcFuncionarios_SelectedIndexChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.txtBajaObservado);
+            this.tabPage1.Controls.Add(this.btnBaja);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.pbFlecha);
+            this.tabPage1.Controls.Add(this.pnlLista);
+            this.tabPage1.Controls.Add(this.btnEditar);
+            this.tabPage1.Controls.Add(this.pnlDatos);
+            this.tabPage1.Controls.Add(this.btnQuitarSeleccion);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1290, 574);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Registro de Resolucion Administrativa";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(722, 281);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(74, 26);
+            this.label6.TabIndex = 131;
+            this.label6.Text = "Baja Solicitud \r\ny Rechazo";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtBajaObservado
+            // 
+            this.txtBajaObservado.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBajaObservado.Location = new System.Drawing.Point(802, 280);
+            this.txtBajaObservado.Multiline = true;
+            this.txtBajaObservado.Name = "txtBajaObservado";
+            this.txtBajaObservado.Size = new System.Drawing.Size(377, 28);
+            this.txtBajaObservado.TabIndex = 130;
+            // 
+            // btnBaja
+            // 
+            this.btnBaja.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaja.Image = global::MidasD.Properties.Resources.delet_inactive;
+            this.btnBaja.Location = new System.Drawing.Point(1183, 280);
+            this.btnBaja.Name = "btnBaja";
+            this.btnBaja.Size = new System.Drawing.Size(81, 29);
+            this.btnBaja.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBaja.TabIndex = 98;
+            this.btnBaja.TabStop = false;
+            this.btnBaja.Click += new System.EventHandler(this.btnBaja_Click_1);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label13.Location = new System.Drawing.Point(6, 277);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(202, 24);
+            this.label13.TabIndex = 97;
+            this.label13.Text = "Listado de las solicitudes de Fianzas registradas\r\npor las unidades de Recursos H" +
+    "umanos.\r\n";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pbFlecha
+            // 
+            this.pbFlecha.Image = global::MidasD.Properties.Resources.Arrow_Right;
+            this.pbFlecha.Location = new System.Drawing.Point(439, 279);
+            this.pbFlecha.Name = "pbFlecha";
+            this.pbFlecha.Size = new System.Drawing.Size(28, 28);
+            this.pbFlecha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFlecha.TabIndex = 76;
+            this.pbFlecha.TabStop = false;
+            this.pbFlecha.Visible = false;
+            // 
+            // btnQuitarSeleccion
+            // 
+            this.btnQuitarSeleccion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQuitarSeleccion.Image = global::MidasD.Properties.Resources.deselect_inactive;
+            this.btnQuitarSeleccion.Location = new System.Drawing.Point(560, 279);
+            this.btnQuitarSeleccion.Name = "btnQuitarSeleccion";
+            this.btnQuitarSeleccion.Size = new System.Drawing.Size(101, 29);
+            this.btnQuitarSeleccion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnQuitarSeleccion.TabIndex = 75;
+            this.btnQuitarSeleccion.TabStop = false;
+            this.btnQuitarSeleccion.Click += new System.EventHandler(this.btnQuitarSeleccion_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabPage2.Controls.Add(this.btnImprimir1);
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.chkUsuarioRHASE);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1290, 574);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Lista de Fianzas con Resolucion Administrativa";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Maroon;
+            this.label16.Location = new System.Drawing.Point(76, 6);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(258, 24);
+            this.label16.TabIndex = 103;
+            this.label16.Text = "El usuario que usted utiliza define el listado de las resoluciones\r\n(Puede destiq" +
+    "uear para ver todas las Fianzas con Resolucion)\r\n";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label1.Location = new System.Drawing.Point(872, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(256, 24);
+            this.label1.TabIndex = 98;
+            this.label1.Text = "Listado de Fianzas que ya tiene una Resolucion Administrtiva\r\npara una Fianza.\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(3, 36);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1279, 481);
+            this.panel2.TabIndex = 92;
+            this.panel2.TabStop = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.dgvConResolucion);
+            this.groupBox2.Location = new System.Drawing.Point(8, 1);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1264, 473);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Lista Funcionarios";
+            // 
+            // dgvConResolucion
+            // 
+            this.dgvConResolucion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvConResolucion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvConResolucion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConResolucion.Location = new System.Drawing.Point(5, 22);
+            this.dgvConResolucion.MultiSelect = false;
+            this.dgvConResolucion.Name = "dgvConResolucion";
+            this.dgvConResolucion.ReadOnly = true;
+            this.dgvConResolucion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvConResolucion.Size = new System.Drawing.Size(1253, 445);
+            this.dgvConResolucion.TabIndex = 0;
+            this.dgvConResolucion.TabStop = false;
+            this.dgvConResolucion.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvConResolucion_DataBindingComplete);
+            this.dgvConResolucion.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvGrilla_RowPostPaint);
+            // 
+            // chkUsuarioRHASE
+            // 
+            this.chkUsuarioRHASE.AutoSize = true;
+            this.chkUsuarioRHASE.Checked = true;
+            this.chkUsuarioRHASE.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkUsuarioRHASE.Location = new System.Drawing.Point(5, 9);
+            this.chkUsuarioRHASE.Name = "chkUsuarioRHASE";
+            this.chkUsuarioRHASE.Size = new System.Drawing.Size(71, 17);
+            this.chkUsuarioRHASE.TabIndex = 91;
+            this.chkUsuarioRHASE.Text = "xxxxxxxxx";
+            this.chkUsuarioRHASE.UseVisualStyleBackColor = true;
+            this.chkUsuarioRHASE.CheckedChanged += new System.EventHandler(this.chkUsuarioRHASE_CheckedChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabPage3.Controls.Add(this.btnImprimir2);
+            this.tabPage3.Controls.Add(this.ch0Dias);
+            this.tabPage3.Controls.Add(this.ch15Dias);
+            this.tabPage3.Controls.Add(this.ch30Dias);
+            this.tabPage3.Controls.Add(this.label2);
+            this.tabPage3.Controls.Add(this.panel1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(1290, 574);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Sin Resolucion Administrativa";
+            // 
+            // ch0Dias
+            // 
+            this.ch0Dias.AutoSize = true;
+            this.ch0Dias.BackColor = System.Drawing.Color.OrangeRed;
+            this.ch0Dias.Location = new System.Drawing.Point(267, 8);
+            this.ch0Dias.Name = "ch0Dias";
+            this.ch0Dias.Size = new System.Drawing.Size(183, 17);
+            this.ch0Dias.TabIndex = 102;
+            this.ch0Dias.Text = "Limite de Presentacion Finalizada";
+            this.ch0Dias.UseVisualStyleBackColor = false;
+            this.ch0Dias.Click += new System.EventHandler(this.ch0Dias_Click);
+            // 
+            // ch15Dias
+            // 
+            this.ch15Dias.AutoSize = true;
+            this.ch15Dias.BackColor = System.Drawing.Color.Gold;
+            this.ch15Dias.Location = new System.Drawing.Point(140, 8);
+            this.ch15Dias.Name = "ch15Dias";
+            this.ch15Dias.Size = new System.Drawing.Size(117, 17);
+            this.ch15Dias.TabIndex = 101;
+            this.ch15Dias.Text = "Menores a 15 Días";
+            this.ch15Dias.UseVisualStyleBackColor = false;
+            this.ch15Dias.Click += new System.EventHandler(this.ch0Dias_Click);
+            // 
+            // ch30Dias
+            // 
+            this.ch30Dias.AutoSize = true;
+            this.ch30Dias.BackColor = System.Drawing.Color.LimeGreen;
+            this.ch30Dias.Location = new System.Drawing.Point(13, 8);
+            this.ch30Dias.Name = "ch30Dias";
+            this.ch30Dias.Size = new System.Drawing.Size(117, 17);
+            this.ch30Dias.TabIndex = 100;
+            this.ch30Dias.Text = "Menores a 30 Días";
+            this.ch30Dias.UseVisualStyleBackColor = false;
+            this.ch30Dias.Click += new System.EventHandler(this.ch0Dias_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(872, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(262, 24);
+            this.label2.TabIndex = 99;
+            this.label2.Text = "Listado de Solicitudes de Fianzas de acuerdo a 30 días de plazo\r\nsegun reglamento" +
+    ".\r\n";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(3, 32);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1274, 493);
+            this.panel1.TabIndex = 93;
+            this.panel1.TabStop = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.dgvDiasRestantes);
+            this.groupBox1.Location = new System.Drawing.Point(8, 1);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1259, 485);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Lista Funcionarios";
+            // 
+            // dgvDiasRestantes
+            // 
+            this.dgvDiasRestantes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvDiasRestantes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvDiasRestantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDiasRestantes.Location = new System.Drawing.Point(5, 24);
+            this.dgvDiasRestantes.MultiSelect = false;
+            this.dgvDiasRestantes.Name = "dgvDiasRestantes";
+            this.dgvDiasRestantes.ReadOnly = true;
+            this.dgvDiasRestantes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDiasRestantes.Size = new System.Drawing.Size(1248, 455);
+            this.dgvDiasRestantes.TabIndex = 0;
+            this.dgvDiasRestantes.TabStop = false;
+            this.dgvDiasRestantes.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.dgvDiasRestantes_DataBindingComplete);
+            this.dgvDiasRestantes.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgvGrilla_RowPostPaint);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tabPage4.Controls.Add(this.panel3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1290, 574);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Solicitudes Rechazadas";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.btnImprimir3);
+            this.panel3.Controls.Add(this.groupBox3);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(12, 17);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1270, 543);
+            this.panel3.TabIndex = 110;
+            this.panel3.TabStop = true;
+            // 
+            // btnImprimir3
+            // 
+            this.btnImprimir3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir3.Image = global::MidasD.Properties.Resources.print;
+            this.btnImprimir3.Location = new System.Drawing.Point(542, 480);
+            this.btnImprimir3.Name = "btnImprimir3";
+            this.btnImprimir3.Size = new System.Drawing.Size(96, 29);
+            this.btnImprimir3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnImprimir3.TabIndex = 111;
+            this.btnImprimir3.TabStop = false;
+            this.btnImprimir3.Click += new System.EventHandler(this.btnImprimir3_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.dgvConRechazo);
+            this.groupBox3.Location = new System.Drawing.Point(8, 1);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1249, 473);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Lista Funcionarios";
+            // 
+            // dgvConRechazo
+            // 
+            this.dgvConRechazo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvConRechazo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvConRechazo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConRechazo.Location = new System.Drawing.Point(5, 22);
+            this.dgvConRechazo.MultiSelect = false;
+            this.dgvConRechazo.Name = "dgvConRechazo";
+            this.dgvConRechazo.ReadOnly = true;
+            this.dgvConRechazo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvConRechazo.Size = new System.Drawing.Size(1238, 440);
+            this.dgvConRechazo.TabIndex = 0;
+            this.dgvConRechazo.TabStop = false;
+            // 
+            // btnImprimir2
+            // 
+            this.btnImprimir2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir2.Image = global::MidasD.Properties.Resources.print;
+            this.btnImprimir2.Location = new System.Drawing.Point(550, 531);
+            this.btnImprimir2.Name = "btnImprimir2";
+            this.btnImprimir2.Size = new System.Drawing.Size(96, 29);
+            this.btnImprimir2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnImprimir2.TabIndex = 112;
+            this.btnImprimir2.TabStop = false;
+            this.btnImprimir2.Click += new System.EventHandler(this.btnImprimir2_Click);
+            // 
+            // btnImprimir1
+            // 
+            this.btnImprimir1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir1.Image = global::MidasD.Properties.Resources.print;
+            this.btnImprimir1.Location = new System.Drawing.Point(557, 534);
+            this.btnImprimir1.Name = "btnImprimir1";
+            this.btnImprimir1.Size = new System.Drawing.Size(96, 29);
+            this.btnImprimir1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnImprimir1.TabIndex = 113;
+            this.btnImprimir1.TabStop = false;
+            this.btnImprimir1.Click += new System.EventHandler(this.btnImprimir1_Click);
+            // 
+            // FrmAsesoriaLegal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.ClientSize = new System.Drawing.Size(1305, 680);
+            this.Controls.Add(this.tbcFuncionarios);
+            this.Controls.Add(this.btnLeyenda);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.txtBuscar);
+            this.Controls.Add(this.lblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "FrmAsesoriaLegal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = " ::: MidasD Resolucion Administrativa :::";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPersona_FormClosed);
+            this.Load += new System.EventHandler(this.FrmPersona_Load);
+            this.pnlLista.ResumeLayout(false);
+            this.grbLista.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBuscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnEditar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            this.pnlDatos.ResumeLayout(false);
+            this.txtUsuario.ResumeLayout(false);
+            this.txtUsuario.PerformLayout();
+            this.pnlCargoActual.ResumeLayout(false);
+            this.pnlCargoActual.PerformLayout();
+            this.pnlCargoAnterior.ResumeLayout(false);
+            this.pnlCargoAnterior.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCancelar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnGuardar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpFalloConectar)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.erpError)).EndInit();
+            this.tbcFuncionarios.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBaja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlecha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnQuitarSeleccion)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConResolucion)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiasRestantes)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnImprimir3)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConRechazo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImprimir2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImprimir1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel pnlLista;
+        private System.Windows.Forms.Panel pnlDatos;
+        private System.Windows.Forms.GroupBox txtUsuario;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.PictureBox btnSalir;
+        private System.Windows.Forms.PictureBox btnEditar;
+        private System.Windows.Forms.PictureBox btnCancelar;
+        private System.Windows.Forms.PictureBox btnGuardar;
+        private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.ErrorProvider erpFalloConectar;
+
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel lblEstado;
+        private System.Windows.Forms.ToolStripStatusLabel lblEstadoHuella;
+        private System.Windows.Forms.PictureBox btnBuscar;
+        private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.ErrorProvider erpError;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtResolucionAdministrativa;
+        private System.Windows.Forms.ComboBox cbxCargo;
+        private System.Windows.Forms.Button btnLeyenda;
+        private System.Windows.Forms.TabControl tbcFuncionarios;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridView dgvConResolucion;
+        private System.Windows.Forms.CheckBox chkUsuarioRHASE;
+        private System.Windows.Forms.PictureBox btnQuitarSeleccion;
+        private System.Windows.Forms.PictureBox pbFlecha;
+        private System.Windows.Forms.GroupBox grbLista;
+        private System.Windows.Forms.DataGridView dgvLista;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dgvDiasRestantes;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTipoSolicitud;
+        private System.Windows.Forms.ComboBox cbxTipoFianza;
+        private System.Windows.Forms.Label lblNumeroDocumentoList;
+        private System.Windows.Forms.Label lblTipoDocumentoList;
+        private System.Windows.Forms.Label lblNombresList;
+        private System.Windows.Forms.Label lblPaternoList;
+        private System.Windows.Forms.Label lblMaternoList;
+        private System.Windows.Forms.Label lblNumeroMemorandoList;
+        private System.Windows.Forms.Label lblNumeroMemorando;
+        private System.Windows.Forms.Label lblCargo;
+        private System.Windows.Forms.Label lblTipoFianza;
+        private System.Windows.Forms.Label lblOficina;
+        private System.Windows.Forms.Label lblTipoDoc;
+        private System.Windows.Forms.Label lblNumeroDocumento;
+        private System.Windows.Forms.Label lblMaterno;
+        private System.Windows.Forms.Label lblPaterno;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblTituloCargoActual;
+        private System.Windows.Forms.ComboBox cbxTipoFianzaAnterior;
+        private System.Windows.Forms.Label lblNumeroMemorandoListAnterior;
+        private System.Windows.Forms.Label lblNumeroMemorandoAnterior;
+        private System.Windows.Forms.Label lblCargoAnterior;
+        private System.Windows.Forms.Label lblTipoFianzaAnterior;
+        private System.Windows.Forms.Label lblOficinaAnterior;
+        private System.Windows.Forms.Label lblTituloCargoAnterior;
+        private System.Windows.Forms.TextBox lblCargoListAnterior;
+        private System.Windows.Forms.TextBox lblOficinaListAnterior;
+        private System.Windows.Forms.TextBox lblCargoList;
+        private System.Windows.Forms.TextBox lblOficinaList;
+        private System.Windows.Forms.ComboBox cbxCargoAnterior;
+        private System.Windows.Forms.Label lblMontoFianzaList;
+        private System.Windows.Forms.Label lblCertificadoFianzaList;
+        private System.Windows.Forms.Label lblMontoFianza;
+        private System.Windows.Forms.Label lblCertificadoFianza;
+        private System.Windows.Forms.Panel pnlCargoActual;
+        private System.Windows.Forms.Panel pnlCargoAnterior;
+        private System.Windows.Forms.TextBox txtObservacion;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblResoAnterior;
+        private System.Windows.Forms.TextBox txtResoAnterior;
+        private System.Windows.Forms.CheckBox ch0Dias;
+        private System.Windows.Forms.CheckBox ch15Dias;
+        private System.Windows.Forms.CheckBox ch30Dias;
+        private System.Windows.Forms.TextBox txtBajaObservado;
+        private System.Windows.Forms.PictureBox btnBaja;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.PictureBox btnImprimir3;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dgvConRechazo;
+        private System.Windows.Forms.PictureBox btnImprimir1;
+        private System.Windows.Forms.PictureBox btnImprimir2;
+    }
+}
